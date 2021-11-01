@@ -1,5 +1,5 @@
 body {
-  font-family: Camphor, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1;
   position: relative;
@@ -56,13 +56,13 @@ h1 {
 }
 
 #docterStrip {
-  min-height: 42px;
+  height: 42px;
+  max-height: 100%;
   display: flex;
   margin: 0px;
 }
 
 .eachImage {
-  flex: 0 0 auto;
   width: 42px;
   height: 42px;
   border-radius: 50%;
