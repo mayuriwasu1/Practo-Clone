@@ -21,6 +21,23 @@
 
 /* Arrows */
 
+.slick-next , .slick-prev{
+    background-image: url("./rightleftarrwos/right-arrow.png");
+    background-color: rgba(255, 255, 255, 0.623);
+    background-size: cover;
+    background-size:30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:25px;
+    border-radius: 150px;
+    z-index: 1;
+}
+.slick-prev{
+    background-image: url("./rightleftarrwos/leftarrows.png");
+    background-size:50px 35px;
+    padding:25px;
+}
+
 .slick-prev,
 .slick-next
 {
@@ -87,42 +104,25 @@
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -15px;
     left: auto;
-}
-.slick-prev:before
-{
-    /* content: '←'; */
 }
 [dir='rtl'] .slick-prev:before
 {
-    /* content: '→'; */
+   
+    background-color: transparent;
 }
 
 .slick-next
 {
-    right: 15px;
+    right: 0px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -15px;
 }
-.slick-next:before
-{
-    background-color: #ffffff;
-    background-image: url("./right.jfif");
-    background-size: cover;
-    background-position: center;
-    padding: 25px;
-    border-radius: 150px;
-    z-index: 1;
-}
-[dir='rtl'] .slick-next:before
-{
-    /* content: '←'; */
-    
-}
+
 
 /* Dots */
 .slick-dotted.slick-slider
@@ -134,7 +134,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -45px;
 
     display: block;
 
@@ -165,7 +165,6 @@
     line-height: 0;
     border-radius: 150px;
     display: block;
-
     width: 10px;
     height: 10px;
     padding: 5px;
@@ -175,7 +174,7 @@
     color: transparent;
     border: 0;
     outline: none;
-    background :rgba(228, 228, 228, 0.315);
+    background :rgba(133, 133, 133, 0.315);
    
 }
 .slick-dots li button:hover,
@@ -217,12 +216,9 @@
     color: black;
 }
 
-/* .slick-prev{
-    background-color: #ffffff;
-    background-image: url("./right.jfif");
-    background-size: cover;
-    background-position: center;
-    padding: 25px;
-    border-radius: 150px;
-    z-index: 1;
-} */
+.single-item  > .slick-prev{
+   margin-left: 120px;
+}
+.single-item  >  .slick-next {
+    margin-right:100px;
+}

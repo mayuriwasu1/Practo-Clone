@@ -1,6 +1,6 @@
 $('.responsive').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -36,6 +36,8 @@ $('.responsive').slick({
 
 
   $('.single-item').slick({
+    
     autoplay: true,
     autoplaySpeed: 1000,
+    dots: true,
   });
