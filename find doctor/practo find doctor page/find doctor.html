@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/fba4772d23.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="findDoctor.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="imagediv">
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+        />
+      </div>
+      <div id="navdiv">
+        <ul id="menu">
+          <li>Find Doctors</li>
+          <li>Video Consult</li>
+          <li>Medicines</li>
+          <li>Lab Test</li>
+          <li>Surgeries</li>
+          <li>For Provider</li>
+          <li>Support & Help</li>
+          <button id="loginButton">Login / Signup</button>
+        </ul>
+      </div>
+    </div>
+    <div id="searchdiv">
+      <div class="main_image"></div>
+
+      <div class="main_text">
+        <h1>Your home for health</h1>
+        <!-- <br /> -->
+        <h2>Find and Book</h2>
+      </div>
+      <div id="input">
+        <input id="place" type="text" placeholder="Kolkata" />
+        <input
+          id="clinic"
+          type="text"
+          placeholder="Search doctors, clinics, hospitals, etc"
+        />
+        <div id="popular">
+          <h5>popular search:</h5>
+          <h5>dermatologist</h5>
+          <h5>prdiatration</h5>
+          <h5>Gynacologist</h5>
+          <h5>Others</h5>
+        </div>
+      </div>
+      <div id="health_provider">
+        <ul>
+          <li>Consult with Doctor</li>
+          <li>Our Medicines</li>
+          <li>View Medical Reports</li>
+          <li>Book Test</li>
+          <li>read articals</li>
+          <li>For Healthcare Providers</li>
+        </ul>
+      </div>
+      <div id="safetydiv">
+        <div id="info">
+          <div id="data">
+            <h1>Safety of your data is our</h1>
+            <h2>top priority.</h2>
+            <span class="icon">
+              <i class="fas fa-check"></i>
+            </span>
+            <h4>Multi-level Security</h4>
+            <h4>Multiple data backup</h4>
+            <h4>Straightain Data Privecy Policies</h4>
+            <button class="button">Read More</button>
+          </div>
+          <div id="safety_image">
+            <img id="safetyimg" src="../images/practo3.png" alt="" />
+          </div>
+        </div>
+
+        <div id="certificate">
+          <div class="certificate_div">
+            <div class="certificate_img">
+              <img src="../images/practo_c1.png" alt="" />
+            </div>
+            <div class="certificate_data">
+              <span>256-bit</span>
+              <span>encryption</span>
+            </div>
+          </div>
+          <div class="certificate_div">
+            <div class="certificate_img">
+              <img src="../images/practo_c2.png" alt="" />
+            </div>
+            <div class="certificate_data">
+              <span>ISO 27001</span>
+              <span>certified</span>
+            </div>
+          </div>
+          <div class="certificate_div">
+            <div class="certificate_img">
+              <img src="../images/practo_c3.png" alt="" />
+            </div>
+            <div class="certificate_data">
+              <span>HIPAA</span>
+              <span>compliant data centers</span>
+            </div>
+          </div>
+          <div class="certificate_div">
+            <div class="certificate_img">
+              <img src="../images/practo_c4.png" alt="" />
+            </div>
+            <div class="certificate_data">
+              <span>DSCI</span>
+              <span>member</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="appoinment">
+      <div id="find_doctor">
+        <h1>
+          Instant appointment with doctors.
+          <span>Guaranteed.</span>
+        </h1>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="bold"> 100,000 </span>
+          <span class="list">Verified doctors</span>
+        </h4>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="bold"> 3M+ </span>
+          <span class="list">Patient recommendations</span>
+        </h4>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="bold"> 25M </span>
+          <span class="list">Patients/year</span>
+        </h4>
+        <button class="button">Find me the right doctor</button>
+      </div>
+      <div id="find_doctor_video">
+        <video
+          class="video"
+          controls
+          loop
+          src="../practo videos/video1.webm"
+        ></video>
+      </div>
+    </div>
+    <div id="waiting_room">
+      <div id="waitingvideo">
+        <video
+          class="video"
+          controls
+          src="../practo videos/video2.webm"
+        ></video>
+      </div>
+      <div id="consult_doctor">
+        <h1>Skip the waiting room.</h1>
+        <span>Consult with a doctor</span>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Fees starting at</span>
+          <span class="rupee_icon">
+            <i class="fas fa-rupee-sign"></i>
+          </span>
+          <span class="bold">99</span>
+        </h4>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Verified doctors respond in</span>
+
+          <span class="bold">5 minutes</span>
+        </h4>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="bold">100% </span>
+          <span class="list">Private and confidential</span>
+        </h4>
+        <button class="button">Consult now</button>
+        <span class="bold">57332 </span>
+        <span class="list">doctors online</span>
+      </div>
+    </div>
+  </body>
+</html>
+<span class="bold">99</span>

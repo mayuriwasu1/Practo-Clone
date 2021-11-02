@@ -1,0 +1,287 @@
+body {
+  background-color: white;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+  height: 70px;
+
+  display: flex;
+  /* justify-content: space-around; */
+  text-decoration: none;
+}
+#navbar > #imagediv > img {
+  height: 70px;
+
+  margin-left: 50px;
+}
+#menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+#menu li {
+  margin-left: 40px;
+
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+#menu #loginButton {
+  height: 30px;
+  padding-left: 25px;
+  background: transparent;
+  float: right;
+}
+#searchdiv {
+  height: 1300px;
+  /* width: 100%; */
+  /* border: 1px solid violet; */
+  background-color: rgb(240, 240, 245);
+  position: relative;
+}
+.main_image {
+  background-image: url(../images/practo2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 470px;
+  width: 100%;
+  margin-top: 30px;
+}
+.main_text {
+  position: absolute;
+  top: 45px;
+  color: white;
+  height: 50px;
+  margin-left: 35%;
+  font-size: 18px;
+}
+.main_text h2 {
+  padding-left: 70px;
+}
+#input {
+  width: 100%;
+  position: absolute;
+  top: 14%;
+  margin-top: 10px;
+}
+#place {
+  height: 45px;
+  width: 20%;
+  margin-left: 22%;
+  size: 60%;
+}
+#clinic {
+  height: 45px;
+  width: 35%;
+}
+#popular {
+  display: flex;
+  margin-left: 22%;
+  /* padding-left: 20px; */
+}
+#popular h5 {
+  padding-left: 5%;
+  color: rgb(141, 147, 179);
+}
+#health_provider {
+  height: 80px;
+
+  background-color: rgb(29, 40, 105);
+  margin-top: 0px;
+  display: flex;
+  /* border: 1px solid yellowgreen; */
+}
+#health_provider ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  margin-left: 100px;
+}
+#health_provider li {
+  margin-left: 50px;
+  font-size: 12px;
+  padding-top: 20px;
+  color: rgb(184, 187, 195);
+}
+#safetydiv {
+  /* border: 1px solid black; */
+  width: 98%;
+  height: 600px;
+}
+#safetydiv > #info {
+  display: flex;
+  /* border: 1px solid peru; */
+  height: 75%;
+  width: 100%;
+}
+#safetydiv > #info > #data {
+  height: 300px;
+  width: 30%;
+  /* border: 1px solid tomato; */
+  margin-top: 10%;
+  margin-left: 100px;
+}
+#safetydiv > #info > #data h1 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(81, 90, 104);
+  font-size: 35px;
+}
+#safetydiv > #info > #data h2 {
+  font-size: 40px;
+  line-height: 15px;
+  color: rgb(65, 65, 70);
+}
+#safetydiv > #info > #data h3 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(81, 90, 104);
+}
+.button {
+  background-color: rgb(20, 190, 240);
+  height: 40px;
+  outline: none;
+  width: 40%;
+  outline: 0%;
+  border: none;
+  color: white;
+}
+#safetydiv > #info > #safety_image {
+  height: 200px;
+  width: 20%;
+  /* border: 1px solid tomato; */
+  margin-top: 13%;
+  margin-left: 30%;
+  float: right;
+}
+#safety_image > #safetyimg {
+  height: 250px;
+  width: 100%;
+}
+#safetydiv > #certificate {
+  height: 130px;
+  width: 100%;
+  /* border: 1px solid green; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#certificate > .certificate_div {
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 8%;
+  margin-left: 10%;
+}
+
+.certificate_div > .certificate_img {
+  width: 100%;
+  height: 60%;
+  /* border: 1px solid olive; */
+  justify-content: center;
+  padding-left: 20px;
+}
+.certificate_div > .certificate_data {
+  /* border: 1px solid purple; */
+  height: 38%;
+  width: 100%;
+}
+
+.certificate_div > .certificate_data > span {
+  justify-content: center;
+  padding-left: 10px;
+  color: rgb(65, 65, 70);
+  font-size: 15px;
+}
+#appoinment {
+  height: 650px;
+  width: 100%;
+  /* border: 1px solid green; */
+  display: flex;
+}
+#appoinment > #find_doctor {
+  height: 500px;
+  width: 35%;
+  /* border: 1px solid purple; */
+  margin-top: 70px;
+  margin-left: 8%;
+}
+#appoinment > #find_doctor_video {
+  height: 500px;
+  width: 20%;
+  /* border: 1px solid purple; */
+  float: right;
+  margin-top: 70px;
+  margin-left: 20%;
+}
+#find_doctor h1 {
+  font-family: inherit;
+  font-weight: lighter;
+  color: rgb(65, 65, 70);
+  font-size: 40px;
+}
+#find_doctor h1 span {
+  font-weight: bold;
+  font-size: 40px;
+}
+.bold {
+  font-weight: bolder;
+  color: rgb(131, 152, 188);
+  font-size: 15px;
+}
+.icon {
+  color: rgb(20, 190, 240);
+  font-size: 15px;
+}
+.list {
+  color: rgb(131, 152, 188);
+  font-weight: lighter;
+  font-size: 15px;
+}
+.video {
+  height: 100%;
+  width: 100%;
+}
+#waiting_room {
+  background-color: rgb(240, 240, 245);
+  height: 600px;
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  padding-top: 70px;
+}
+#waitingvideo {
+  height: 500px;
+  width: 20%;
+  /* border: 1px solid purple; */
+}
+#consult_doctor {
+  height: 500px;
+  width: 35%;
+  /* border: 1px solid purple; */
+}
+#consult_doctor h1 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(81, 90, 104);
+  font-size: 35px;
+  line-height: 18px;
+}
+span {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 18px;
+  color: rgb(65, 65, 70);
+}
+#consult_doctor span > .icon {
+  color: rgb(20, 190, 240);
+}
+.rupee_icon {
+  color: rgb(120, 120, 135);
+  font-size: 15px;
+}
