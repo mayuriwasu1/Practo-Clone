@@ -1,16 +1,5 @@
 
 
-// function menuClick(e){
-
-//   document.getElementById("forProvidersmanu").style.display = "block";
-
-// }
-
-// function DobesClick(){
-//   document.getElementById("forProvidersmanu").style.display = "none";
-// }
-
-
 document.querySelector("#Sendmes").addEventListener("click", Sendmes)
 
 function Sendmes() {

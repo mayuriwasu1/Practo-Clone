@@ -452,11 +452,14 @@
     font-size: 14px;
 }
 
-.slick-next {
+/* .slick-next {
     background-color: #ffffff;
+    background-image: url("./right.jfif");
+    background-size: cover;
+    background-position: center;
     padding: 25px;
     border-radius: 150px;
-}
+} */
 
 #HomeSixSection>span {
     font-size: 25px;
