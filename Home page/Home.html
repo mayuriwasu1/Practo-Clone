@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Home Page Images/title logo/favicon.webp"  type = "image/x-icon">
     <title>Buy Medicines,Health Products Online | India's Most Reliable Online Medical Store | Practo</title>
     <script src="https://kit.fontawesome.com/d829865ea3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./HomeCss/slick.css">
@@ -43,22 +44,28 @@
                 </div>
             </div>
             <div class="NavThirdSection">
-                <div class="Nav1selctors">
-                    <select>
-              <option value="">For Provider</option>
-              <option value="practoPrime">Practo Prime</option>
-              <option value="Software ">Software for provider</option>
-              <option value="List">List for partices for free</option>
-              <option value="">Corporate wellness</option>
-            </select>
-                </div>
-                <div class="Nav2selctors">
-                    <select>
-              <option value="">Security & Help</option>
-              <option value="practoPrime">Data security</option>
-              <option value="Software ">Help</option>
-            </select>
-                </div>
+               <ul>
+                   <li id="forProvider" onclick="menuClick()">For Providers
+                    <i class="fas fa-angle-down"></i>
+                        <div id="forProvidersmanu" class="samenav2">
+                            <ul>
+                                <li id="newtext">Practo Prime <span id="new">New</span></li>
+                                <li>Software for providers</li>
+                                <li>List your practice for Free</li>
+                                <li>Corporate wellness</li>
+                            </ul>
+                        </div>
+                   </li>
+                   <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+                    <div id="Securitysmanu" class="samenav2">
+                        <ul>
+                            <li id="newtext">Data Security</li>
+                            <li>Help</li>
+                        </ul>
+                    </div>
+                  
+                   </li>
+                </ul>
             </div>
             <div class="NavFourSection">
                 <div class="loginSignUp">
@@ -330,7 +337,7 @@
         </div>
         <div class="eScard2 Ecard">
             <div class="card1text ">
-                <h1>Very good app. Well thought out about booking/rescheduling/canceling an appointment. Also, Doctor's feedback mechanism is good and describes all the basics in a good way</h1>
+                <h1>Very good app. Well thought out about booking/rescheduling/canceling an appointment Also, Doctor's feedback mechanism is good and describes all the basics in a good way</h1>
                 <span><i class="far fa-user-circle">Jeet Sharma</i></span>
             </div>
         </div>
@@ -348,13 +355,13 @@
             <h3>Access video consultation with India’s top doctors on the Practo app. Connect with doctors online, available 24/7, from the comfort of your home.</h3>
             <div class="Nineinputpart">
                 <h3> Get link to download the app</h3>
-                <form id="form">
-                    <div class="inputcont"><div><p>91+ </p></div>
-                    <input type="text" placeholder="Enter Your Number">
+                <div id="form">
+                    <div class="inputcont" id="redborder"><div><p>91+ </p></div>
+                    <input id="Numberformes" type="text" placeholder="Enter Your Number">
                 </div>
-                    <input class="Mes" type="submit" value="Send Mes">
-                </form>
-                <div class="Disaplymes">App Download Link Sent
+                    <Button id="Sendmes">Send Mes</Button>
+                </div>
+                <div class="Disaplymes" id="DisaplymesGrenn">App Download Link Sent
                 </div>
                 <div class="NineIcon">
                     <img src="./Home Page Images/NIne Section/google_play.webp" alt="">
