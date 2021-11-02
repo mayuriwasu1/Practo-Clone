@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f5;
+}
+                        /* NAVIGATION BAR */
+  /* #navbar{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+  }
+  #navimg{
+      border: 1px solid red;
+      height: 10%;
+      width: 11%;
+      margin: auto;
+  }
+  img{
+      width: 100%;
+  }
+  #seldiv{
+      border: 1px solid green;
+      margin: auto;
+  }  */
+hr{
+    margin-top: 80px;  
+}
+                        /* <!-- SEARCH BAR AND CART SECTION starts here--> */
+#sear_cart{
+    margin-top: 20px;
+    display:flex;
+}
+#container{
+    max-width: 1280px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#searchbar{
+    font-size: 0;
+}
+#searchbar-1{
+    width: 230px;
+    height: 30px;
+    border: 1px solid #cacad3;
+    padding: 4px;
+    border-right: white;
+    border-radius: 4px;
+}
+#searchbar-1::placeholder,#searchbar-2::placeholder{
+    padding-left: 10px;
+}
+#searchbar-2{
+    width: 336px;
+    height: 30px;
+    border: 1px solid #cacad3;
+    padding: 4px;
+    border-left: white;
+    border-radius: 3px;
+}
+
+#cart{
+    border:1px solid #cacad3;
+    margin-left:504px ;
+    width:85px;
+    border-radius: 3px;
+}
+                         /* <!-- SEARCH BAR AND CART SECTION ends here--> */
+
+                         /* <!-- FIRST IMAGE BOX STARTS HERE    --> */
+#first_imgdiv{
+    margin-top: 23px;
+}
+.sec_two{
+    height: 84px;
+    width: 1180px;
+    background-color: #28328C;
+    margin-top: 24px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#booktest{
+    /* border: 1px solid red; */
+    width: 428.69px;
+    margin-left: 24px;
+    display: flex;
+    
+}
+#sectwo_img{
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    width: 56px;        
+}
+#sectwo_img>img{
+    width: 100%;
+}
+#sectwo_txt{
+    width: 328px;
+     /* border: 1px solid red; */
+     color: #fff;
+     line-height: 5px;
+     padding-top: 8px;
+     padding-left: 20px;
+     word-spacing: 1px ;
+    }
+#sectwo_txt>p{
+    font-size: 13px;
+}
+#contact{
+    border: 1px solid red;
+    width: 213.58px;
+    height: 56px;
+    margin-top:13px;
+    margin-right: 24px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
