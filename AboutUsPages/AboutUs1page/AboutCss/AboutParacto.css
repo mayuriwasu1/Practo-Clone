@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #414146;
+}
+
+#NavBarAection{
+    margin-top: 80px;
+}
+
+
+/* Second Section Css start */
+#SecondSection{
+    background-color: aliceblue;
+    padding:90px 0px 60px 0px;
+}
+
+#SecondSection > .seconfSectionContent{
+    width:90%;
+    margin: auto;
+    text-align: center;
+   
+}
+
+#SecondSection > .seconfSectionContent >.headingimg{
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#SecondSection > .seconfSectionContent >.headingimg > img {
+        width: 90%;
+}
+
+#SecondSection > .seconfSectionContent > .MidText > p{
+        font-size: 35px;
+        color: #414146;
+        font-weight: 600;
+        margin-bottom: 25px;
+}
+#SecondSection > .seconfSectionContent > .thirdText{
+    width: 80%;
+    margin: auto;
+}
+
+.seconfSectionContent > .thirdText > h3{
+    font-size: 17px;  
+    font-weight: 400;
+    color: #414146;
+    line-height: 22px;
+
+}
+/* Second Section Css end */
+
+
+/* Thrid Css part start */
+
+#ThirdSection{
+    background-image: url("/AboutUsPages/AboutUs1page/Aboutusimg/ThirdSection/Backgroundimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:200px 50px;
+}
+
+.ThirdSecontionContent > .leftSideText{
+    width: 50%;
+}
+
+.ThirdSecontionContent > .leftSideText > p{
+    font-size: 39px;
+    color: #414146;
+    line-height: 44px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.ThirdSecontionContent > .leftSideText > h3{
+    color: #414146;
+    font-size: 17px;
+    font-weight:400;
+    line-height: 24px;
+}
+
+/* Thrid Css part End */
+
+
+
+
+
+/* Four Section css start */
+
+.FourSectionContent{
+    padding: 50px;
+}
+
+.FourSectionContent > .FourSecond1 > .FourSecond {
+    display: flex;
+    padding: 40px;
+    gap: 35px;
+    justify-content: center;
+}
+
+.FourSecond1 > .Fourheading > p {
+    font-size: 45px;
+    line-height: 30px;
+    color: #414146;
+    font-weight:700;
+    margin-left: 50px;
+}
+
+.FourSecond > .col >.row {
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+
+.FourSecond > .col >.row > p > span {
+    display: table-cell;
+    color: #414146;
+   
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.Fourcol1 {
+    max-width: 1550px;
+}
+
+.fa-check{
+    color: #14bef0;
+    font-size: 15px;
+    margin-right: 15px;
+}
+ .FourSectionContent > .FourSecond1 > .FourSecond > .col{
+        width: 43%;
+}
+
+.FourSectionContent > .FourIcon{
+    display: flex;
+    width: 83%;
+    margin: auto;
+    padding: 15px;
+}
+
+.FourSectionContent > .FourIcon > .FourSectionIcon {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.FourSectionContent > .FourIcon > .FourSectionIcon > img {
+    width: 32%;
+    color: #414146;
+}
+.FourSectionContent > .FourIcon > .FourSectionIcon > h1{
+    margin-top: 10px;
+    font-size:24px;
+    font-weight: 600;
+}
+
+.FourSectionContent > .FourIcon > .FourSectionIcon > p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+
+/* Four Section Css End */
+
+
+/* fifth Section Css start */
+
+#FifthSection > .FifthSectioncontent{
+    background-color: #F0F1F4;
+    text-align: center;
+    padding: 72px;
+}
+.FifthSectioncontent  > .Fifth1Section{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.FifthSectioncontent > .Fifth1Section >p{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700; 
+}
+
+#FifthSection > .Fifth2Section {
+    margin-top:-130px;
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    padding: 100px;
+    justify-content: center;
+}
+
+.Fifth2Section > .Fifthsectioncard > .FifthcardText{
+    width: 80%;
+    padding: 30px ;
+    margin-left: 2px;
+}
+.Fifth2Section > .Fifthsectioncard > .FifthcardText > h3{
+    margin-bottom: 18px;
+}
+
+.Fifth2Section > .Fifthsectioncard > .FifthcardText > a {
+    margin-top: 18px;
+    font-weight: bold;
+    color: #14bef0;
+    text-decoration: none;
+}
+.Fifth2Section > .Fifthsectioncard > .FifthcardText > a:hover{
+    text-decoration: underline;
+}
+
+.Fifth2Section > .Fifthsectioncard > img {
+    width:85%;
+    height:60%;
+}
+
+
+/* Sixth Section Css start */
+
+#SixthSection > .sixSectionheadig {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+#SixthSection > .sixSectionheadig > h3{
+        font-size: 41px;
+            margin-bottom:30px;
+        font-weight: 700;
+}
+.sixSectionheadig > p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+#SixthSection > .SixsectionIconContent{
+    display: flex;
+    width:80%;
+    gap:29px;
+    padding: 10px;
+    margin: auto;
+}
+
+.SixsectionIconContent > .Sixicons{
+        width: 100%;
+        text-align: center;
+}
+.SixsectionIconContent > .Sixicons > img{
+    width: 36%;
+    height: 60%;
+ 
+}
+.SixsectionIconContent > .trusticon > img{
+    width: 60%;
+    height: 60%;
+}
+.SixsectionIconContent > .Sixicons > h2{
+    font-size: 40px;
+    margin-top: 5px;
+}
+.SixsectionIconContent > .Sixicons > .p{
+    margin-top:25px;
+}
+.SixsectionIconContent > .Sixicons > .p >p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+/* Six Section Css end */
+
+
+/* Seven Section css start */
+
+#SevenSection {
+    margin-top: 100px;
+    padding:90px 90px 50px 90px;
+}
+#SevenSection > .SevenSectionContent{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:60px;
+}
+.SevenSectionContent > .leftsidetext{
+    width: 40%;
+}
+
+.SevenSectionContent > .leftsidetext > h1{
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+}
+.SevenSectionContent > .leftsidetext > p{
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.SevenSectionContent > .rightsideimg{
+    width: 45%;
+}
+.SevenSectionContent > .rightsideimg > img{
+    width: 100%;
+    margin-left:20px;
+}
+
+/* Seven Section css End*/
