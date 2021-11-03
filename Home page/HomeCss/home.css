@@ -30,6 +30,8 @@
     cursor: pointer;
 }
 
+
+
 #NavBar>.NavSecondSection>div {
     width: 40%;
     padding: 4px;
@@ -46,6 +48,9 @@
     font-size: 12px;
     color: #787887;
 }
+#NavBar>.NavSecondSection>div>h4:hover{
+    color: #112092;
+}
 
 #NavBar>.NavThirdSection > ul > li{
     color: #414146;
@@ -54,6 +59,7 @@
     font-weight: 200;
     cursor: pointer;
 }
+
 
 #NavBar>.NavThirdSection > ul{
     align-items: center;
