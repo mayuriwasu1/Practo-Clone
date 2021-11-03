@@ -44,11 +44,12 @@ body {
 .main_image {
   background-image: url(../images/practo2.jpeg);
   background-size: cover;
+  background-size: 100%, 600px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  height: 470px;
-  width: 100%;
+  height: 430px;
+  /* width: 100%; */
   margin-top: 30px;
 }
 .main_text {
@@ -88,12 +89,41 @@ body {
   color: rgb(141, 147, 179);
 }
 #health_provider {
-  height: 80px;
-
+  height: 95px;
   background-color: rgb(29, 40, 105);
   margin-top: 0px;
   display: flex;
-  /* border: 1px solid yellowgreen; */
+  justify-content: center;
+}
+#health_provider > .services {
+  height: 80%;
+  width: 15%;
+  border: 0.5px solid rgb(166, 166, 176);
+  /* justify-content: center; */
+  /* margin: auto; */
+  margin-top: 10px;
+  /* justify-content: center; */
+}
+.services_text{
+  justify-content: center;
+margin-top: 15px;
+
+}
+
+.icon2 {
+  font-size: 15px;
+  color: white;
+  font-weight: normal;
+  padding-left: 45%;
+  padding-top: 10%;
+}
+.category {
+  font-size: 13px;
+  color: rgb(159, 163, 200);
+  font-weight: lighter;
+  padding-left: 30%;
+  text-align: center;
+  text-align: center;
 }
 #health_provider ul {
   list-style: none;
@@ -145,10 +175,14 @@ body {
   background-color: rgb(20, 190, 240);
   height: 40px;
   outline: none;
-  width: 40%;
+  /* width: 40%; */
   outline: 0%;
   border: none;
   color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #safetydiv > #info > #safety_image {
   height: 200px;
@@ -209,6 +243,33 @@ body {
   margin-top: 70px;
   margin-left: 8%;
 }
+.single-item {
+  height: 200px;
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-top: 30px;
+}
+.review {
+  margin-top: 10px;
+}
+.star {
+  font-size: 10px;
+  color: green;
+  margin-right: 20px;
+}
+.contact {
+  font-size: 20px;
+  color: rgb(166, 166, 176);
+}
+.doctor_name {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.customer_review {
+  font-size: 15px;
+  padding-top: 20px;
+  color: rgb(166, 166, 176);
+}
 #appoinment > #find_doctor_video {
   height: 500px;
   width: 20%;
@@ -229,7 +290,7 @@ body {
 }
 .bold {
   font-weight: bolder;
-  color: rgb(131, 152, 188);
+  color: rgb(126, 127, 142);
   font-size: 15px;
 }
 .icon {
@@ -237,9 +298,9 @@ body {
   font-size: 15px;
 }
 .list {
-  color: rgb(131, 152, 188);
+  color: rgb(126, 127, 142);
   font-weight: lighter;
-  font-size: 15px;
+  font-size: 17px;
 }
 .video {
   height: 100%;
@@ -284,4 +345,185 @@ span {
 .rupee_icon {
   color: rgb(120, 120, 135);
   font-size: 15px;
+}
+/* video::-webkit-media-controls-fullscreen-button, video::-webkit-media-controls-play-button, video::-webkit-media-controls-pausebutton {
+  display: none;
+} */
+#health_expert {
+  height: 600px;
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+#health_expert h1 {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 40px;
+  color: rgb(65, 65, 70);
+}
+.slider_artical {
+  display: flex;
+  height: 60%;
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+.slider_image {
+  /* border: 1px solid blue; */
+  height: 98%;
+  width: 30%;
+  margin: 10px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+.slider_image > img {
+  height: 50%;
+  width: 100%;
+}
+.slider_image > h5 {
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 10px;
+  margin-left: 20px;
+  color: rgb(65, 65, 70);
+}
+.slider_image > h6 {
+  font-size: 13px;
+  margin-left: 20px;
+  color: rgb(120, 120, 135);
+  line-height: 0px;
+}
+.button3 {
+  background-color: rgb(20, 190, 240);
+  height: 40px;
+  outline: none;
+  /* width: 40%; */
+  margin-left: 50%;
+  margin-top: 30px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+.medicine_on_time {
+  height: 750px;
+  width: 100%;
+  background-color: rgb(240, 240, 245);
+  /* border: 1px solid green; */
+  display: flex;
+  gap: 100px;
+}
+.medicine_data {
+  height: 550px;
+  width: 35%;
+  /* border: 1px solid black; */
+  margin-left: 8%;
+  margin-top: 5%;
+}
+.medicine_header > h1 {
+  color: rgb(65, 65, 70);
+  font-weight: lighter;
+  font-size: 40px;
+}
+#medicine_service {
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid brown; */
+  margin-top: 10%;
+}
+.order_medicine {
+  height: 120px;
+  width: 100%;
+  /* border: 1px solid peru; */
+  display: flex;
+  padding-top: 20px;
+  gap: 50px;
+}
+#medicine_image {
+  height: 300px;
+  width: 35%;
+  /* border: 1px solid purple; */
+  margin-top: 5%;
+  padding-left: 70px;
+}
+.secure_app {
+  height: 650px;
+  width: 100%;
+  /* border: 1px solid purple; */
+  display: flex;
+  gap: 100px;
+}
+.secure_app_img {
+  height: 250px;
+  width: 30%;
+  /* border: 1px solid red; */
+  margin-top: 170px;
+  margin-left: 12%;
+  padding-top: 0%;
+}
+.secure_app > #medical_record {
+  height: 300px;
+  width: 35%;
+  /* border: 1px solid red; */
+  margin-top: 170px;
+}
+.medical_record_header > h1 {
+  color: rgb(65, 65, 70);
+  font-weight: lighter;
+  font-size: 40px;
+}
+.record_info {
+  margin-top: 30px;
+}
+.healthcare_providers {
+  height: 700px;
+  width: 100%;
+  background-color: rgb(240, 240, 245);
+  /* border: 1px solid red; */
+  display: flex;
+}
+.healthcare_providers > #leading_healthcare {
+  height: 550px;
+  width: 40%;
+  margin-left: 10%;
+  /* border: 1px solid black; */
+  margin-top: 10%;
+}
+.healthcare_provider_image {
+  height: 550px;
+  width: 45%;
+  /* border: 1px solid black; */
+  margin-top: 10%;
+}
+.healthcare_provider_image > img {
+  height: 80%;
+  width: 100%;
+}
+.download_app {
+  height: 700px;
+  width: 100%;
+  /* border: 1px solid purple; */
+  display: flex;
+  gap: 10%;
+}
+.download_app > .app_img {
+  height: 400px;
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 15%;
+  /* border: 1px solid green; */
+}
+.app_img > img {
+  height: 98%;
+  width: 100%;
+}
+#download_practo {
+  height: 400px;
+  width: 50%;
+  /* border: 1px solid yellowgreen; */
+  margin-top: 10%;
+}
+.app_facility {
+  margin-top: 5%;
 }
