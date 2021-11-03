@@ -23,19 +23,20 @@
 
 .slick-next , .slick-prev{
     background-image: url("./rightleftarrwos/right-arrow.png");
-    background-color: rgba(255, 255, 255, 0.623);
+    background-color: transparent;
     background-size: cover;
-    background-size:30px 30px;
+    background-size:20px 20px;
     background-repeat: no-repeat;
     background-position: center;
     padding:25px;
     border-radius: 150px;
+    opacity: .55;
     z-index: 1;
 }
 .slick-prev{
     background-image: url("./rightleftarrwos/leftarrows.png");
-    background-size:50px 35px;
-    padding:25px;
+    background-size:28px 28px;
+    padding:20px;
 }
 
 .slick-prev,
@@ -45,7 +46,7 @@
     line-height: 0;
 
     position: absolute;
-    top:40%;
+    top:50%;
 
     display: block;
     margin-left: 10px;
@@ -100,16 +101,15 @@
 
 .slick-prev
 {
-    left: -40px;
+    left: -20px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -15px;
+    right: -25px;
     left: auto;
 }
 [dir='rtl'] .slick-prev:before
 {
-   
     background-color: transparent;
 }
 
@@ -120,7 +120,7 @@
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -15px;
+    left: -25px;
 }
 
 
