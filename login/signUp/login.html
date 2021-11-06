@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practo Accounts</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+
+        <!-- Nav bhar started  -->
+        <div id="NavBar">
+          <!-- Nav have four section -->
+          <div class="NavFirstSection">
+              <img src="https://raw.githubusercontent.com/Vaman93/Practo-Clone/b7b33f403d69bdc774e2709e3a52022e0806a482/Home%20page/Home%20Page%20Images/practonav%20logo/practo.svg?token=AWIMW2UACUUQULAN6FI3DSTBQJTOK" alt="" />
+          </div>
+          <div class="NavSecondSection">
+              <div class="second1Text">
+                  <h4>Find Doctors</h4>
+                  <p>Book an appointment</p>
+              </div>
+              <div class="second2Text">
+                  <h4>Video Consult</h4>
+                  <p>Consult top doctors</p>
+              </div>
+              <div class="second3Text">
+                  <h4>Medicines</h4>
+                  <p>Practo pharmacy</p>
+              </div>
+              <div class="second4Text">
+                  <h4>Lab Tests</h4>
+                  <p>Book tests & checkup</p>
+              </div>
+              <div class="second5Text">
+                  <h4>Surgeries</h4>
+                  <p>Expert surgical care</p>
+              </div>
+          </div>
+          <div class="NavThirdSection">
+             <ul>
+                 <li id="forProvider" onclick="menuClick()">For Providers
+                  <i class="fas fa-angle-down"></i>
+                      <div id="forProvidersmanu" class="samenav2">
+                          <ul>
+                              <li id="newtext">Practo Prime <span id="new">New</span></li>
+                              <li>Software for providers</li>
+                              <li>List your practice for Free</li>
+                              <li>Corporate wellness</li>
+                          </ul>
+                      </div>
+                 </li>
+                 <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+                  <div id="Securitysmanu" class="samenav2">
+                      <ul>
+                          <li id="newtext">Data Security</li>
+                          <li>Help</li>
+                      </ul>
+                  </div>
+                
+                 </li>
+              </ul>
+          </div>
+          <div class="NavFourSection">
+              <div class="loginSignUp">
+                  <a href=""><Button>Login / SignUp</Button></a>
+              </div>
+          </div>
+      </div>
+      <!-- Nav bhar end  -->
+      <hr>
+      <div class="secondary-nav">
+            
+        <div><a href="login.html" id="loginLink">Login</a></div>
+        <div><a href="signUp.html" id="registerLink">Register</a></div>
+    
+      </div>
+     
+      <div class="bodyContainer" id="spSignup">
+
+        <div id="leftImagePart">
+            <img src="https://accounts.practo.com/static/images/illustration.png" alt="logInImage">
+        </div>
+        <div id="loginPageRight">
+        <div>
+        <form>
+        
+       <div> <label>Phone number / Email ID</label></div>
+       <div><input id="email" placeholder="Type Your Email"/></div>
+       
+       <div><label>Password</label></div>
+       <div><input id="pass" placeholder="password"/></div>
+        
+       
+       </form></div>
+
+       <div><input checked="" id="remember" name="remember" type="checkbox" value="y">
+        
+        <div><label for="remember">Remember me for 30 days</label></div>
+      
+       <div class="forget-pasword">
+        <a href="#"  id="forgotPassword">Forgot password?</a>
+      </div>
+     </div>
+       <div> <input id="otp_flow"  type="checkbox" value="y">
+         
+       <label>Login with OTP instead of password</label>
+    </div>
+    <div><input id="submit" type="button" value="Login"> </div>
+    
+  <hr>
+  <button class="loginBtn loginBtn--facebook">
+    Login with Facebook
+  </button>
+</div>
+</div>
+</body>
+<script>
+    var submit = document.getElementById("submit")
+    submit.addEventListener("click", handleSubmit)
+    var credentialsData = JSON.parse(localStorage.getItem('credentials')) || []
+
+    function handleSubmit(e){
+        e.preventDefault()
+        var email = document.getElementById("email").value
+        var pass = document.getElementById("pass").value
+        if(email == "" || pass == ""){
+            alert("Please fill in the details")
+        }else {
+            var isValidUser = false
+        for(var i=0; i<credentialsData.length; i++){
+            if(credentialsData[i].email == email && credentialsData[i].password == pass){
+                isValidUser = true
+                break;
+            }
+        }
+        if(isValidUser){
+            alert("Login Successfull")
+        }else {
+            alert("Invalid Credentials")
+        }
+        }
+
+        
+
+    }
+</script>
+</html>
