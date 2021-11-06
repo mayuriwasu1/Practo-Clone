@@ -144,9 +144,12 @@
 /* NavBar Css part end */
 
 #Homepagewarp {
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
+
+
+
 
 
 /* second part css start */
@@ -156,38 +159,91 @@
     display: flex;
     justify-content: space-around;
     padding: 20px 0px 10px 0px;
+    color: #414146;
 }
 
-.HomeSecondsection>.input1part input {
-    width: 250px;
+.HomeSecondsection>.input1part{
+    display: flex;
+}
+
+.HomeSecondsection>.input1part .secondbar > .loctionserch > input {
+    width: 90%;
     border: none;
     font-size: 13px;
     outline: none;
+  
 }
 
-.HomeSecondsection>.input1part .i2n {
-    width: 350px;
-    margin-top: 10px;
-}
-
-.HomeSecondsection>.input1part>span {
+.HomeSecondsection>.input1part .secondbar > .loctionserch {
     border: 1px solid rgba(148, 148, 148, 0.37);
     border-radius: 2px;
     width: 350px;
     padding: 10px 12px 12px 8px;
-    margin-left: -5px;
 }
 
-.HomeSecondsection>.input1part>span>i {
+.HomeSecondsection>.input1part .secondbar > .loctionserch > i {
     margin-right: 10px;
     margin-left: 6px;
     color: #5e5e61;
     font-size: 13px;
 }
 
+
+.loctiondata{
+    position: absolute;
+    width: 24.4%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+    display: none;
+}
+.loction{
+    display: flex;
+}
+
+.fa-times-circle{
+    font-size: 15px;
+    display: none;
+}
+
+.loction:active .loctiondata{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.loctiondata > ul {
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgba(95, 95, 95, 0.582);
+}
+
+.loctiondata  li {
+    border-bottom:1px solid rgba(156, 156, 156, 0.185); 
+    padding: 15px 5px ;
+    font-size: 14px;
+    font-weight:400;
+}
+
+.loctiondata li{
+    display: block;
+}
+
+.loctiondata li:hover{
+    background-color: #d1d1d142;
+}
+
+.loctiondata  li  i {
+    background-color: #cacaca3d;
+    border-radius: 50%;
+    color: #787887;
+    padding: 8px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
 .HomeSecondsection>.adimg>img {
-    width: 50%;
-    height: 90%;
+    width: 60%;
+    height: 95%;
 }
 
 .HomeSecondsection>.adimg {
@@ -256,8 +312,8 @@
 
 #HomethirdSection>.thirdlinerback>.rightsideimg>img {
     margin-left: -20px;
-    width: 85%;
-    margin-top: -6.6%;
+    width: 86%;
+    margin-top: -5.6%;
 }
 
 
