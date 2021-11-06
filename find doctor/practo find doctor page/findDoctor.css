@@ -3,54 +3,156 @@ body {
   margin: 0%;
   font-family: Arial, Helvetica, sans-serif;
 }
-#navbar {
-  height: 70px;
 
+#NavBar {
+  display: grid;
+  grid-template-columns: 11% 48% 16% 10%;
+  justify-content: center;
+  /* padding: 30px; */
+  height: 80px;
+  align-items: center;
+ 
+}
+
+#NavBar > .NavFirstSection {
+  width: 100%;
+  align-items: center;
+}
+
+#NavBar > .NavFirstSection > img {
+  width: 72%;
+}
+
+#NavBar > .NavSecondSection {
   display: flex;
-  /* justify-content: space-around; */
-  text-decoration: none;
+  gap: 0px;
+  cursor: pointer;
 }
-#navbar > #imagediv > img {
-  height: 70px;
 
-  margin-left: 50px;
+#NavBar > .NavSecondSection > div {
+  width: 48%;
+  padding: 4px;
 }
-#menu {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-#menu li {
-  margin-left: 40px;
 
+#NavBar > .NavSecondSection > div > h4 {
   font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
+  line-height: 5px;
+  font-weight: 550;
+  color: #2d2d32;
 }
-#menu #loginButton {
-  height: 30px;
-  padding-left: 25px;
-  background: transparent;
+
+#NavBar > .NavSecondSection > div > p {
+  font-size: 12px;
+  color: #787887;
+}
+#NavBar > .NavSecondSection > div > h4:hover {
+  color: #112092;
+}
+
+#NavBar > .NavThirdSection > ul > li {
+  color: #414146;
+  font-size: 14px;
+  /* padding: 8px; */
+  font-weight: 200;
+  cursor: pointer;
+}
+
+#NavBar > .NavThirdSection > ul {
+  align-items: center;
+  display: flex;
+  position: relative;
+  list-style: none;
+  gap: 5px;
+}
+
+#forProvidersmanu,
+#Securitysmanu {
+  display: none;
+}
+
+#forProvider:hover #forProvidersmanu {
+  z-index: 2;
+  display: block;
+  width: 230px;
+  margin-left: -100px;
+  position: absolute;
+  left: 100;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#SecurityHelpNav:hover #Securitysmanu {
+  display: block;
+  width: 230px;
+  margin-left: -60px;
+  position: absolute;
+  left: 100;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.samenav2 > ul {
+  list-style: none;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+.samenav2 > ul > li {
+  margin: 10px 0px;
+  padding: 15px;
+}
+#new {
+  background-color: rgb(255, 174, 0);
+  font-size: 12px;
+  padding: 6px;
+  color: #fff;
   float: right;
+  margin-right: 20px;
+  margin-top: -2px;
 }
+
+.samenav2 > ul > li:hover {
+  background-color: #f0f1f4;
+}
+
+#NavBar > .NavFourSection > .loginSignUp > a > button {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #787887;
+  border-radius: 4px;
+  border: solid 1px#d3d3d3;
+  padding: 8px 10px;
+}
+
+#NavBar > .NavFourSection > .loginSignUp > a > button:hover {
+  border: solid 1px#00d9ff;
+  color: #00d9ff;
+}
+
 #searchdiv {
-  height: 1300px;
+  height: 560px;
   /* width: 100%; */
   /* border: 1px solid violet; */
   background-color: rgb(240, 240, 245);
   position: relative;
+  /* border: 1px solid red; */
 }
 .main_image {
   background-image: url(../images/practo2.jpeg);
   background-size: cover;
-  background-size: 100%, 600px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  height: 430px;
-  /* width: 100%; */
-  margin-top: 30px;
+  margin-top: 20px;
+  min-height: 480px;
+  width: 100%;
+  border: 1px solid rgb(40,49,140);
 }
 .main_text {
   position: absolute;
@@ -66,8 +168,8 @@ body {
 #input {
   width: 100%;
   position: absolute;
-  top: 14%;
-  margin-top: 10px;
+
+  margin-top: 13%;
 }
 #place {
   height: 45px;
@@ -79,37 +181,54 @@ body {
   height: 45px;
   width: 35%;
 }
-#popular {
+.main_image > #popular {
   display: flex;
-  margin-left: 22%;
+  margin-left: 18%;
   /* padding-left: 20px; */
+  margin-top: 16%;
 }
 #popular h5 {
   padding-left: 5%;
   color: rgb(141, 147, 179);
 }
 #health_provider {
-  height: 95px;
+  height: 75px;
   background-color: rgb(29, 40, 105);
   margin-top: 0px;
   display: flex;
   justify-content: center;
+  /* border: 1px solid crimson; */
+  margin-top: 0%;
 }
 #health_provider > .services {
   height: 80%;
   width: 15%;
-  border: 0.5px solid rgb(166, 166, 176);
+  /* border: 1px solid rgb(166, 166, 176); */
   /* justify-content: center; */
   /* margin: auto; */
   margin-top: 10px;
   /* justify-content: center; */
+  border-right: 1px solid rgb(166, 166, 176);
 }
-.services_text{
+#health_provider :nth-child(4) {
+  width: 10%;
+}
+#health_provider :nth-child(5) {
+  width: 10%;
+}
+#health_provider :nth-child(2) {
+  width: 12%;
+}
+
+.services_text {
   justify-content: center;
-margin-top: 15px;
-
+  margin-top: 15px;
 }
 
+.services:hover {
+  color: white;
+  transform: scale(0.5px);
+}
 .icon2 {
   font-size: 15px;
   color: white;
@@ -121,9 +240,12 @@ margin-top: 15px;
   font-size: 13px;
   color: rgb(159, 163, 200);
   font-weight: lighter;
-  padding-left: 30%;
-  text-align: center;
-  text-align: center;
+  padding-left: 20%;
+  /* text-align: center; */
+}
+.health_provider > .services_text:nth-child(4) {
+  width: 10px;
+  color: blueviolet;
 }
 #health_provider ul {
   list-style: none;
@@ -137,22 +259,29 @@ margin-top: 15px;
   padding-top: 20px;
   color: rgb(184, 187, 195);
 }
+.anchor{
+  color:  white;
+  text-decoration: none;
+}
 #safetydiv {
   /* border: 1px solid black; */
-  width: 98%;
-  height: 600px;
+  width: 100%;
+  height: 550px;
+  background-color: rgb(240, 240, 245);
+  padding-bottom: 50px;
+  /* margin-top: 105px; */
 }
 #safetydiv > #info {
   display: flex;
   /* border: 1px solid peru; */
-  height: 75%;
+  height: 65%;
   width: 100%;
 }
 #safetydiv > #info > #data {
   height: 300px;
   width: 30%;
   /* border: 1px solid tomato; */
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 100px;
 }
 #safetydiv > #info > #data h1 {
@@ -188,7 +317,7 @@ margin-top: 15px;
   height: 200px;
   width: 20%;
   /* border: 1px solid tomato; */
-  margin-top: 13%;
+  margin-top: 5%;
   margin-left: 30%;
   float: right;
 }
@@ -197,7 +326,7 @@ margin-top: 15px;
   width: 100%;
 }
 #safetydiv > #certificate {
-  height: 130px;
+  height: 100px;
   width: 100%;
   /* border: 1px solid green; */
   margin-top: 20px;
@@ -267,6 +396,7 @@ margin-top: 15px;
 }
 .customer_review {
   font-size: 15px;
+  font-weight: lighter;
   padding-top: 20px;
   color: rgb(166, 166, 176);
 }
@@ -367,6 +497,7 @@ span {
   /* border: 1px solid red; */
   margin: auto;
 }
+
 .slider_image {
   /* border: 1px solid blue; */
   height: 98%;
@@ -375,6 +506,10 @@ span {
   margin-top: 10px;
   border-radius: 2px;
 }
+.slider_image :hover {
+  box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
+  transform: scale(1);
+}
 .slider_image > img {
   height: 50%;
   width: 100%;
@@ -382,10 +517,11 @@ span {
 .slider_image > h5 {
   font-size: 20px;
   margin-top: 10px;
-  line-height: 10px;
+  line-height: 20px;
   margin-left: 20px;
   color: rgb(65, 65, 70);
 }
+
 .slider_image > h6 {
   font-size: 13px;
   margin-left: 20px;
@@ -526,4 +662,30 @@ span {
 }
 .app_facility {
   margin-top: 5%;
+}
+.playstore {
+  background-color: black;
+  display: flex;
+  border-radius: 5px;
+}
+.playstore_icon {
+  color: white;
+  font-size: 30px;
+  padding-top: 5px;
+}
+.subheading {
+  font-size: 10px;
+  color: white;
+  font-weight: lighter;
+}
+.heading {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+}
+.button_area {
+  display: flex;
+  gap: 20px;
+  border: none;
+  outline: none;
 }
