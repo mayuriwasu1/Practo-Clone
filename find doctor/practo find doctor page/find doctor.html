@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <script
+      src="https://kit.fontawesome.com/fba4772d23.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="findDoctor.css" />
+  </head>
+  <body>
+     <div id="NavBar"> 
+       <!-- Nav have four section -->
+      <div class="NavFirstSection">
+          <img src="../images/practo nav logo.svg" alt="" />
+      </div>
+      <div class="NavSecondSection">
+          <div class="second1Text">
+              <h4>Find Doctors</h4>
+              <p>Book an appointment</p>
+          </div>
+          <div class="second2Text">
+              <h4>Video Consult</h4>
+              <p>Consult top doctors</p>
+          </div>
+          <div class="second3Text">
+              <h4>Medicines</h4>
+              <p>Practo pharmacy</p>
+          </div>
+          <div class="second4Text">
+              <h4>Lab Tests</h4>
+              <p>Book tests & checkup</p>
+          </div>
+          <div class="second5Text">
+              <h4>Surgeries</h4>
+              <p>Expert surgical care</p>
+          </div>
+      </div>
+      <div class="NavThirdSection">
+         <ul>
+             <li id="forProvider" onclick="menuClick()">For Providers
+              <i class="fas fa-angle-down"></i>
+                  <div id="forProvidersmanu" class="samenav2">
+                      <ul>
+                          <li id="newtext">Practo Prime <span id="new">New</span></li>
+                          <li>Software for providers</li>
+                          <li>List your practice for Free</li>
+                          <li>Corporate wellness</li>
+                      </ul>
+                  </div>
+             </li>
+             <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+              <div id="Securitysmanu" class="samenav2">
+                  <ul>
+                      <li id="newtext">Data Security</li>
+                      <li>Help</li>
+                  </ul>
+              </div>
+            
+             </li>
+          </ul>
+      </div>
+      <div class="NavFourSection">
+          <div class="loginSignUp">
+              <a href=""><Button>Login / SignUp</Button></a>
+          </div>
+      </div>
+  </div> 
+    <div id="searchdiv">
+     <div class="main_image">
+      <div class="main_text">
+        <h1>Your home for health</h1>
+        <h2>Find and Book</h2>
+      </div>
+      <div id="input">
+        <input id="place" type="text" placeholder="Kolkata" />
+        <input
+          id="clinic"
+          type="text"
+          placeholder="Search doctors, clinics, hospitals, etc"
+        />
+     </div>
+     <div id="popular">
+      <h5>popular search:</h5>
+      <h5>dermatologist</h5>
+      <h5>prdiatration</h5>
+      <h5>Gynacologist</h5>
+      <h5>Others</h5>
+    </div>
+  </div>
+    <div id="health_provider">
+      <div class="services">
+        <div class="services_text">
+          <span class="icon2">
+            <i class="far fa-comments"></i>
+            <br>
+            <span class="category"> <a class="anchor" href="">Consult with a doctor</a> </span>
+          </span>
+        </div>
+      </div>
+    
+      <div  class="services">
+    
+        <div class="services_text">
+          <span class="icon2">
+            <i class="fas fa-shopping-cart"></i>
+          </span>
+          <br>
+            <span class="category"> <a class="anchor" href="">Order medicine</a> </span>
+        </div>
+        
+        
+      </div>
+      <div  class="services">
+        <div class="services_text">
+          <span class="icon2">
+            <i class="far fa-address-book"></i>
+          </span>
+          <br>
+          <span class="category"> <a class="anchor" href=""> View medical records</a></span>
+        </div>
+        
+      </div>
+      <div  class="services">
+    
+        <div class="services_text">
+          <span class="icon2">
+            <i class="fas fa-flask"></i>
+         
+          </span>
+          <br>
+          <span class="category"> <a class="anchor" href="">Book test</a> </span>
+        </div>
+        
+      
+      </div>
+      <div  class="services">
+        <div class="services_text">
+          
+        </div>
+        <span class="icon2">
+          <i class="fas fa-newspaper"></i>
+        </span>
+        <br>
+        <span class="category"> <a class="anchor" href="">Read articals</a> </span>
+      </span>
+      </div>
+      <div  class="services">
+        <div class="services_text">
+          <span class="icon2">
+            <i class="fas fa-briefcase"></i>
+          </span>
+          <br>
+          <span class="category"> <a class="anchor" href=""> For healthcare providers</a></span>
+        </div>
+      </div>
+    
+    </div>
+  
+      <div id="safetydiv">
+        <div id="info">
+          <div id="data">
+            <h1>Safety of your data is our</h1>
+            <h2>top priority.</h2>
+            <span class="icon">
+              <i class="fas fa-check"></i>
+            </span>
+            <span class="list">Multi-level security checks</span>
+            <br>
+            <br>
+            <span class="icon">
+              <i class="fas fa-check"></i>
+            </span>
+            <span class="list">Multiple data backups</span>
+            <br>
+            <br>
+            <span class="icon">
+              <i class="fas fa-check"></i>
+            </span>
+            <span class="list">Multiple data backups</span>
+            <br>
+            <br>
+            <button class="button">Read More</button>
+          </div>
+          <div id="safety_image">
+            <img id="safetyimg" src="../images/practo3.png" alt="" />
+          </div>
+        </div>
+
+        <div id="certificate">
+          <div class="certificate_div">
+            <div class="certificate_img">
+              <img src="../images/practo_c1.png" alt="" />
+            </div>
+            <div class="certificate_data">
+              <span>256-bit</span>
+              <span>encryption</span>
+            </div>
+          </div>
+          <div class="certificate_div">
+            <div class="certificate_img">
+              <img src="../images/practo_c2.png" alt="" />
+            </div>
+            <div class="certificate_data">
+              <span>ISO 27001</span>
+              <span>certified</span>
+            </div>
+          </div>
+          <div class="certificate_div">
+            <div class="certificate_img">
+              <img src="../images/practo_c3.png" alt="" />
+            </div>
+            <div class="certificate_data">
+              <span>HIPAA</span>
+              <span>compliant data centers</span>
+            </div>
+          </div>
+          <div class="certificate_div">
+            <div class="certificate_img">
+              <img src="../images/practo_c4.png" alt="" />
+            </div>
+            <div class="certificate_data">
+              <span>DSCI</span>
+              <span>member</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div id="appoinment">
+      <div id="find_doctor">
+        <h1>
+          Instant appointment with doctors.
+          <span>Guaranteed.</span>
+        </h1>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="bold"> 100,000 </span>
+          <span class="list">Verified doctors</span>
+        </h4>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="bold"> 3M+ </span>
+          <span class="list">Patient recommendations</span>
+        </h4>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="bold"> 25M </span>
+          <span class="list">Patients/year</span>
+        </h4>
+        <button class="button">Find me the right doctor</button>
+        <div class="appoinment_slider single-item">
+          <div>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+          </span>
+          <span class="star">
+            <i class="fas fa-star"></i>
+          </span>
+          <div class="review">
+            <span class="customer_review">
+             Very easy to book, maintain history. Husstle free from older version of booking appoinment via telephone. Thanks Practo for making the  app simple. 
+            </span>
+            <div class="doctor_name">
+              <span class="contact">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="customer_review">  
+               Jyothi Bhatia
+              </span>
+            </div>
+            </div>
+          </div>
+          <div>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+          </span>
+          <span class="star">
+            <i class="fas fa-star"></i>
+          </span>
+          <div class="review">
+            <span class="customer_review">
+              Very good app. Well thought out about booking / reschuduling / cancelling an appoinment. Also Doctor's feedback mechanisam is good and all the basics are also good way.
+            </span>
+            <div class="doctor_name">
+              <span class="contact">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="customer_review">  
+                Abinash Kumar
+              </span>
+            </div>
+            </div>
+          </div>
+          <div>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+          </span>
+          <span class="star">
+            <i class="fas fa-star"></i>
+          </span>
+          <div class="review">
+            <span class="customer_review">
+             Very helpful. far easier to do the same thing on computer. allows quick and easy search with speedy booking.Even maintain the doctors visited.
+            </span>
+            <div class="doctor_name">
+              <span class="contact">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="customer_review">  
+               Amit Sharma
+              </span>
+            </div>
+            </div>
+          </div>
+          
+          
+          <!-- <div></div> -->
+        </div>
+      </div>
+      
+      <div id="find_doctor_video">
+        <video
+          class="video"
+          controls
+          loop
+          src="../practo videos/video1.webm"
+        ></video>
+      </div>
+    </div>
+    <div id="waiting_room">
+      <div id="waitingvideo">
+        <video
+          class="video"
+          controls
+          src="../practo videos/video2.webm"
+        ></video>
+      </div>
+      <div id="consult_doctor">
+        <h1>Skip the waiting room.</h1>
+        <span>Consult with a doctor</span>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Fees starting at</span>
+          <span class="rupee_icon">
+            <i class="fas fa-rupee-sign"></i>
+          </span>
+          <span class="bold">99</span>
+        </h4>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Verified doctors respond in</span>
+
+          <span class="bold">5 minutes</span>
+        </h4>
+        <h4>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="bold">100% </span>
+          <span class="list">Private and confidential</span>
+        </h4>
+        <button class="button">Consult now</button>
+        <span class="bold">57332 </span>
+        <span class="list">doctors online</span>
+        <div class="appoinment_slider single-item">
+          <div>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+          </span>
+          <span class="star">
+            <i class="fas fa-star"></i>
+          </span>
+          <div class="review">
+            <span class="customer_review">
+              Very good app. Well thought out about booking / reschuduling / cancelling an appoinment. Also Doctor's feedback mechanisam is good and all the basics are also good way.
+            </span>
+            <div class="doctor_name">
+              <span class="contact">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="customer_review">  
+                Abinash Kumar
+              </span>
+            </div>
+            </div>
+          </div>
+          <div>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+          </span>
+          <span class="star">
+            <i class="fas fa-star"></i>
+          </span>
+          <div class="review">
+            <span class="customer_review">
+              Good initiative. The doctors are responsive and provide yor a brief consultation.
+            </span>
+            <div class="doctor_name">
+              <span class="contact">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="customer_review">  
+                Aron Maitra
+              </span>
+            </div>
+            </div>
+          
+          </div>
+          <div>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+          </span>
+          <span class="star">
+            <i class="fas fa-star"></i>
+          </span>
+          <div class="review">
+            <span class="customer_review">
+             Private help Practo saved my life, I was in big trouble. I used this app to consult with doctors by paying by my card and it saved my night. But if chat response gets fast it will be helpful for patients. It takes hour to get reply.
+            </span>
+            <div class="doctor_name">
+              <span class="contact">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="customer_review">  
+                Kousik das
+              </span>
+            </div>
+            </div>
+          
+          </div>
+          
+          
+         
+        </div>
+      </div>
+    </div>
+    <div id="health_expert">
+      <h1>Read top articles from health experts</h1>
+      <div class="slider_artical multiple-items">
+        <div class="slider_image">
+          <img src="../images/health6.jpg" alt="" />
+          <h5>Ayurved Panchakarma For</h5>
+          <h5>Healthy Life</h5>
+          <h6>Dr.Atulkumar Bedre , Ayurveda</h6>
+          <h6>379 Likes . 43283 Views</h6>
+        </div>
+
+        <div class="slider_image">
+          <img src="../images/health2.jpg" alt="" />
+          <h5>7 Habits of Emotionally</h5>
+          <h5>Evolved People</h5>
+          <h6>Dr.Guruprasad Sivakamat , Pychologist</h6>
+          <h6>361 Likes . 35540 Views</h6>
+        </div>
+
+        <div class="slider_image">
+          <img src="../images/health3.jpg" alt="" />
+          <h5>Masturbation - Good or Bad</h5>
+          <h6>Dr.Anish Kumar Gupta , Andrologist</h6>
+          <h6>268 Likes . 35546 Views</h6>
+        </div>
+
+        <div class="slider_image">
+          <img src="../images/health5.jpg" alt="" />
+          <h5>What's in my Bread</h5>
+          <h6>Ms. Teheseeb, diatician , Nutriontost</h6>
+          <h6>268 Likes . 35546 Views</h6>
+        </div>
+
+        <div class="slider_image">
+          <img src="../images/health8.jpg" alt="" />
+          <h5>52 Effortless ways to loose weight</h5>
+          <h6>Ms. Swati, Kapoor , Dietitionist</h6>
+          <h6>268 Likes . 35546 Views</h6>
+        </div>
+        <div class="slider_image">
+          <img src="../images/health9.jpg" alt="" />
+          <h5>10 tips to get gorgious hair</h5>
+          <h6>Ms. Swati, Kapoor , Dietitionist</h6>
+          <h6>268 Likes . 35546 Views</h6>
+        </div>
+
+      </div>
+      <button class="button3">More articals</button>
+    </div>
+    <div class="medicine_on_time">
+      <div class="medicine_data">
+        <div class="medicine_header">
+          <h1>Get all your medicines.</h1>
+          <span>Everytime. On time.</span>
+        </div>
+        <div id="medicine_service">
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Guaranteed availability</span>
+          <br>
+          <br>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Over</span>
+          <span class="bold">13,000+</span>
+          <span class="list">genuine medicines</span>
+          <br>
+          <br>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Home delivery in</span>
+          <span class="bold"> 24hrs</span>
+        </div>
+        <div class="order_medicine">
+          <div>
+            <button class="button">Order medicine</button>
+          </div>
+         
+          <div>
+            <span class="list">Last order delivered </span>
+            <span class="bold">few</span>
+            <br>
+          <span class="bold">seconds</span>
+          <span class="list">ago in Parvati Paytha,</span>
+          <br>
+          <span class="list"> Pune</span>
+          </div>
+        </div>
+        <!-- .............SLIDING PART START ..................... -->
+        <div class="appoinment_slider single-item">
+          <div>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+          </span>
+          <span class="star">
+            <i class="fas fa-star"></i>
+          </span>
+          <div class="review">
+            <span class="customer_review">
+              Very good app. Well thought out about booking / reschuduling / cancelling an appoinment. Also Doctor's feedback mechanisam is good and all the basics are also good way.
+            </span>
+            <div class="doctor_name">
+              <span class="contact">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="customer_review">  
+                Abinash Kumar
+              </span>
+            </div>
+            </div>
+          </div>
+          <div>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+          </span>
+          <span class="star">
+            <i class="fas fa-star"></i>
+          </span>
+          <div class="review">
+            <span class="customer_review">
+              Very good app. Well thought out about booking / reschuduling / cancelling an appoinment. Also Doctor's feedback mechanisam is good and all the basics are also good way.
+            </span>
+            <div class="doctor_name">
+              <span class="contact">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="customer_review">  
+                Abinash Kumar
+              </span>
+            </div>
+            </div>
+          </div>
+        </div>
+       <!-- .................. SLIDING PART END .....................    -->
+      </div>
+      <div id="medicine_image">
+        <img src="../images/med1.svg" alt="">
+      </div>
+    </div>
+    <div class="secure_app">
+      <div class="secure_app_img">
+        <img src="../images/med2.svg" alt="">
+      </div>
+      <div id="medical_record">
+        <div class="medical_record_header">
+          <h1>All your medical records</h1>
+          <span>In one secure app.</span>
+          <div class="record_info">
+            <span class="icon">
+              <i class="fas fa-check"></i>
+            </span>
+            <span class="list">256-bit end to end encryption</span>
+            <br>
+            <br>
+            <span class="icon">
+              <i class="fas fa-check"></i>
+            </span>
+            <span class="list">Records are accessible only by you</span>
+            <br>
+            <br>
+            <span class="icon">
+              <i class="fas fa-check"></i>
+            </span>
+            <span class="list">Access your records across</span>
+            <span class="bold">8000+</span>
+            <span class="list">centers</span>
+            <br>
+            <br>
+            <button class="button">Find out more</button>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="healthcare_providers">
+      <div id="leading_healthcare">
+        <div class="medical_record_header" >
+          <h1>Leading Healthcare Providers.</h1>
+          <span>Trust us for Business</span>
+        </div>
+        <div class="record_info">
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Get seen by </span>
+          <span class="bold">25M+</span>
+          <span class="list"> patients on Practo.com</span>
+          <br>
+          <br>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">The most advanced software for clinics and hospitals</span>
+          <br>
+          <br>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">State of the art business analytics for enterprises</span>
+        </div>
+        <br>
+        <br>
+        <button class="button">Learn more</button>
+        <div>
+          <div class="appoinment_slider single-item">
+            <div>
+              <span class="star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="star">
+                <i class="fas fa-star"></i>
+              </span>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <div class="review">
+              <span class="customer_review">
+                Very good app. Well thought out about booking / reschuduling / cancelling an appoinment. Also Doctor's feedback mechanisam is good and all the basics are also good way.
+              </span>
+              <div class="doctor_name">
+                <span class="contact">
+                  <i class="far fa-user"></i>
+                </span>
+                <span class="customer_review">  
+                  Abinash Kumar
+                </span>
+              </div>
+              </div>
+            </div>
+            <div>
+              <span class="star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="star">
+                <i class="fas fa-star"></i>
+              </span>
+              <span class="star">
+                <i class="fas fa-star"></i>
+              </span>
+            </span>
+            <span class="star">
+              <i class="fas fa-star"></i>
+            </span>
+            <div class="review">
+              <span class="customer_review">
+                Very good app. Well thought out about booking / reschuduling / cancelling an appoinment. Also Doctor's feedback mechanisam is good and all the basics are also good way.
+              </span>
+              <div class="doctor_name">
+                <span class="contact">
+                  <i class="far fa-user"></i>
+                </span>
+                <span class="customer_review">  
+                  Abinash Kumar
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="healthcare_provider_image">
+        <img src="../images/healthcare1.png" alt="">
+      </div>
+    </div>
+    <div class="download_app">
+      <div class="app_img">
+        <img src="../images/appimg1.png" alt="">
+      </div>
+      <div id="download_practo">
+        <div>
+          <div class="medical_record_header" >
+            <span>
+              Download the Practo app</span>
+          </div>
+        </div>
+        <div class="app_facility">
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Book appointments and lab tests</span>
+          <br>
+          <br>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Order medicines</span>
+          <br>
+          <br>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Consult doctors online</span>
+          <br>
+          <br>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Set medicine reminders</span>
+          <br>
+          <br>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Store health records</span>
+          <br>
+          <br>
+          <span class="icon">
+            <i class="fas fa-check"></i>
+          </span>
+          <span class="list">Read health tips</span>
+          <br>
+          <br>
+          <div class="button_area">
+            <span>
+              <button class="playstore">
+                <div>
+                  <span class="playstore_icon">
+                    <i class="fab fa-google-play"></i>
+                  </span>
+                </div>
+                <div>
+                   
+                <span class="subheading">Get it on</span>
+                <br>
+                <span class="heading"> Google Play</span>
+                </div>
+               
+              </button>
+            </span>
+            <span>
+              <button class="playstore">
+                <div>
+                  <span class="playstore_icon">
+                    <i class="fab fa-apple"></i>
+                  </span>
+                </div>
+                <div>
+                   
+                <span class="subheading">Download on the</span>
+                <br>
+                <span class="heading"> App store</span>
+                </div>
+               
+              </button>
+            </span>
+          </div>
+          
+         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="slick/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="find doctor.js"></script>

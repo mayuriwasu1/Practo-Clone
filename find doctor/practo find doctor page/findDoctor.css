@@ -1,0 +1,691 @@
+body {
+  background-color: white;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#NavBar {
+  display: grid;
+  grid-template-columns: 11% 48% 16% 10%;
+  justify-content: center;
+  /* padding: 30px; */
+  height: 80px;
+  align-items: center;
+ 
+}
+
+#NavBar > .NavFirstSection {
+  width: 100%;
+  align-items: center;
+}
+
+#NavBar > .NavFirstSection > img {
+  width: 72%;
+}
+
+#NavBar > .NavSecondSection {
+  display: flex;
+  gap: 0px;
+  cursor: pointer;
+}
+
+#NavBar > .NavSecondSection > div {
+  width: 48%;
+  padding: 4px;
+}
+
+#NavBar > .NavSecondSection > div > h4 {
+  font-size: 15px;
+  line-height: 5px;
+  font-weight: 550;
+  color: #2d2d32;
+}
+
+#NavBar > .NavSecondSection > div > p {
+  font-size: 12px;
+  color: #787887;
+}
+#NavBar > .NavSecondSection > div > h4:hover {
+  color: #112092;
+}
+
+#NavBar > .NavThirdSection > ul > li {
+  color: #414146;
+  font-size: 14px;
+  /* padding: 8px; */
+  font-weight: 200;
+  cursor: pointer;
+}
+
+#NavBar > .NavThirdSection > ul {
+  align-items: center;
+  display: flex;
+  position: relative;
+  list-style: none;
+  gap: 5px;
+}
+
+#forProvidersmanu,
+#Securitysmanu {
+  display: none;
+}
+
+#forProvider:hover #forProvidersmanu {
+  z-index: 2;
+  display: block;
+  width: 230px;
+  margin-left: -100px;
+  position: absolute;
+  left: 100;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#SecurityHelpNav:hover #Securitysmanu {
+  display: block;
+  width: 230px;
+  margin-left: -60px;
+  position: absolute;
+  left: 100;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.samenav2 > ul {
+  list-style: none;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+.samenav2 > ul > li {
+  margin: 10px 0px;
+  padding: 15px;
+}
+#new {
+  background-color: rgb(255, 174, 0);
+  font-size: 12px;
+  padding: 6px;
+  color: #fff;
+  float: right;
+  margin-right: 20px;
+  margin-top: -2px;
+}
+
+.samenav2 > ul > li:hover {
+  background-color: #f0f1f4;
+}
+
+#NavBar > .NavFourSection > .loginSignUp > a > button {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #787887;
+  border-radius: 4px;
+  border: solid 1px#d3d3d3;
+  padding: 8px 10px;
+}
+
+#NavBar > .NavFourSection > .loginSignUp > a > button:hover {
+  border: solid 1px#00d9ff;
+  color: #00d9ff;
+}
+
+#searchdiv {
+  height: 560px;
+  /* width: 100%; */
+  /* border: 1px solid violet; */
+  background-color: rgb(240, 240, 245);
+  position: relative;
+  /* border: 1px solid red; */
+}
+.main_image {
+  background-image: url(../images/practo2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+  min-height: 480px;
+  width: 100%;
+  border: 1px solid rgb(40,49,140);
+}
+.main_text {
+  position: absolute;
+  top: 45px;
+  color: white;
+  height: 50px;
+  margin-left: 35%;
+  font-size: 18px;
+}
+.main_text h2 {
+  padding-left: 70px;
+}
+#input {
+  width: 100%;
+  position: absolute;
+
+  margin-top: 13%;
+}
+#place {
+  height: 45px;
+  width: 20%;
+  margin-left: 22%;
+  size: 60%;
+}
+#clinic {
+  height: 45px;
+  width: 35%;
+}
+.main_image > #popular {
+  display: flex;
+  margin-left: 18%;
+  /* padding-left: 20px; */
+  margin-top: 16%;
+}
+#popular h5 {
+  padding-left: 5%;
+  color: rgb(141, 147, 179);
+}
+#health_provider {
+  height: 75px;
+  background-color: rgb(29, 40, 105);
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid crimson; */
+  margin-top: 0%;
+}
+#health_provider > .services {
+  height: 80%;
+  width: 15%;
+  /* border: 1px solid rgb(166, 166, 176); */
+  /* justify-content: center; */
+  /* margin: auto; */
+  margin-top: 10px;
+  /* justify-content: center; */
+  border-right: 1px solid rgb(166, 166, 176);
+}
+#health_provider :nth-child(4) {
+  width: 10%;
+}
+#health_provider :nth-child(5) {
+  width: 10%;
+}
+#health_provider :nth-child(2) {
+  width: 12%;
+}
+
+.services_text {
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.services:hover {
+  color: white;
+  transform: scale(0.5px);
+}
+.icon2 {
+  font-size: 15px;
+  color: white;
+  font-weight: normal;
+  padding-left: 45%;
+  padding-top: 10%;
+}
+.category {
+  font-size: 13px;
+  color: rgb(159, 163, 200);
+  font-weight: lighter;
+  padding-left: 20%;
+  /* text-align: center; */
+}
+.health_provider > .services_text:nth-child(4) {
+  width: 10px;
+  color: blueviolet;
+}
+#health_provider ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  margin-left: 100px;
+}
+#health_provider li {
+  margin-left: 50px;
+  font-size: 12px;
+  padding-top: 20px;
+  color: rgb(184, 187, 195);
+}
+.anchor{
+  color:  white;
+  text-decoration: none;
+}
+#safetydiv {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 550px;
+  background-color: rgb(240, 240, 245);
+  padding-bottom: 50px;
+  /* margin-top: 105px; */
+}
+#safetydiv > #info {
+  display: flex;
+  /* border: 1px solid peru; */
+  height: 65%;
+  width: 100%;
+}
+#safetydiv > #info > #data {
+  height: 300px;
+  width: 30%;
+  /* border: 1px solid tomato; */
+  margin-top: 5%;
+  margin-left: 100px;
+}
+#safetydiv > #info > #data h1 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(81, 90, 104);
+  font-size: 35px;
+}
+#safetydiv > #info > #data h2 {
+  font-size: 40px;
+  line-height: 15px;
+  color: rgb(65, 65, 70);
+}
+#safetydiv > #info > #data h3 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(81, 90, 104);
+}
+.button {
+  background-color: rgb(20, 190, 240);
+  height: 40px;
+  outline: none;
+  /* width: 40%; */
+  outline: 0%;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#safetydiv > #info > #safety_image {
+  height: 200px;
+  width: 20%;
+  /* border: 1px solid tomato; */
+  margin-top: 5%;
+  margin-left: 30%;
+  float: right;
+}
+#safety_image > #safetyimg {
+  height: 250px;
+  width: 100%;
+}
+#safetydiv > #certificate {
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid green; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#certificate > .certificate_div {
+  /* border: 1px solid black; */
+  height: 100%;
+  width: 8%;
+  margin-left: 10%;
+}
+
+.certificate_div > .certificate_img {
+  width: 100%;
+  height: 60%;
+  /* border: 1px solid olive; */
+  justify-content: center;
+  padding-left: 20px;
+}
+.certificate_div > .certificate_data {
+  /* border: 1px solid purple; */
+  height: 38%;
+  width: 100%;
+}
+
+.certificate_div > .certificate_data > span {
+  justify-content: center;
+  padding-left: 10px;
+  color: rgb(65, 65, 70);
+  font-size: 15px;
+}
+#appoinment {
+  height: 650px;
+  width: 100%;
+  /* border: 1px solid green; */
+  display: flex;
+}
+#appoinment > #find_doctor {
+  height: 500px;
+  width: 35%;
+  /* border: 1px solid purple; */
+  margin-top: 70px;
+  margin-left: 8%;
+}
+.single-item {
+  height: 200px;
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-top: 30px;
+}
+.review {
+  margin-top: 10px;
+}
+.star {
+  font-size: 10px;
+  color: green;
+  margin-right: 20px;
+}
+.contact {
+  font-size: 20px;
+  color: rgb(166, 166, 176);
+}
+.doctor_name {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.customer_review {
+  font-size: 15px;
+  font-weight: lighter;
+  padding-top: 20px;
+  color: rgb(166, 166, 176);
+}
+#appoinment > #find_doctor_video {
+  height: 500px;
+  width: 20%;
+  /* border: 1px solid purple; */
+  float: right;
+  margin-top: 70px;
+  margin-left: 20%;
+}
+#find_doctor h1 {
+  font-family: inherit;
+  font-weight: lighter;
+  color: rgb(65, 65, 70);
+  font-size: 40px;
+}
+#find_doctor h1 span {
+  font-weight: bold;
+  font-size: 40px;
+}
+.bold {
+  font-weight: bolder;
+  color: rgb(126, 127, 142);
+  font-size: 15px;
+}
+.icon {
+  color: rgb(20, 190, 240);
+  font-size: 15px;
+}
+.list {
+  color: rgb(126, 127, 142);
+  font-weight: lighter;
+  font-size: 17px;
+}
+.video {
+  height: 100%;
+  width: 100%;
+}
+#waiting_room {
+  background-color: rgb(240, 240, 245);
+  height: 600px;
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  padding-top: 70px;
+}
+#waitingvideo {
+  height: 500px;
+  width: 20%;
+  /* border: 1px solid purple; */
+}
+#consult_doctor {
+  height: 500px;
+  width: 35%;
+  /* border: 1px solid purple; */
+}
+#consult_doctor h1 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(81, 90, 104);
+  font-size: 35px;
+  line-height: 18px;
+}
+span {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 18px;
+  color: rgb(65, 65, 70);
+}
+#consult_doctor span > .icon {
+  color: rgb(20, 190, 240);
+}
+.rupee_icon {
+  color: rgb(120, 120, 135);
+  font-size: 15px;
+}
+/* video::-webkit-media-controls-fullscreen-button, video::-webkit-media-controls-play-button, video::-webkit-media-controls-pausebutton {
+  display: none;
+} */
+#health_expert {
+  height: 600px;
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+#health_expert h1 {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 40px;
+  color: rgb(65, 65, 70);
+}
+.slider_artical {
+  display: flex;
+  height: 60%;
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+
+.slider_image {
+  /* border: 1px solid blue; */
+  height: 98%;
+  width: 30%;
+  margin: 10px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+.slider_image :hover {
+  box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
+  transform: scale(1);
+}
+.slider_image > img {
+  height: 50%;
+  width: 100%;
+}
+.slider_image > h5 {
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 20px;
+  margin-left: 20px;
+  color: rgb(65, 65, 70);
+}
+
+.slider_image > h6 {
+  font-size: 13px;
+  margin-left: 20px;
+  color: rgb(120, 120, 135);
+  line-height: 0px;
+}
+.button3 {
+  background-color: rgb(20, 190, 240);
+  height: 40px;
+  outline: none;
+  /* width: 40%; */
+  margin-left: 50%;
+  margin-top: 30px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+.medicine_on_time {
+  height: 750px;
+  width: 100%;
+  background-color: rgb(240, 240, 245);
+  /* border: 1px solid green; */
+  display: flex;
+  gap: 100px;
+}
+.medicine_data {
+  height: 550px;
+  width: 35%;
+  /* border: 1px solid black; */
+  margin-left: 8%;
+  margin-top: 5%;
+}
+.medicine_header > h1 {
+  color: rgb(65, 65, 70);
+  font-weight: lighter;
+  font-size: 40px;
+}
+#medicine_service {
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid brown; */
+  margin-top: 10%;
+}
+.order_medicine {
+  height: 120px;
+  width: 100%;
+  /* border: 1px solid peru; */
+  display: flex;
+  padding-top: 20px;
+  gap: 50px;
+}
+#medicine_image {
+  height: 300px;
+  width: 35%;
+  /* border: 1px solid purple; */
+  margin-top: 5%;
+  padding-left: 70px;
+}
+.secure_app {
+  height: 650px;
+  width: 100%;
+  /* border: 1px solid purple; */
+  display: flex;
+  gap: 100px;
+}
+.secure_app_img {
+  height: 250px;
+  width: 30%;
+  /* border: 1px solid red; */
+  margin-top: 170px;
+  margin-left: 12%;
+  padding-top: 0%;
+}
+.secure_app > #medical_record {
+  height: 300px;
+  width: 35%;
+  /* border: 1px solid red; */
+  margin-top: 170px;
+}
+.medical_record_header > h1 {
+  color: rgb(65, 65, 70);
+  font-weight: lighter;
+  font-size: 40px;
+}
+.record_info {
+  margin-top: 30px;
+}
+.healthcare_providers {
+  height: 700px;
+  width: 100%;
+  background-color: rgb(240, 240, 245);
+  /* border: 1px solid red; */
+  display: flex;
+}
+.healthcare_providers > #leading_healthcare {
+  height: 550px;
+  width: 40%;
+  margin-left: 10%;
+  /* border: 1px solid black; */
+  margin-top: 10%;
+}
+.healthcare_provider_image {
+  height: 550px;
+  width: 45%;
+  /* border: 1px solid black; */
+  margin-top: 10%;
+}
+.healthcare_provider_image > img {
+  height: 80%;
+  width: 100%;
+}
+.download_app {
+  height: 700px;
+  width: 100%;
+  /* border: 1px solid purple; */
+  display: flex;
+  gap: 10%;
+}
+.download_app > .app_img {
+  height: 400px;
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 15%;
+  /* border: 1px solid green; */
+}
+.app_img > img {
+  height: 98%;
+  width: 100%;
+}
+#download_practo {
+  height: 400px;
+  width: 50%;
+  /* border: 1px solid yellowgreen; */
+  margin-top: 10%;
+}
+.app_facility {
+  margin-top: 5%;
+}
+.playstore {
+  background-color: black;
+  display: flex;
+  border-radius: 5px;
+}
+.playstore_icon {
+  color: white;
+  font-size: 30px;
+  padding-top: 5px;
+}
+.subheading {
+  font-size: 10px;
+  color: white;
+  font-weight: lighter;
+}
+.heading {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+}
+.button_area {
+  display: flex;
+  gap: 20px;
+  border: none;
+  outline: none;
+}
