@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #414146;
+}
+
+
+/* Prime Second L Nav bar css start */
+#primeSecondLnav{
+    background-color: #fff;
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+}
+
+/* .primeSecondLnavfixed{
+    /* position: fixed; */
+    /* display: flex; */
+
+
+#primeSecondLnav > .primeSecondLnavfixed > .PrimeSecondnavrow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.PrimeSecondnavrow > a {
+    text-decoration: none;
+    color: #ffa000;
+    font-weight: 700;
+    font-size: 16px;
+   
+}
+
+.PrimeSecondnavrow > a > button {
+    padding: 9px;
+    width: 120px;
+    font-size: 13px;
+    background-color: #ffa000;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* Prime Second L Nav bar css End */
+
+
+
+/* First Section css start  */
+
+#FirstSection{
+    background-image: url("/PrimePage/primeImg/ForstSectionBackgroundImg.svg");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 80px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.firstleftcol{
+    width: 50%;
+   
+}
+
+.firstleftcol > h2 > span{
+    color: #8a45e6;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 50px;
+    line-height: 1.39;
+    font-weight: 700;
+    font-weight: 400;
+}
+
+.firstleftcol > h2 > span + span {
+    font-weight: 700;
+}
+
+.firstleftcol > h2 > span + span > i{
+    margin-left: 5px;
+    color: #8a45e6;
+}
+.firstleftcol > .firstleft2row > h2{
+    margin: 25px 0px;
+    font-size: 18px;
+    line-height: 1.33;   
+    font-weight: 400;
+}
+
+.firstleftcol > .firstleft2row {
+    width: 71%;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.322);
+    margin-left: 15px;
+    padding-right: 15px;
+}
+
+.firstleft3row{
+    margin-top: 25px;
+    width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.firstleft3row > h2{
+    font-size: 18px;
+    font-weight:10;
+    line-height: 1.2em;
+}
+
+.firstleft4row{
+    margin-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.firstleft4row > a {
+    background-color: #ffa000;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    color: #fff;
+    cursor:pointer;
+    padding:12px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+/* First Section css End  */
+
+
+
+/* Second Section css start */
+
+
+#SecondSection{
+    background-color: #f0f0f5;
+    color: #414146;
+    padding: 40px;
+}
+
+.Secondsectionrow{
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+.Secondsectionrow > .secondcols {
+    width: 100%;
+    padding: 20px;
+    border-right: 1px solid #41414649;
+    font-weight: 700;
+}
+
+.Secondsectionrow > .secondcols > h1 {
+    color: #8a45e6;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: Camphor;
+    margin-bottom: 5px;
+}
+
+.Secondsectionrow > .secondcols > p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.SecondSectioncol2{
+    border: none;
+}
+
+/* Second Section css End */
+
+
+
+/* third section css start */
+
+
+.thirdsectionrow{
+     width: 68%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+
+.thirdsectionrow > h2 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.thirdsectioniconrow {
+    margin:50px 0px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
