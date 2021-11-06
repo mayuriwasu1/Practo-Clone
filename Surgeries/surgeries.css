@@ -1,0 +1,557 @@
+body {
+    margin:0px;
+    padding:0px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    min-height: 100 vh;
+    min-width: 100 vw;
+    color: #414146;
+    text-rendering: auto;
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* blue div section  */
+  #app {
+    font-family: Helvetica, Arial, sans-serif;
+    width: 83%;
+    margin: auto;
+  }
+  
+ 
+  
+  .care-app .dweb-header {
+    background: linear-gradient(105.21deg, #3743ab 4.62%, #141b56 94.13%);
+    min-height: 700 px;
+    margin-bottom: 100 px;
+    position: relative;
+  }
+  
+  * {
+    user-select: none;
+    box-sizing: border-box;
+  }
+ 
+  .care-app {
+    
+    margin: auto;
+    color: #2d2d32;
+    line-height: 1.2;
+    max-width: 1280 px;
+  }
+ 
+
+  
+  /* left part of blue portion  */
+  
+  .care-app .dweb-header .blueContainerWrapper .left-section {
+    width: 48%;
+    display: flex;
+    padding: 110px;
+    flex-direction: column;
+    
+  }
+  
+  
+  .care-app .dweb-header .blueContainerWrapper .left-section  {
+    height: 65 px;
+  }
+  
+  .practo-care > img{
+    height:60px;
+    width:70%
+  }
+  .care-app .dweb-header .blueContainerWrapper .left-section .info {
+    color: #fff;
+    margin-top: 65 px;
+    margin-bottom: 100 px;
+  }
+  
+  .care-app .dweb-header .blueContainerWrapper .left-section .info .heading {
+    font-size: 44px;
+    font-weight: 700;
+  }
+  
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  
+  .care-app .dweb-header .blueContainerWrapper .left-section .info .separator {
+    border: 2 px solid #fff;
+    height: 0px;
+    width: 50 px;
+    margin: 30 px 0;
+    border-radius: 16 px;
+  }
+  
+  .care-app  .dweb-header .blueContainerWrapper .left-section .info .subheading {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 380 px;
+  }
+  
+  .care-app .dweb-header .blueContainerWrapper .call-cta {
+    text-align: center;
+    padding: 14px;
+    background-color: #fff;
+    color: #2d2d32;
+    width: 380 px;
+    z-index: 2;
+    font-weight: 700;
+    border-radius: 8 px;
+  }
+  
+  
+  .call-cta{
+    padding :18px;
+    width: 100%;
+    margin: auto;
+    border-radius:8px;
+    
+  }
+  /* right section of blue part */
+  .care-app .dweb-header .blueContainerWrapper .right-section {
+    width: 52%;
+    position: relative;
+  }
+  
+  .care-app .dweb-header .blueContainerWrapper .right-section .remarks {
+    color: #fff;
+   
+ /* position: absolute; */
+    bottom: 20px;
+    left: 50px;
+    z-index: 1;
+    line-height: 34px;
+  }
+  .care-app .dweb-header .blueContainerWrapper .right-section .remarks .row-1 {
+    font-size: 24px;
+    font-weight: 700;
+    
+  }
+  
+  .care-app .dweb-header .blueContainerWrapper .right-section .remarks .row-2 {
+    font-size: 18px;
+  }
+  
+  .care-app .dweb-header .blueContainerWrapper .right-section .remarks {
+    color: #fff;
+  }
+  
+  /* bottom side of blue part */
+  
+  .care-app .dweb-header:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 200 px;
+   
+    background: linear-gradient(180deg, rgba(27, 34, 101, 0), #192061 106.23%);
+  }
+  
+  .care-app .dweb-header:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 200 px;
+    background: linear-gradient(180deg, rgba(27, 34, 101, 0), #192061 106.23%);
+  }
+  
+  /* styling for main div of blue part */
+  
+  .care-app .dweb-header .blueContainerWrapper {
+    width: 100%;
+    display: flex;
+  }
+  
+
+  /* portion right before blue part upper-mid-part */
+
+.care-app .dweb-body {
+    display: flex;
+    box-sizing: border-box;
+  }
+  
+  .itemIcon{
+    padding:20px;
+  }
+
+  
+  .separator{
+    height:10px;
+    width:100%;
+    background: #a3a3a8;
+  }
+  
+/* trust section  */
+
+.care-app .dweb-left-section {
+    width: 50%;
+}
+
+.c-trust-section .c-trust-banner {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+  }
+  
+  .c-trust-section .c-trust-banner > div {
+    color: #2626b1;
+  }
+
+  .c-location-banner__heading > span {
+    color: #2626b1;
+    font-size: large;
+  }
+  
+  .c-trust-section .c-trust-banner__item,
+  .c-trust-section .c-trust-banner__item--border {
+    text-align: center;
+    padding: 5% 10%;
+  }
+
+  .c-trust-section .c-trust-banner__item--border {
+    border-left: 1 px solid #f0f0f5;
+  }
+  
+  .c-trust-section .c-location-banner {
+    padding: 20px 24px;
+    margin-top: 20 px;
+    background-color: #e3fae8;
+    border-radius: 12 px;
+    display: flex;
+    align-items: center;
+  }
+
+  .care-app {
+    margin: auto;
+    color: #2d2d32;
+    line-height: 1.2;
+    /* max-width: 1280 px; */
+    width: 100%;
+}
+
+.c-location-banner__locations > span{
+    padding: 5px;
+}
+  
+
+.c-location-banner > img{
+    margin: 8px;
+}
+
+/* round image section  */
+/* .u-d-flex {
+    display: flex;
+}
+.surgery-list {
+    flex-wrap: wrap;
+}
+
+.round_img_section{
+    padding: 20px;
+} */
+ #roundImagesection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#roundImagesection .roundImage {
+    flex: 1 1 30%; 
+    height: auto;
+    padding: 20px 15px;
+}
+
+/* why Practo ? Section */
+
+/* #whyPractoSection{
+    display: flex;
+    box-sizing: border-box;
+   
+} */
+
+/* .whyPracto_icon{
+    padding: 18px;
+}
+ */
+ .c-value-description-item{
+     padding: 3%;
+     border-bottom: 2 px solid #d9d9df;
+ }
+.margin--bottom--20 {
+    margin-bottom: 20 px;
+  }
+  .c-header {
+    font-weight: 700;
+    font-size: 22px;
+  }
+  
+  
+  .c-value-description-item__header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .c-value-description-item__content {
+    margin-top: 8 px;
+    line-height: 1.5;
+  }
+
+  
+  
+  
+  
+  
+  
+  /* page footer blue  */
+  /* .care-app > #footer {
+    padding-top: 80 px;
+    padding-left: 150 px;
+    padding-bottom: 220 px;
+  } */
+  
+  
+
+
+
+  /* right flexible form  */
+
+.c-form-section {
+    padding: 18 px;
+    background-color: #f0f0f5;
+  }
+  
+  .c-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2d2d32;
+  }
+  
+  .u-width-per--60 {
+    width: 60%;
+  }
+  
+  .text-beta {
+    font-size: 20px;
+  }
+  .u-text--bold {
+    font-weight: 700;
+  }
+  
+   .dweb-hide {
+    display: none;
+  }
+  
+  /* separator again  */
+  
+  .seperator {
+    height: 10 px;
+    background: #f0f0f5;
+  }
+  
+  
+  
+  /* page footer blue  */
+  .care-app .c-footer {
+    padding-top: 80 px;
+    padding-left: 150 px;
+    padding-bottom: 220 px;
+  }
+  
+  .c-footer {
+    width: 100%;
+    background: #28328c;
+    color: #fff;
+    padding: 150px;
+  }
+  
+  .care-app .c-footer .logo {
+    padding-bottom: 32 px;
+  }
+  .c-footer .logo {
+    width: 150 px;
+  }
+  
+  .care-app .c-footer .row-1 {
+    width: 60%;
+    opacity: 1;
+  }
+  .c-footer .row-1 {
+    font-size: 20px;
+    line-height: 28px;
+    opacity: 0.8;
+  }
+  
+  .care-app .c-footer .row-2 {
+    padding-top: 24 px;
+    font-size: 16px;
+    opacity: 0.8;
+  } 
+
+
+
+  /* main section og right flexible part */
+ .dweb-right-section {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding:50px;
+  }
+  
+    .c-form-section {
+    position: sticky;
+    top: 0;
+    border: 4 px solid #28328c;
+    border-radius: 16 px;
+    box-shadow: 2px 2px 8px #787887;
+    padding:20px;
+  }
+  .c-form-section {
+    padding: 18 px;
+    background-color: #f0f0f5;
+  }
+  
+  .c-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2d2d32;
+  }
+  
+  .u-width-per--60 {
+    width: 60%;
+  }
+  
+  .text-beta {
+    font-size: 20px;
+  }
+  .u-text--bold {
+    font-weight: 700;
+  }
+  
+  .c-form-section__content {
+    margin-top: 20 px;
+  }
+  
+  .c-input__container {
+    position: relative;
+    border: 1 px solid #787887;
+    border-radius: 8 px;
+    height: 60 px;
+    background-color: #fff;
+    padding: 0 20 px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+    border : 2px solid gr
+  }
+  
+  .c-input__info--hide {
+    display: none;
+  }
+  
+  .c-input {
+    margin: 2 px;
+    font-weight: 700;
+    border: 0;
+    padding: 0;
+    outline: 0;
+  }
+  input,
+  input:after,
+  input:before {
+    user-select: initial;
+  }
+  
+  .c-book-form__items {
+    margin-top: 20 px;
+  }
+  
+  .c-input__container {
+    position: relative;
+    border: 1 px solid #787887;
+    border-radius: 8 px;
+    height: 60 px;
+    background-color: #fff;
+    padding: 0 20 px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .c-book-form__items {
+    margin-top: 20 px;
+  }
+  
+  .c-input__container {
+    position: relative;
+    border: 1 px solid #787887;
+    border-radius: 8 px;
+    height: 60 px;
+    background-color: #fff;
+    padding: 0 20 px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .c-input__info--hide {
+    display: none;
+  }
+  
+  .c-input {
+    margin: 2 px;
+    font-weight: 700;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    margin:2px;
+  }
+  
+  .c-input__icon {
+    position: absolute;
+    right: 0;
+    top: 12 px;
+    font-size: 30px;
+    color: #787887;
+  }
+  
+  .c-book-form__items {
+    margin-top: 20 px;
+  }
+  
+  .care-app .dweb-right-section .c-form-section .c-cta__primary {
+    background-color: #28328c;
+    border: 1 px solid #28328c;
+    border-radius:8px;
+  }
+  .c-cta__primary {
+    background-color: #199fd9;
+    border: 1 px solid #199fd9;
+    color: #fff;
+  }
+  .c-cta,
+  .c-cta__basic,
+  .c-cta__primary {
+    text-align: center;
+    /* font-weight: 700;
+    border-radius: 8 px;
+    padding: 16 px 12 px; */
+    
+    border-radius:8px;
+    cursor: pointer;
+  }
