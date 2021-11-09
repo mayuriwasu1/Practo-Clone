@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <style>
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.new-login-area{
+  height:auto;
+  padding:24px;
+  width: 30%;
+  margin: auto;
+  border:2px solid #ebf3fa;
+  text-align: center;
+ 
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #787887;
+}
+label {
+  font-size: 12px;
+}
+.request-otp-header {
+  margin: 40px 0px;
+}
+.login-label label {
+  color: #868699;
+  font-weight: 600;
+}
+
+input{
+  width: 50%;
+  border-radius: 3px;
+  margin: 3%;
+ 
+}
+#request-otp {
+  width: 54%;
+  background:#00d9ff;
+  font-size: 14px;
+  color: #fff;
+  padding: 2%;
+  border: none;
+  border-radius: 3px;
+}
+
+.fa-chevron-left {
+  cursor: pointer;
+}
+
+
+input[type=number]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2%;
+}
+::placeholder{
+    color:rgb(190, 188, 188);
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="new-login-area">
+        <div id='sign-in' class='login-setup-section'>
+            <h3 class="request-otp-header">Please verify your mobile number</h3>
+            <div class="form-group login-label">
+                <label for="inputnumber"> Enter mobile number</label>
+                <br>
+                <input type="number" class="form-control input-edit" placeholder='Enter mobile number' id="number">
+            </div>
+           <a href="otpVerify.html"><button type="button" class="request-otp" id='request-otp'>Get OTP</button></a> 
+        </div>
+       
+    </div>
+</body>
+</html>
