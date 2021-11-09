@@ -1,0 +1,106 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+  height: 80px;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+#contact_us_div {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(40, 50, 140);
+  margin-top: 0%;
+  border: 1px solid rgb(40, 50, 140);
+}
+#contact_us_div > h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+#contact_us_div > h3 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 23px;
+}
+#info_brunch {
+  height: 700px;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 20px;
+}
+.flex_divs {
+  height: 85%;
+  width: 40%;
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  margin-left: 80px;
+}
+.flex_divs > h3 {
+  color: rgb(65, 65, 70);
+  font-size: 22px;
+  font-family: Camphor, verdana;
+  font-weight: 500;
+}
+.label {
+  color: rgb(65, 65, 70);
+}
+.flex_divs > select {
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  color: rgb(65, 65, 70);
+  
+}
+.flex_divs > select > .option {
+  color: rgb(65, 65, 70);
+}
+.submit_button {
+  background-color: rgb(20, 190, 240);
+  color: white;
+  height: 45px;
+  width: 100px;
+  outline: none;
+  border: none;
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.brunch_div{
+    height: 85%;
+  width: 45%;
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  margin-left: 25px;
+  background-color: rgb(240,240,245);
+  padding-left: 30px;
+}
+.brunch_div > h3{
+    color: rgb(65, 65, 70);
+    font-size: 23px;
+    font-family: Camphor, verdana;
+    
+}
+.brunch_div > label{
+    color: rgb(65, 65, 70)
+}
+.brunch_div > select{
+    height: 45px;
+    width: 40%;
+    font-size: 15px;
+    color: rgb(65, 65, 70);
+}
+.brunch_div > select > option{
+    color: rgb(65, 65, 70);  
+}
+#show_adress{
+    height: 150px;
+    width: 90%;
+    background-color: white;
+    margin-top: 40px;
+}
