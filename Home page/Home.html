@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./HomeCss/slick.css">
     <link rel="stylesheet" href="./HomeCss/slick-theme.css">
     <link rel="stylesheet" href="./HomeCss/home.css" />
+    <link rel="stylesheet" href="./HomeCss/homeresipove.css">
 </head>
 
 <body>
@@ -80,9 +81,33 @@
             <!-- Second part of html start -->
             <div class="HomeSecondsection">
                 <div class="input1part">
-                    <span><i class="fas fa-map-marker-alt"></i><input class="i1n" type="text " placeholder="Pune"></span>
-                    
-                    <span class="secondi"><i class="fas fa-search"></i><input class="i2n" type="text " placeholder="Search doctors,clinics,hospitals,etc."></span>
+                <div class="loctionmanin secondbar">
+                    <div class="loction loctionserch" >
+                        <i class="fas fa-map-marker-alt"></i><input class="i1n" onclick="showtheloction()" type="text" placeholder="Pune">
+                        <i class="fas fa-times-circle" onclick="locationsuggestionnone()"></i>
+                    </div>
+                    <div class="loctiondata">
+                        <ul>
+                            <li style="color: #14bef0; font-weight: 700">Use My location</li>
+                            <li style="color: #14bef0; font-weight: 700">Search in entire</li>
+                            <li onclick="select(this)"><i class="fas fa-search"></i>Pimpri-Chinchwad</li>
+                            <li onclick="select(this)"><i class="fas fa-search"></i>Hadapsar</li>
+                            <li onclick="select(this)"><i class="fas fa-search"></i>Kothrud</li>
+                            <li onclick="select(this)"><i class="fas fa-search"></i>Wakad</li>
+                            <li onclick="select(this)"><i class="fas fa-search"></i>Aundh</li>
+                            <li onclick="select(this)"><i class="fas fa-search"></i>Baner</li>
+                            <li onclick="select(this)"><i class="fas fa-search"></i>Pimple Saudagar</li>
+                            <li onclick="select(this)"><i class="fas fa-search"></i>Kharadi</li>
+                        </ul>
+                    </div>
+                    <div></i></div>
+
+                </div>
+                <div class="serachmain secondbar">
+                    <div class="search loctionserch">
+                        <i class="fas fa-search"></i><input class="i2n" type="text" placeholder="Search doctors,clinics,hospitals,etc.">
+                    </div>
+                </div>
                 </div>
                 <div class="adimg">
                     <img src="./Home Page Images/Second section/plus-tag.png">
@@ -92,6 +117,7 @@
 
             <!-- third part of start here -->
             <div id="HomethirdSection">
+                <img src="./Home Page Images/Third Section/model/mobile_banner.webp" alt="">
                 <div class="thirdlinerback">
                     <div class="leftsidecontect">
                         <img src="./Home Page Images/Third Section/logo.webp">
@@ -164,6 +190,7 @@
 
             <!-- five part are start here  -->
             <div id="HomeFiveSection">
+                
                 <div class="Heading5part">
                     <div class="leftTextSection">
                         <h2>Consult top doctors online for any health concern</h2>
@@ -290,6 +317,9 @@
 
             <!-- Seven part are end here  -->
             <div id="HomeSevenSection">
+                <div class="sevenrespoive"><h2>Introducing Practo PLUS</h2>
+                <a href=""><div class="sevenrespoiveimg"><img src="./Home Page Images/Seven Section/respovies.webp" alt=""></a></div>
+            </div> 
                 <div class="SevenAllContent">
                     <div class="Seven1Section">
                         <div class="Seven1SectionContent">
@@ -373,6 +403,40 @@
         </div>
     </div>
 </div>
+
+
+<!-- Home responsive section are start here down -->
+<div id="Homeresponsivesectionmain">
+
+
+    <div id="responsive1section">
+        <div class="responsive1sectionsilder">
+            <div class="responsive1sectionsildercards">
+                <div class="responsive1sectionscard1 responsive1sectionscards">
+                        <div class="res1cright">
+                            <div class="res1coffer">
+                                <p>OFFER</p>
+                            </div>
+                            <div class="res2ctext">
+                                <h3>Download the App & get ₹200 HealthCash</h3>
+                            </div>
+                            <div class="res3ctext">
+                                <h5>Download Now  <i class="fas fa-chevron-right"></i></h5>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
 
         <script src="./HomeJS/jquery-3.6.0.min.js"></script>
         <script src="./HomeJS/slick.min.js"></script>
