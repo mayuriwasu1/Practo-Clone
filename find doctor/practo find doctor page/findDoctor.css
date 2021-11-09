@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-columns: 11% 48% 16% 10%;
   justify-content: center;
-  /* padding: 30px; */
+ 
   height: 80px;
   align-items: center;
  
@@ -52,7 +52,7 @@ body {
 #NavBar > .NavThirdSection > ul > li {
   color: #414146;
   font-size: 14px;
-  /* padding: 8px; */
+ 
   font-weight: 200;
   cursor: pointer;
 }
@@ -144,7 +144,7 @@ body {
   /* border: 1px solid red; */
 }
 .main_image {
-  background-image: url(../images/practo2.jpeg);
+  background-image: url(./images/practo2.jpeg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -688,4 +688,4 @@ span {
   gap: 20px;
   border: none;
   outline: none;
-}
+} */
