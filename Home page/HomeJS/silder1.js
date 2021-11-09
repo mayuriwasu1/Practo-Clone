@@ -22,9 +22,9 @@ $('.responsive').slick({
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 499,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       }

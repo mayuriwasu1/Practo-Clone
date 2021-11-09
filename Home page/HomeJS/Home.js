@@ -86,5 +86,13 @@ function Sendmes() {
     document.getElementById("redborder").style.border = "thin solid red";
   }
 }
+// this code for last section user get link here text
 
 
+
+const mediaQuery = window.matchMedia('(max-width: 400px)')
+// Check if the media query is true
+if (mediaQuery.matches) {
+  document.querySelector(".heaing6 > h4").textContent = "Find doctors in top specialities";
+  document.querySelector(".heaing6 > h4").style.fontSize = "medium";
+}

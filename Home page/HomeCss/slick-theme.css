@@ -223,3 +223,17 @@
 .single-item  >  .slick-next {
     margin-right:100px;
 }
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 499px){
+    .slick-next , .slick-prev{
+        background-image: none;
+        background-color:transparent;
+    }
+
+    .slick-dots{
+        opacity: -2;
+    }
+}
