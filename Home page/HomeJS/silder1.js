@@ -42,3 +42,5 @@ $('.responsive').slick({
     dots: true,
   });
 
+
+  $('.single').slick();
