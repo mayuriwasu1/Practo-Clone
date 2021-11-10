@@ -1,0 +1,961 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  color: #2d2d32;
+  /* color: #414146; */
+  font-family: "Camphor", "Verdana", sans-serif;
+}
+
+/*First box starts*/
+.pinkBox {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+  color: #414146;
+  margin: 0px;
+}
+
+#paddingBox {
+  padding: 60px 68px 0 50px;
+}
+
+.pinkBox {
+  background-color: #f8e9e6;
+  color: #2d2d32;
+}
+
+.heading {
+  font-size: 36px;
+  line-height: 1.28;
+  font-weight: 700;
+}
+
+.pinkBox h1 {
+  display: block;
+  font-weight: bold;
+  font-size: inherit;
+  line-height: 1.28;
+  margin: 0px;
+}
+
+.content > p {
+  margin: 0px;
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.content > article {
+  margin-top: 22px;
+  display: block;
+}
+
+#docterStrip {
+  height: 42px;
+  max-height: 100%;
+  display: flex;
+  margin: 0px;
+}
+
+.eachImage {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  color: #787887;
+  border: 3px solid #fff;
+  position: relative;
+}
+
+.docterImage {
+  max-width: 36px;
+}
+
+.docOnline {
+  width: auto;
+  height: 42px;
+  color: inherit;
+  padding-left: 12px;
+  padding-top: 2px;
+  font-size: 16px;
+  vertical-align: top;
+  border: none;
+  line-height: 42px;
+}
+
+@keyframes pulse {
+  70% {
+    box-shadow: 0 0 0 10px rgb(170 224 0 / 0%);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(170 224 0 / 0%);
+  }
+}
+
+.pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 1.2s infinite;
+  box-shadow: 0 0 0 0 rgb(170 224 0 / 60%);
+  background-color: #aae000;
+  margin-left: 4px;
+  color: inherit;
+  font-size: 16px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.blueButton {
+  display: inline-block;
+  line-height: 1.56;
+  padding: 9px 32px;
+  font-size: 18px;
+  border-radius: 4px;
+  background: #14bef0;
+  color: #fff;
+  border: 1px solid #14bef0;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 24px;
+}
+
+#lastDiv {
+  margin: 48px 0 0;
+  padding: 0 0 26px;
+  display: flex;
+  max-width: 100%;
+  background: transparent;
+  font-size: 14px;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.womenImage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 318px;
+  margin: 31px auto 0;
+}
+
+#lastDiv > p {
+  color: #2d2d32;
+  display: block;
+}
+
+/*First box ends*/
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h2 {
+  line-height: 1.5;
+  color: #2d2d32;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
+p {
+  color: #787887;
+  font-size: 18px;
+  padding-bottom: 12px;
+  /* line-height: 1.29; */
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+a {
+  font-size: 14px;
+  color: #14bef0;
+  font-weight: 700;
+  width: 130px;
+}
+.firstSlide,
+.fourthSlide,
+.bigBox {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstSlide img {
+  width: 98px;
+  height: 98px;
+  margin: auto;
+  margin-top: 27px;
+  margin-bottom: 18px;
+}
+
+.commonConcerns,
+.specialities {
+  width: 170px;
+  height: 245px;
+  max-width: 100%;
+  margin: 10px; /*delete after complete*/
+  margin-top: 20px;
+  margin: 3px 16px 6px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px 0 rgb(45 45 51 / 8%);
+}
+
+.specialities {
+  text-align: center;
+  gap: 10%;
+  min-width: 167px;
+  min-height: 241px;
+}
+.specialities > h4 {
+  margin-bottom: 16px;
+}
+
+.specialities > p {
+  padding-bottom: 9px;
+}
+/* .slider .priv_arrow .next_arrow {
+  position: absolute;
+  bottom: -50px;
+  left: 45%;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.slider .next_arrow {
+  right: 45%;
+} */
+
+#head1,
+#head2,
+#head3 {
+  width: 88%;
+  margin: auto;
+}
+
+#head1 > div {
+  display: inline-block;
+}
+
+.firstSlide {
+  margin-top: 10px;
+}
+
+#startButton {
+  margin: 0px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2d2d32;
+}
+
+#head1 > div:nth-child(2) {
+  margin-top: 20px;
+  float: right;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: 1px solid #979797;
+}
+
+#head2 > a {
+  top: 420px;
+  right: 60px;
+  width: 150px;
+  color: #2d2d32;
+  text-decoration: none;
+  position: absolute;
+  border-radius: 8px;
+  padding: 11px 17px;
+  text-align: center;
+  border: 1px solid #979797;
+}
+
+.slider,
+.slider2 {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.slider h4 {
+  height: 36px;
+  font-size: 16px;
+  color: #2d2d32;
+  margin: 0px 4px;
+  text-align: center;
+}
+
+.icon-ic_next_cheveron {
+  content: "\e93c";
+  font-weight: 700;
+}
+
+.specialities p,
+a {
+  display: block;
+  color: #787887;
+  padding: 0px;
+}
+
+.specialities a {
+  margin-top: 9px;
+  font-weight: 700;
+  color: #14bef0;
+  margin-bottom: 21px;
+  width: auto;
+}
+
+/* specialities end */
+
+.slider2 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.commonConcerns {
+  height: 295px;
+}
+.commonConcerns > img {
+  width: 100%;
+  margin: 2%;
+  margin: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.commonConcerns > b {
+  margin: 0px;
+  margin-bottom: 3px;
+  font-size: 16px;
+  color: #414146;
+}
+
+.commonConcerns > p {
+  margin-bottom: 28px;
+}
+
+.commonConcerns > div {
+  padding: 12px 16px 16px 16px;
+}
+#head3 {
+  margin-top: 30px;
+}
+
+.secondSlide {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-top: 30px;
+}
+
+.thirdSlide {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  height: 200px;
+}
+
+.thirdS {
+  width: 580px;
+  /* width: 40%; */
+  background-color: blue;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px; /*delete after complete*/
+  margin: 3px 8px 6px;
+  box-shadow: 0 3px 6px 0 rgb(45 45 51 / 8%);
+}
+.thirdS1 {
+  background-color: #96d3bf;
+}
+.thirdS2 {
+  background-color: #fce5f4;
+}
+.thirdS3 {
+  background-color: #feba7f;
+}
+
+.thirdS img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 230px;
+}
+.thirdS span {
+  color: #2e6f5a;
+  font-size: 16px;
+  height: 27px;
+  padding: 0 7px;
+  background-color: #fff;
+  line-height: 27px;
+  margin-top: 20px;
+}
+.thirdS h4 {
+  color: #1e1e28;
+  line-height: 1.42;
+  font-size: 24px;
+  width: 50%;
+  margin: 25px 0;
+}
+
+.thirdS p {
+  color: #1e1e28;
+}
+
+.docters {
+  max-width: 271px;
+  border-radius: 6px;
+  height: auto;
+  border: 1px solid #f0f0f5;
+  padding: 10px;
+  margin: 20px;
+}
+
+.docters > img {
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-right: 5px;
+}
+
+.docters > div {
+  display: inline-block;
+}
+.docters h4 {
+  margin: 12px 0;
+}
+.docters p {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0px;
+}
+.docters > label {
+  position: absolute;
+  top: 49px;
+  left: 50%;
+  background: #ffeb01;
+  border-radius: 3px;
+  font-size: 100px;
+  padding: 2.5px;
+  font-weight: 700;
+}
+
+/* Start of How it works */
+
+#howItWorks {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+
+#hiwBox {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 18px;
+  position: relative;
+}
+
+#hiwBox:before {
+  content: "";
+  width: 68%;
+  background: #eaeaea;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 48px;
+  left: 14.5%;
+  color: #000;
+}
+
+#hiwBox > div > div:nth-child(2) {
+  padding-top: 24px;
+  padding-left: 12px;
+}
+
+#hiwBox > div > div:nth-child(1) {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#hiwBox p {
+  line-height: 1.29;
+  font-size: 14px;
+  color: #2d2d32;
+}
+
+#hiwBox > div {
+  display: inline-block;
+  width: 100%;
+}
+
+#hiwBox i {
+  color: #787887;
+  width: 60px;
+  height: 60px;
+  background: #f0eff4;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  display: flex;
+}
+
+.icon-ic_cursor {
+  content: "\e904";
+}
+
+.icon-ic_chat {
+  content: "\e921";
+}
+
+.icon-ic_prescription {
+  content: "\e976";
+}
+
+/* End of how it works */
+
+.overall {
+  display: flex;
+  grid-template-rows: 100% 100% 100% 100%;
+  grid-gap: 20px;
+  background-color: #2d2d32;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 16px 0;
+}
+
+.overall > div {
+  padding: 16px;
+  width: 25%;
+}
+
+.overall p {
+  display: block;
+}
+.firstP {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 0px;
+}
+
+.secondP {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 0px;
+}
+
+#benefits {
+  margin-top: 50px;
+}
+
+.bigBox {
+  display: grid;
+  border: 1px solid #f0f0f5;
+  border-radius: 4px;
+  background-color: #fff;
+  grid-template-areas:
+    "a b c"
+    "d e .";
+}
+
+.bigBox:nth-child(1) {
+  grid-area: a;
+}
+
+.bigBox:nth-child(2) {
+  grid-area: b;
+}
+
+.bigBox:nth-child(3) {
+  grid-area: c;
+}
+
+.bigBox:nth-child(4) {
+  grid-area: d;
+}
+
+.bigBox:nth-child(5) {
+  grid-area: e;
+}
+
+.bigBox h3 {
+  color: #414146;
+  margin-bottom: 14px;
+}
+
+.bigBox p {
+  color: #787887;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 0px;
+}
+
+.bigBox > div {
+  margin: 30px;
+}
+
+#videoDiv {
+  margin-top: 55px;
+}
+
+#videoDiv iframe {
+  height: 289px;
+  width: 100%;
+  border: 2px solid initial;
+}
+
+#videoTab {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 20px;
+}
+
+#videoTab > div {
+  max-width: 514px;
+  min-width: 376px;
+  margin-right: 62px;
+}
+
+#head4,
+#head5 {
+  width: 90%;
+  margin: auto;
+}
+
+iframe + p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.opinions {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+.opinions img,
+p {
+  display: inline-block;
+}
+
+#none {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+}
+.opinions p:nth-child(2) {
+  display: block;
+}
+
+#faqDetails,
+#healthQuaries {
+  display: grid;
+  gap: 10%;
+  width: 90%;
+  margin: auto;
+  border: 1px solid cyan;
+  grid-template-columns: auto auto;
+}
+
+#faqDetails > div {
+  /* width: 40%; */
+  display: inline-block;
+  max-width: 480px;
+  min-width: 470px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+
+#head5 {
+  margin-top: 100px;
+}
+
+#healthQuaries > div {
+  display: inline-block;
+  max-width: 480px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+
+#healthQuaries {
+  grid-template-columns: auto auto auto;
+}
+
+#healthConcerns {
+  height: 155px;
+  background-color: #2d2d32;
+  margin-top: 100px;
+  display: flex;
+}
+
+#healthConcerns h2,
+h4 {
+  color: #fff;
+  margin-left: 0px;
+}
+
+#healthConcerns > div {
+  display: inline-block;
+  margin: auto;
+}
+
+#healthConcerns > div:nth-child(1) {
+  margin-left: 70px;
+  line-height: 0;
+}
+
+#healthConcerns a {
+  background-color: #14bef0;
+  color: #fff;
+  display: block;
+  line-height: 1.56;
+  padding: 9px 32px;
+  font-size: 18px;
+  border-radius: 4px;
+  width: 309px;
+  margin: auto;
+  text-align: center;
+}
+
+#downloadApp {
+  display: flex;
+  padding: 15px 55px 15px;
+  background-color: #f0f0f5;
+}
+
+#downloadApp > div:nth-child(2) {
+  padding-top: 80px;
+}
+
+#downloadApp ul {
+  list-style: none;
+  line-height: 1.5;
+  padding: 0px;
+}
+
+.icon-ic_done_open_system {
+  content: "\e9a8";
+  color: #14bef0;
+  font-size: 21px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+#downloadApp > div {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  padding: auto;
+  margin: auto;
+  max-height: 548px;
+  margin-top: 0;
+}
+
+#downloadApp img {
+  height: 526px;
+  width: 300px;
+}
+
+#downloadApp form {
+  display: flex;
+}
+
+#downloadApp form > div {
+  display: flex;
+  background-color: #fff;
+}
+
+#downloadApp input {
+  border: white;
+}
+
+#downloadApp button {
+  display: block;
+  background: #14bef0;
+  color: #fff;
+  border: 1px solid #14bef0;
+  font-size: 16px;
+  padding: 10px 25px;
+  margin-left: 10px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 2px;
+}
+
+#countryCode {
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+  min-width: 63px;
+  line-height: 3;
+}
+
+#downloadTabs {
+  padding-top: 25px;
+  width: 540px;
+  height: 43px;
+  display: flex;
+  gap: 15px;
+}
+
+#downloadApp h2,
+p {
+  padding: 0px;
+}
+
+#downloadApp p {
+  margin-top: 5px;
+}
+
+#bottomDiv {
+  padding: 55px;
+}
+#bottomDiv p,
+a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #787887;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#bottomDiv p:nth-child(1) {
+  margin-top: 0px;
+}
