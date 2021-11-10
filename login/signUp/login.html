@@ -85,12 +85,13 @@
         <div>
         <form>
         
-       <div> <label>Mobile number / Email ID</label></div>
+       <div><label>Mobile number / Email ID</label></div>
        <div><input  type="text" id="email" placeholder="Type Your Email"/></div>
-       
+       <div id="error1"></div>
+
        <div><label>Password</label></div>
        <div><input type="password" id="pass" placeholder="password"/></div>
-        
+       <div id="error2"></div>
        
        </form></div>
 
@@ -136,31 +137,7 @@
 </div>
 
 </body>
-<script>
-    var submit = document.getElementById("submit")
-    submit.addEventListener("click", handleSubmit)
-    var credentialsData = JSON.parse(localStorage.getItem('credentials')) || [];
 
-    function handleSubmit(e){
-        e.preventDefault()
-        var email = document.getElementById("email").value
-        var pass = document.getElementById("pass").value
-        if(email == "" || pass == ""){
-            alert("Please fill in the details")
-        }else {
-            var isValidUser = false
-        for(var i=0; i<credentialsData.length; i++){
-            if(credentialsData[i].email == email && credentialsData[i].password == pass){
-                isValidUser = true
-                break;
-            }
-        }
-        if(isValidUser){
-            alert("Login Successfull")
-        }else {
-            alert("Invalid Credentials")
-        }
-        }
-    }
-</script>
 </html>
+
+<script src="login.js"></script>

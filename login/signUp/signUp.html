@@ -109,6 +109,7 @@
       <div id="fullName">
       <div  class="padding_bottom"><label>Full Name</label></div>
       <div><input type="text" id="email" placeholder="Full Name" /></div>
+      <div class="error"></div>
     </div>
     <div id="MobileNumber">
       <div class="padding_bottom"><label>Mobile Number</label></div>
@@ -129,11 +130,13 @@
       </select>
    
      <input type="number"  id="contact" placeholder="Mobile Number" /></div>
+     <div class="error2"></div>
     </div>
       
       <div id="password">
         <div class="padding_bottom"><label>Create Password</label></div>
         <div><input type="password" id="pass" placeholder="Password" /></div>
+        <div class="error3"></div>
     </div>
    
 
@@ -155,51 +158,10 @@
     </div>
     </form>
   </body>
-
-
-
-
-  <script>
-    var submit = document.getElementById("submit");
-    submit.addEventListener("click", handleSubmit);
-
-    var credentialsData = JSON.parse(localStorage.getItem("credentials")) || [];
-
-    function handleSubmit(e) {
-      e.preventDefault();
-      var email = document.getElementById("email").value;
-      var pass = document.getElementById("pass").value;
-      var contact = document.getElementById("contact").value;
-
-      var isEmailTaken = false;
-      for (var i = 0; i < credentialsData.length; i++) {
-        if (credentialsData[i].email == email) {
-          isEmailTaken = true;
-          break;
-        }
-      }
-
-      var newCredential = {
-        email: email,
-        password: pass,
-        contact: contact,
-      };
-
-      if(email.length==0||pass.length==0||contact.length==0){
-        alert("Please Fill Info");
-      }
-      if (isEmailTaken) {
-        alert("User already exist.");
-      } else {
-        credentialsData.push(newCredential);
-        localStorage.setItem("credentials", JSON.stringify(credentialsData));
-        alert("SignIn Successful");
-        window.location.href = "login.html";
-      }
-    }
-  </script>
 </html>
 
+
+<script src="signUp.js"></script>
 
 
  

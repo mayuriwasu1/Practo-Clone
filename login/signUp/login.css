@@ -228,24 +228,37 @@ input{
     height: 45px;
 }
 form > div{
-    padding: 1%;
+    padding: 0.3%;
 }
 ::placeholder{
     color:rgb(190, 188, 188);
 }
+
 input[type=text]{
     border: 1px solid #ccc;
-   
+    border-radius: 3px;
+    
 }
+
 input[type=password]{
     border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=number]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=text]:focus{
+   
+    outline: 2px solid #32c5f1;  
 }
 
 input[type=number]:focus{
     outline: 2px solid #32c5f1;  
 
   }
-
 
   input[type=password]:focus{
     outline: 2px solid #32c5f1;    

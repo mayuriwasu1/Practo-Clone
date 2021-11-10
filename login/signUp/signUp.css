@@ -120,7 +120,7 @@
 
 
 .samenav2 > ul > li:hover{
-   background-color: #F0F1F4    ;
+   background-color: #F0F1F4;
 }
 
 #NavBar>.NavFourSection>.loginSignUp>a>button {
@@ -197,9 +197,7 @@
 
 #loginPageRight{
     width: 50%;
-    /* border-bottom: 0.1px
-     solid rgba(255, 252, 252, 0.863); */
-    
+  
 }
 .loginPageRight > div {
     width: 40%;
@@ -267,18 +265,15 @@ input{
     text-decoration: none;
 }
 #joinPracto{
-    /* width: 40%; */
     padding:  2px 15px;
 }
 #doctor{
-/* width: 28%; */
 padding: 3px 5px 2px 60px;
 font-size: 14px;
 color: #84848f;
 
 }
 .blue-link{
-    /* width: 30%; */
     padding: 3px 2px;
 } 
 
@@ -333,22 +328,44 @@ color: #84848f;
 input[type=text]{
     border: 1px solid #ccc;
     border-radius: 3px;
+    
 }
+
 input[type=password]{
     border: 1px solid #ccc;
     border-radius: 3px;
-}
-input[type=checkbox]{
-    border: 1px solid #ccc;
-    border-radius: 3px;
+   
 }
 input[type=number]{
     border: 1px solid #ccc;
     border-radius: 3px;
+   
 }
+input[type=checkbox]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=text]:focus{
+    outline: 2px solid #32c5f1;
+    border-radius: 3px;
+   
+}
+input[type=number]:focus{
+    outline: 2px solid #32c5f1;
+    border-radius: 3px;
+   
+}
+input[type=password]:focus{
+    outline: 2px solid #32c5f1;
+    border-radius: 3px;
+   
+}
+
 select{
     border: 1px solid #ccc;
     border-radius: 3px;
+   
 }
 
 #registerLink{

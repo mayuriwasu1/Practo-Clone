@@ -5,67 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otp Verification</title>
+    <link rel="stylesheet" href="./otpVerify.css">
     <style>
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: Helvetica, Arial, sans-serif;
-}
 
-.new-login-area{
-  width: 30%;
-  padding:24px;
- text-align: center;
-  margin: auto;
-  border:2px solid #ebf3fa;
- 
-}
-h3 {
-  font-size: 24px;
-  line-height: 30px;
-  color: #868699;
-}
-label {
-  font-size: 12px;
-}
-.request-otp-header {
-  margin: 40px 0px;
-}
-.login-label label {
-  color: #868699;
-  font-weight: 600;
-}
-
-.fa-chevron-left {
-  cursor: pointer;
-}
-.request-otp{
-  margin-top:6px;
-  cursor:pointer;
-  border: none;
-  width: 55%;
-  background:#00d9ff;
-  color: white;
-  padding: 2%;
-  border-radius: 3px;
-}
-
-input{
-  width: 50%;
-  border-radius: 3px;
-  padding: 2%;
-  margin: 3%;
-
-}
-
-input[type=number]{
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-::placeholder{
-    color:rgb(190, 188, 188);
-}
     </style>
 </head>
 <body>
@@ -75,25 +17,14 @@ input[type=number]{
         <div class="form-group login-label">
             <label for="inputnumber">Enter one Time Password</label>
             <br>
-            <input type="number" class="form-control input-edit" placeholder='Enter OTP' id="match">
-            <!-- <label class="pull-right resend-otp">Resend otp</label> -->
+            <input  id="match" type="number" class="form-control input-edit" placeholder='Enter OTP' id="match">
+            <div id="error"></div>
+          
         </div>
-       <a href="log"></a> <button type="button" id="btn" class="request-otp">Verify</button>
+       <a href="log"></a> <button  type="button" id="btn" class="request-otp" onclick="errorMessage()">Verify</button>
     </div>
     </div>
 </body>
 </html>
 
-<script>
-   document.getElementById("btn").addEventListener("click", funotp);
-
-function funotp(){
-  var input = document.getElementById("match").value;
-  if(input=='5869'){
-        alert("login successful")
-    }else{
-      alert("incorrect otp")
-    }
-       
-}
-</script>
+<script src="otpVerify.js"></script>
