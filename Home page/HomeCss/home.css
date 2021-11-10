@@ -8,6 +8,10 @@
 
 /* NavBar Css part start */
 
+#respoviesNavbarMaiandiv {
+    display: none;
+}
+
 #NavBar {
     display: grid;
     grid-template-columns: 11% 45% 17% 10%;
@@ -158,6 +162,13 @@
     
 }
 
+@media screen and (min-width: 43px) and (max-width: 768px){
+    #Homepagewarp {
+        width: 100%;
+        margin: auto;
+    }
+}
+
 
 /* second part css start */
 
@@ -262,6 +273,7 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 430px){
+    #Homepagewarp{width:50%}
     #Homepagewarp>.HomeSecondsection{
         display: block;
     }
@@ -271,12 +283,14 @@
     .HomeSecondsection>.adimg{
         display: none;
     }
-   
+    .loctiondata{
+        width: 80%;
+    }
     .loction{
         margin-bottom: 10px;
     }
     .HomeSecondsection>.input1part .secondbar > .loctionserch{
-        width: 100%;
+        width: 90%;
         padding: 10px 0px;
     }
     .HomeSecondsection>.input1part .loctionmanin> .loctionserch > input{
@@ -291,10 +305,47 @@
     .fa-chevron-down{
         display: inline-block;
     }
-    .fa-chevron-down:before {
-       
+
 }
+
+
+@media screen and (min-width: 431px) and (max-width: 768px){
+    #Homepagewarp>.HomeSecondsection{
+        display: block;
+    }
+    .HomeSecondsection>.input1part{
+        display: block;
+    }
+    .HomeSecondsection>.adimg{
+        display: none;
+    }
+
+    .loctiondata{
+        width: 80%;
+    }
+   
+    .loction{
+        margin-bottom: 10px;
+    }
+    .HomeSecondsection>.input1part .secondbar > .loctionserch{
+        width: 90%;
+        margin: auto;
+        padding: 10px 0px;
+    }
+    .HomeSecondsection>.input1part .loctionmanin> .loctionserch > input{
+        width: 15%;
+        font-weight: 900;
+        margin-top:-4px;
+
+    }
+    .HomeSecondsection > .input1part > .loctionmanin > .loctionserch{
+        border: none;
+    }
+    .fa-chevron-down{
+        display: inline-block;
+    }
 }
+
 
 /* second part css end */
 
@@ -371,15 +422,30 @@
 
 @media screen and (min-width: 0px) and (max-width: 430px){
     #HomethirdSection{
-        width: 100%;
+        width: 90%;
         margin-top: 0;
     }
     #HomethirdSection>.thirdlinerback{
        display: none;
     }
-    #HomethirdSection{
+    #HomethirdSection > img{
+        display: block;
         width: 100%;
-        min-height: 150px; 
+    }
+}
+
+
+
+@media screen and (min-width: 431px) and (max-width: 768px){
+    #HomethirdSection{
+        width: 90%;
+    }
+    #HomethirdSection>.thirdlinerback{
+       display: none;
+    }
+    #HomethirdSection{
+        width: 90%;
+       margin: auto;
     } 
     #HomethirdSection > img{
         display: block;
@@ -398,6 +464,7 @@
 
 .FourCardMeandiv>.FourAllCard {
     display: flex;
+    gap: 15px;
 }
 
 .FourAllCard>.card {
@@ -442,6 +509,7 @@
 
 .FourAllCard>.Card2>.cardimg {
     background-color: #98CBD6;
+    width: 80%;
 }
 
 .FourAllCard>.Card2>.cardimg>img {
@@ -458,8 +526,28 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 430px){
-    
+  
+#HomeFourSection {
+    display: none;
 }
+
+} 
+
+@media screen and (min-width: 431px) and (max-width: 768px){
+      
+#HomeFourSection {
+    display: none;
+}
+#responsivefourSection{
+    display: block;
+}
+}
+
+#responsivefourSection{
+    display: none;
+}
+
+
 /* Four part css end  */
 
 
@@ -537,8 +625,19 @@
     #HomeFiveSection{
         display: none;
     }
+    .heaing6{
+        padding: 10px 10px 0px 10px;
+    }
 }
 
+@media screen and (min-width: 431px) and (max-width: 768px){
+    #HomeFiveSection{
+        display: none;
+    }
+    .heaing6{
+        padding: 10px 10px 0px 10px;
+    }
+}
 
 /* Five section css end */
 
@@ -602,6 +701,12 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 430px){
+
+    #HomeSixSection {
+        margin-top: 31px;
+        margin-bottom: 85px;
+    }
+
     hr{
         display: none;
     }
@@ -613,7 +718,7 @@
     }
     .slidercard>h3{
         padding:5px 5px 3px 5px;
-        font-size: 10.5px;
+        font-size: 12px;
     }
     #HomeSixSection>.cardSilder>div>div {
         width: 100%;
@@ -625,13 +730,54 @@
     }
     .slidercard>img {
         width: 100%;
-        height: 120px;
+        height: 130px;
     }
     .slick-dotted.slick-slider {
         margin-bottom: -50px;
     }
 
 }
+
+
+@media screen and (min-width: 431px) and (max-width: 768px){
+    #HomeSixSection {
+        margin-top: 31px;
+        margin-bottom: 85px;
+    }
+
+    hr{
+        display: none;
+    }
+    .heaing6 > h3{
+        display: none;
+    }
+    .slidercard>h4 {
+        display: none;
+    }
+    .slidercard>h3{
+        padding:5px 5px 3px 5px;
+        font-size: 12px;
+    }
+    #HomeSixSection>.cardSilder>div>div {
+        width: 80%;
+    }
+    .slidercard{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .slidercard>img {
+        width: 100%;
+        height: 130px;
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: -50px;
+    }
+}
+
+
+
+
 /* Six Section this is silder section dont change it up*/
 
 
@@ -725,6 +871,32 @@
 
 
 @media screen and (min-width: 0px) and (max-width: 430px){
+    #HomeSevenSection{
+        padding: 0px;
+        margin: 0px;
+    }
+    #HomeSevenSection .sevenrespoive {
+        display: block;
+    }
+    #HomeSevenSection .sevenrespoive > h2{
+        font-size: 16px;
+        font-weight:bolder;
+        font: italic;
+        color: #414146;
+    }
+    #HomeSevenSection .sevenrespoive > .sevenrespoiveimg{
+        width: 100%;
+    }
+    #HomeSevenSection .sevenrespoive > .sevenrespoiveimg> a > img{
+        width: 100%;
+    }
+    #HomeSevenSection > h2 {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 431px) and (max-width: 768px){
     #HomeSevenSection{
         padding: 0px;
         margin: 0px;
@@ -914,4 +1086,19 @@ font-size: 20px;
         display: none;
         background-color: transparent;
     }
+}
+
+
+@media screen and (min-width: 431px) and (max-width: 768px){
+    #Homeresponsivesectionmain{
+        display: block;
+    }
+    #HomeSevenSection>.SevenAllContent{
+        display: none;
+    }
+    #HomeEightSection ,#HomeNineSection{
+        display: none;
+        background-color: transparent;
+    }
+
 }
