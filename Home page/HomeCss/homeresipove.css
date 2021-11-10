@@ -44,6 +44,9 @@
     body{
         width: 100%;
     }
+    #Homepagewarp{
+        width: 100%;
+    }
      #NavBar{
         display: none;
     }
@@ -52,6 +55,9 @@
     }
     #responsivefourSection{
       display: block;
+    }
+    .allpadesrespvenav > ul > li > a {
+       padding: 2px;
     }
    
 }
@@ -66,7 +72,7 @@
     justify-content:space-between;
 }
 .respoviesNavbarleftmanu{
-    width: 70%;
+    width: 80%;
     margin-top: -70px;
     position: absolute;
     left: -800px;
@@ -97,7 +103,7 @@
     align-items: center;
     text-decoration: none;
     color: #414146;
-    padding:15px;
+    padding:10px;
 }
 
 .allpadesrespvenav > ul > li{
@@ -122,33 +128,19 @@
 
 
 
-
-
-
-
-
-
 .renavbarimg{
     width: 75%;
 }
 
 .renavba > a > button{
+    width: 110%;
         height: 30px;
         color: #14bef0;
-        padding: 5px 12px 8px 12px;
+        padding: 5px 8px 8px 8px;
         border-radius: 3px;
         border: solid 1px #14bef0;
         background-color: transparent;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -449,7 +441,7 @@
 
 .r4sc1heding {
    width: 130px;
-   height: 62%;
+   height: 60%;
    margin-bottom: 20px;
 }
 

@@ -37,23 +37,24 @@
 
 
 
-#NavBar>.NavSecondSection>div {
-    width: 40%;
+#NavBar>.NavSecondSection> a {
+    width: 20%;
     padding: 4px;
+    text-decoration: none;
 }
 
-#NavBar>.NavSecondSection>div>h4 {
+#NavBar>.NavSecondSection> a > div>h4 {
     font-size: 15px;
     line-height: 25px;
     font-weight: 550;
     color: #2d2d32;
 }
 
-#NavBar>.NavSecondSection>div>p {
+#NavBar>.NavSecondSection> a > div>p {
     font-size: 12px;
     color: #787887;
 }
-#NavBar>.NavSecondSection>div>h4:hover{
+#NavBar>.NavSecondSection> a > div>h4:hover{
     color: #112092;
 }
 
@@ -289,12 +290,20 @@
     .loction{
         margin-bottom: 10px;
     }
+
+    
+    .HomeSecondsection>.input1part .secondbar > .loctionserch > input {
+        
+        width: 70%;
+    }
+
     .HomeSecondsection>.input1part .secondbar > .loctionserch{
         width: 90%;
+        margin: auto;
         padding: 10px 0px;
     }
     .HomeSecondsection>.input1part .loctionmanin> .loctionserch > input{
-        width: 15%;
+        width: 70%;
         font-weight: 900;
         margin-top:-4px;
 
@@ -328,7 +337,7 @@
         margin-bottom: 10px;
     }
     .HomeSecondsection>.input1part .secondbar > .loctionserch{
-        width: 90%;
+        width: 70%;
         margin: auto;
         padding: 10px 0px;
     }
