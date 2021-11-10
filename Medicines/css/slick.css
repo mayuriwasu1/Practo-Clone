@@ -1,0 +1,378 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+body {
+  font-family: "Camphor", "Verdana", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4;
+}
+/* OnePicSlide start */
+
+#onePicSlide img {
+  width: 1180px;
+  max-height: 275px;
+  width: 100%;
+  padding-top: 15px;
+}
+
+#slide1 {
+  background-color: rgb(228, 242, 235);
+}
+#slide2 {
+  background-color: rgb(238, 235, 248);
+}
+#slide3 {
+  background-color: #e7f1f7;
+}
+#slide4 {
+  background-color: rgb(247, 232, 230);
+}
+
+/* OnePicSlide ends */
+
+/* products start */
+
+#products {
+  width: 1180px;
+  margin: 0 auto;
+}
+#products > h2 {
+  color: #2d2d32;
+  font-weight: 700;
+}
+#HCslider div,
+img {
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  border-radius: 5px;
+}
+#HCslider img:nth-child(1) {
+  margin-left: 0px;
+}
+#categories div,
+img {
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  border-radius: 5px;
+}
+#categories img:nth-child(1) {
+  margin-left: 0px;
+}
+#popularProductsDiv {
+  border-bottom: 1px solid #dfdfe5;
+  padding-bottom: 35px;
+}
+#popularProducts div,
+img {
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+}
+#popularProducts img:nth-child(1) {
+  margin-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#popularProducts img {
+  height: 150px;
+  max-height: 100%;
+  padding-right: 10px;
+}
+.medicine {
+  border-top: 1px solid #dfdfe5;
+}
+.medicine > div {
+  color: #414146;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 40px;
+  max-height: 40px;
+}
+.amountWithOffer {
+  display: flex;
+}
+.amountWithOffer > span:nth-child(1) {
+  color: #414146;
+  font-size: 18px;
+  font-weight: 700;
+}
+.amountWithOffer > span:nth-child(2) {
+  color: #787887;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-align: center;
+  line-height: 24px;
+  padding-left: 5px;
+}
+.amountWithOffer > span:nth-child(3) {
+  color: #00a500;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 24px;
+  padding-left: 5px;
+}
+
+/* products end */
+
+#introducingDiv {
+  display: flex;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 50px;
+}
+#introducingDiv > div {
+  margin-right: 25px;
+}
+#introducingDiv h3 {
+  color: #4a90e2;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+}
+#introducingDiv h3 + div {
+  color: #414146;
+  text-align: left;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+#introducingDiv > div > a > div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#introducingDiv img {
+  width: 100%;
+  height: 285px;
+}
+
+/* End of Introducingdiv */
+
+#CIdiv {
+  background: #e7f1f7;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+#CIdiv > div {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 15px 15px 0 15px;
+  max-height: 280px;
+}
+
+/* End of CIdiv */
+
+#userSay {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  color: #2d2d32;
+}
+#userSay > div:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+}
+.userSayContent > span:nth-child(1) {
+  font-size: 60px;
+}
+.userSayContent > span:nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* End of userSay */
+
+#downloadApp {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #f8f8fb;
+}
+#downloadApp > div:nth-child(1) {
+  width: 40%;
+  text-align: center;
+}
+#downloadApp img {
+  width: 60%;
+}
+#numberTab {
+  display: flex;
+}
+.contentDiv > div:nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2d2d32;
+}
+.contentDiv > div:nth-child(2) {
+  font-size: 16px;
+  color: #787887;
+  font-weight: 400;
+}
+.contentDiv > div:nth-child(3) {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #414146;
+  font-weight: 400;
+}
+.contentDiv > div:nth-child(4) {
+  font-size: 16px;
+  color: #414146;
+  font-weight: 400;
+}
+.contentDiv > div:nth-child(5) {
+  font-size: 16px;
+  margin-top: 50px;
+  color: #414146;
+  font-weight: 400;
+}
+#numberTab {
+  border: 1px solid black;
+  width: 315px;
+  margin-top: 10px;
+}
+#numberTab > div {
+  border-right: 1px solid rgba(180, 180, 190, 0.3);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px;
+}
+#numberTab > input {
+  padding-left: 20px;
+  width: 100%;
+  border: 0px;
+  background: #f8f8fb;
+}
+#inputDiv > button {
+  padding: 15px 30px;
+  background-color: #14bef0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+  border: 0px;
+}
+#inputDiv {
+  display: flex;
+}
+#downloadTabs {
+  padding-top: 25px;
+  width: 540px;
+  height: 43px;
+  display: flex;
+  gap: 15px;
+}
+#downloadTabs img {
+  width: 100%;
+}
