@@ -12,6 +12,100 @@
   </head>
   <body>
 
+
+     <!-- Nav bhar started  -->
+
+     <div id="respoviesNavbarMaiandiv">
+      <div id="respoviesNavbar">
+          <div class="renavbaricon">
+              <i class="fas fa-bars" onclick="showrespovemeni()"></i>
+          </div>
+          <div class="renavbarimg">
+              <img src="./Home Page Images/practonav logo/practo.svg" alt="">
+          </div>
+          <div class="renavba">
+              <a href=""><button>Sign in</button></a>
+          </div>
+         
+      </div>
+      <div class="respoviesNavbarleftmanu">
+          <div class="respoviesNavbarleftmanuimg"> <i class="fas fa-times" onclick="closethermeanu()"></i> <img src="./Home Page Images/practonav logo/practo.svg" alt=""> </div>
+
+          <div class="allpadesrespvenav">
+              <ul>
+                  <li><a href=""><i class="fas fa-search"></i><h6>Find Doctors -</h6><p> Book an appointment</p></a></li></a>
+                  <li><a href=""><i class="fas fa-video"></i><h6>Video Consult -</h6><p>  Consult top doctors</p></a></li>
+                  <li><a href=""><i class="fas fa-prescription-bottle-alt"></i><h6>Medicines -</h6><p>  Practo pharmacy</p></a></li>
+                  <li><a href=""><i class="fas fa-flask"></i><h6>Lab Tests -</h6><p>  Expert surgical care</p></a></li>
+                  <li><a href=""><i class="fas fa-book-medical"></i><h6>Surgeries -</h6><p>  Expert surgical care</p></a></li>
+                  <li><a href=""></a></li>
+
+              </ul>
+          </div>
+          
+      </div>
+  </div>
+
+
+      <div id="NavBar">
+          <!-- Nav have four section -->
+          <div class="NavFirstSection">
+              <img src="./Home Page Images/practonav logo/practo.svg" alt="" />
+          </div>
+          <div class="NavSecondSection">
+              <a href=""><div class="second1Text">
+                  <h4>Find Doctors</h4>
+                  <p>Book an appointment</p>
+              </div></a>
+              <a href=""><div class="second2Text">
+                  <h4>Video Consult</h4>
+                  <p>Consult top doctors</p>
+              </div></a>
+              <a href=""><div class="second3Text">
+                  <h4>Medicines</h4>
+                  <p>Practo pharmacy</p>
+              </div></a>
+              <a href=""><div class="second4Text">
+                  <h4>Lab Tests</h4>
+                  <p>Book tests & checkup</p>
+              </div></a>
+              <a href=""><div class="second5Text">
+                  <h4>Surgeries</h4>
+                  <p>Expert surgical care</p>
+              </div></a>
+          </div>
+          <div class="NavThirdSection">
+             <ul>
+                 <li id="forProvider" onclick="menuClick()">For Providers
+                  <i class="fas fa-angle-down"></i>
+                      <div id="forProvidersmanu" class="samenav2">
+                          <ul>
+                              <li id="newtext">Practo Prime <span id="new">New</span></li>
+                              <li>Software for providers</li>
+                              <li>List your practice for Free</li>
+                              <li>Corporate wellness</li>
+                          </ul>
+                      </div>
+                 </li>
+                 <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+                  <div id="Securitysmanu" class="samenav2">
+                      <ul>
+                          <li id="newtext">Data Security</li>
+                          <li>Help</li>
+                      </ul>
+                  </div>
+                
+                 </li>
+              </ul>
+          </div>
+          <div class="NavFourSection">
+              <div class="loginSignUp">
+                  <a href=""><Button>Login / SignUp</Button></a>
+              </div>
+          </div>
+      </div>
+      <!-- Nav bhar end  -->
+      <!-- <hr> -->
     <!-- main container having id = aap  -->
     <div id="app">
       <div class="care-app">                       <!-- div for main container -->
@@ -56,6 +150,7 @@
                   <div class="itemIcon">
                    
                       <img
+                      class="c-value-section__item__icon"
                         alt="doctor"
                         src="ic_doctor_icon1.jpg"
                         height="20px"
@@ -69,6 +164,7 @@
                   <div class="itemIcon">
                    
                       <img
+                      class="c-value-section__item__icon"
                         alt="treatment"
                         src="ic_certificate_icon2.jpg"
                         height="20px"
@@ -82,6 +178,7 @@
                   <div class="itemIcon">
                    
                       <img
+                      class="c-value-section__item__icon"
                         alt="personal care"
                         src="ic_shake+hand_icon3.webp"
                         height="20px"
@@ -95,6 +192,7 @@
                   <div class="itemIcon">
                     
                     <img
+                    class="c-value-section__item__icon"
                     alt="treatment"
                     src="ic_certificate_icon2.jpg"
                     height="20px"
@@ -110,6 +208,7 @@
                   <div class="itemIcon">
                     
                       <img
+                      class="c-value-section__item__icon"
                         alt="care"
                         src="ic_care_icon4.jpg"
                         height="20px"
@@ -125,7 +224,7 @@
 
                <!-- 1st separator  -->
            
-            <div class="seperator"></div>
+            <div class="seperatorO"></div>
 
       <!-- specification part(trust)  -->
 
@@ -134,28 +233,28 @@
            
           <div class="c-trust-banner__item">
             
-            <h3>200+</h3>
+            <h2>200+</h2>
             <small>Surgeons</small>
           </div>
           <div class="c-trust-banner__item--border">
-            <h3>30+</h3>
+            <h2>30+</h2>
             <small>Clinics</small>
           </div>
           <div class="c-trust-banner__item--border">
-            <h3>50+</h3>
+            <h2>50+</h2>
             <small>Procedures</small>
           </div>
         </div>
         <div class="c-location-banner">
-            <img height="35px" width="35px" src="clinicLogo.jpg">
+            <img height="35px" width="43px" src="clinicLogo.jpg">
           <div class="LazyLoad"></div>
           <div class="c-location-banner__details">
             <div class="c-location-banner__heading">
               <span>7+</span><small>Locations</small>
             </div>
             <div class="c-location-banner__locations">
-              <span>BANGALORE</span><span>MUMBAI</span><span>DELHI</span
-              ><span>4+ CITIES</span>
+              <span>BANGALORE</span><span>: MUMBAI</span><span>: DELHI</span
+              ><span>: 4+ CITIES</span>
             </div>
           </div>
         </div>
@@ -165,14 +264,12 @@
       <!-- round image part  -->
 
            
-      <div class="seperator"></div>
+      <div class="seperatorO"></div>
       
       <section class="round_img_section">
         <div class="providedSurgeries">
          <h2>Surgeries we provide</h2>  
         </div>
-        <div class="Collapsible">
-         
               <div class="General_Surgery"> 
                 <img
                   alt="General Surgery"
@@ -181,11 +278,12 @@
                   width="42px"
                   class="margin--right--16"
                 />
-                <div>General Surgery </div>
               </div>
+              <div>General Surgery </div>
               <div>
                
-          
+                <button type="button" class="collapsible">Open Section 3</button>
+                <div class="Collapsible">
             <div id="roundImagesection">
              
                 <div class="roundImage">
@@ -351,7 +449,7 @@
             </div>
           </div>
         </div>
-      
+        <div class="seperatorO"></div>
 
         <!-- why practo ? section  -->
 
@@ -383,7 +481,7 @@
                   consult with you to determine and conduct the most
                   appropriate surgical procedure for your condition.
                 </div>
-                <hr>
+                
               </div>
               <div class="c-value-description-item">
                 <div class="c-value-description-item__header">
@@ -406,7 +504,7 @@
                   with our cutting-edge modern medical technology, designed to
                   provide you the most advanced level of medical care.
                 </div>
-                <hr>
+                
               </div>
               <div class="c-value-description-item">
                 <div class="c-value-description-item__header">
@@ -434,7 +532,7 @@
                   approvals, and coordinating admission and discharge
                   formalities.
                 </div>
-                <hr>
+                
               </div>
               <div class="c-value-description-item">
                 <div class="c-value-description-item__header">
@@ -460,7 +558,7 @@
                   discounted medicines and lab tests, and support for a wide
                   range of insurance policies.
                 </div>
-                <hr>
+                
               </div>
               <div class="c-value-description-item">
                 <div class="c-value-description-item__header">
@@ -488,82 +586,87 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="seperatorO"></div>
+        <div class="dweb-right-section">
+        
+          <div class="c-form-section">
+            <div class="c-form-header">
+              <div class="u-width-per--60">
+                <div class="u-text--bold text-beta">
+                  Let’s schedule your appointment
+                </div>
+                <div class="appointment_image">
+                  <img height="99" width="86" src="	https://www.practostatic.com/consumer-home/practo-care/1631021888/call.png">
+                </div>
+              </div>
+              <!-- <div><div class="LazyLoad"></div></div> -->
+            </div>
+            <div class="c-form-section__content">
+              <div class="c-book-form__items">
+                <!-- <div> -->
+                  <div
+                    class="c-input__container"
+                    role="presentation"
+                    tabindex="0"
+                  >
+                    <div class="c-input__info--hide">Name*</div>
+                    <input
+                      type="text"
+                      class="c-input"
+                      name="name"
+                      placeholder="Name*"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div class="c-book-form__items">
+                  <div
+                    class="c-input__container"
+                    role="presentation"
+                    tabindex="0"
+                  >
+                    <div class="c-input__info--hide">Phone Number*</div>
+                    <input
+                      type="text"
+                      class="c-input"
+                      name="phone"
+                      placeholder="Phone Number*"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div class="c-book-form__items">
+                  <div
+                    class="c-input__container"
+                    role="presentation"
+                    tabindex="0"
+                  >
+                    <div class="c-input__info--hide">Location*</div>
+                    <input
+                      type="text"
+                      class="c-input"
+                      name="location"
+                      placeholder="Location*"
+                      readonly=""
+                      value=""
+                    /><i class="icon-ic_next_cheveron c-input__icon"></i>
+                  </div>
+                </div>
+                <div class="c-book-form__items">
+                  <div role="presentation" class="c-cta__primary">
+                    <span>Book Appointment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+          </div> 
+        </div>
+      </div>
+    </div>
+</div>
 
-        </div>
-    </div>
-</div>
-<!-- 
-<div class="dweb-right-section">
-  <div class="c-form-section">
-    <div class="c-form-header">
-      <div class="u-width-per--60">
-        <div class="u-text--bold text-beta">
-          Let’s schedule your appointment
-        </div>
-      </div>
-      <div><div class="LazyLoad"></div></div>
-    </div>
-    <div class="c-form-section__content">
-      <div class="c-book-form">
-        <div>
-          <div
-            class="c-input__container"
-            role="presentation"
-            tabindex="0"
-          >
-            <div class="c-input__info--hide">Name*</div>
-            <input
-              type="text"
-              class="c-input"
-              name="name"
-              placeholder="Name*"
-              value=""
-            />
-          </div>
-        </div>
-        <div class="c-book-form__items">
-          <div
-            class="c-input__container"
-            role="presentation"
-            tabindex="0"
-          >
-            <div class="c-input__info--hide">Phone Number*</div>
-            <input
-              type="text"
-              class="c-input"
-              name="phone"
-              placeholder="Phone Number*"
-              value=""
-            />
-          </div>
-        </div>
-        <div class="c-book-form__items">
-          <div
-            class="c-input__container"
-            role="presentation"
-            tabindex="0"
-          >
-            <div class="c-input__info--hide">Location*</div>
-            <input
-              type="text"
-              class="c-input"
-              name="location"
-              placeholder="Location*"
-              readonly=""
-              value=""
-            /><i class="icon-ic_next_cheveron c-input__icon"></i>
-          </div>
-        </div>
-        <div class="c-book-form__items">
-          <div role="presentation" class="c-cta__primary">
-            <span>Book Appointment</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div> -->
 </div>
 <div class="mweb-hide">
 <div class="c-footer">
@@ -586,7 +689,11 @@
 </div>
 <div id="modal-wrapper"></div>
  
+
+
+
 </body>
 </html>
 
 
+<script src="guidingCollaps.js"></script>

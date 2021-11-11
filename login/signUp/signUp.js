@@ -24,7 +24,7 @@ function handleSubmit(e) {
     password: pass,
     contact: contact,
   };
-
+console.log(email.length)
   if(email.length==0||pass.length==0||contact.length==0){
    
       error.innerHTML =
@@ -34,10 +34,10 @@ function handleSubmit(e) {
       error3.innerHTML =
       "<span style='color: #E35A49;font-size:11px'>" + "Password field cannot be empty</span>";
   }
-  if (isEmailTaken) {
+  else if (isEmailTaken) {
     error.innerHTML =
       "<span style='color: #E35A49;font-size:11px'>" + "User already exist.</span>";
-  } else {
+  } else{
     credentialsData.push(newCredential);
     localStorage.setItem("credentials", JSON.stringify(credentialsData));
     window.location.href = "login.html";

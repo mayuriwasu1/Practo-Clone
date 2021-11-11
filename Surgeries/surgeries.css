@@ -1,19 +1,163 @@
 body {
-    margin:0px;
-    padding:0px;
+    margin:0;
+    padding:0;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    min-height: 100 vh;
-    min-width: 100 vw;
-    color: #414146;
-    text-rendering: auto;
     scroll-behavior: smooth;
   }
+  * {
+    margin:0;
+    padding:0;
+    user-select: none;
+    box-sizing: border-box;
+  }
   
+  /* NavBar Css part start */
+
+#respoviesNavbarMaiandiv {
+  display: none;
+}
+
+#NavBar {
+  display: grid;
+  grid-template-columns: 11% 45% 17% 10%;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+
+#NavBar>.NavFirstSection {
+  width: 95%;
+  align-items: center;
+}
+
+#NavBar>.NavFirstSection>img {
+  width: 72%;
+}
+
+#NavBar>.NavSecondSection {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+
+
+#NavBar>.NavSecondSection> a {
+  width: 20%;
+  padding: 4px;
+  text-decoration: none;
+}
+
+#NavBar>.NavSecondSection> a > div>h4 {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 550;
+  color: #2d2d32;
+}
+
+#NavBar>.NavSecondSection> a > div>p {
+  font-size: 12px;
+  color: #787887;
+}
+#NavBar>.NavSecondSection> a > div>h4:hover{
+  color: #112092;
+}
+
+#NavBar>.NavThirdSection > ul > li{
+  color: #414146;
+  font-size: 14px;
+  padding: 8px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+
+#NavBar>.NavThirdSection > ul{
+  align-items: center;
+  display: flex;
+  position: relative;
+  list-style: none;
+  gap:0px;
+}
+
+#forProvidersmanu , #Securitysmanu{
+  display: none;
+
+}
+
+#forProvider:hover #forProvidersmanu{
+
+  display: block;
+ width: 230px;
+  margin-left: -100px;
+  position: absolute;
+  left:100;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#SecurityHelpNav:hover #Securitysmanu{
+  display: block;
+  width: 230px;
+   margin-left: -60px;
+   position: absolute;
+   left:100;
+   background-color: #ffffff;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.samenav2 > ul {
+  list-style: none;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+.samenav2 > ul > li {
+  margin: 10px 0px;
+  padding: 15px;
+}
+#new{
+  background-color: rgb(255, 174, 0);
+  font-size: 12px;
+  padding: 6px;
+  color: #fff;
+ float: right;
+ margin-right: 20px;
+ margin-top: -2px;
+}
+
+
+.samenav2 > ul > li:hover{
+ background-color: #F0F1F4    ;
+}
+
+#NavBar>.NavFourSection>.loginSignUp>a>button {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #787887;
+  border-radius: 4px;
+  border: solid 1px#d3d3d3;
+  padding: 8px 10px;
+}
+
+#NavBar>.NavFourSection>.loginSignUp>a>button:hover {
+  border: solid 1px#00d9ff;
+  color: #00d9ff;
+}
+
+
+/* NavBar Css part end */
+
   
   /* blue div section  */
   #app {
-    font-family: Helvetica, Arial, sans-serif;
+    
     width: 83%;
     margin: auto;
   }
@@ -22,22 +166,19 @@ body {
   
   .care-app .dweb-header {
     background: linear-gradient(105.21deg, #3743ab 4.62%, #141b56 94.13%);
-    min-height: 700 px;
-    margin-bottom: 100 px;
+    min-height: 700px;
+    margin-bottom: 100px;
     position: relative;
   }
   
-  * {
-    user-select: none;
-    box-sizing: border-box;
-  }
+  
  
   .care-app {
     
     margin: auto;
     color: #2d2d32;
     line-height: 1.2;
-    max-width: 1280 px;
+    max-width: 1280px;
   }
  
 
@@ -49,22 +190,23 @@ body {
     display: flex;
     padding: 110px;
     flex-direction: column;
+   
     
   }
   
   
   .care-app .dweb-header .blueContainerWrapper .left-section  {
-    height: 65 px;
+    height: 65px;
   }
   
   .practo-care > img{
     height:60px;
-    width:70%
+    width:78%
   }
   .care-app .dweb-header .blueContainerWrapper .left-section .info {
     color: #fff;
-    margin-top: 65 px;
-    margin-bottom: 100 px;
+    margin-top: 5px;
+    margin-bottom: 50px;
   }
   
   .care-app .dweb-header .blueContainerWrapper .left-section .info .heading {
@@ -72,7 +214,7 @@ body {
     font-weight: 700;
   }
   
-  p {
+  .heading ,.subheading {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -80,18 +222,18 @@ body {
     margin-inline-end: 0px;
   }
   
-  .care-app .dweb-header .blueContainerWrapper .left-section .info .separator {
-    border: 2 px solid #fff;
+   .separator {
+    border: 2px solid #fff;
     height: 0px;
-    width: 50 px;
-    margin: 30 px 0;
-    border-radius: 16 px;
+    width: 50px;
+    margin: 30px 0;
+    border-radius: 16px;
   }
   
   .care-app  .dweb-header .blueContainerWrapper .left-section .info .subheading {
     font-size: 20px;
     line-height: 28px;
-    max-width: 380 px;
+    max-width: 380px;
   }
   
   .care-app .dweb-header .blueContainerWrapper .call-cta {
@@ -99,10 +241,10 @@ body {
     padding: 14px;
     background-color: #fff;
     color: #2d2d32;
-    width: 380 px;
+    width: 380px;
     z-index: 2;
     font-weight: 700;
-    border-radius: 8 px;
+    border-radius: 8px;
   }
   
   
@@ -150,8 +292,7 @@ body {
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 200 px;
-   
+    height: 200px;
     background: linear-gradient(180deg, rgba(27, 34, 101, 0), #192061 106.23%);
   }
   
@@ -161,13 +302,13 @@ body {
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 200 px;
+    height: 200px;
     background: linear-gradient(180deg, rgba(27, 34, 101, 0), #192061 106.23%);
   }
   
   /* styling for main div of blue part */
   
-  .care-app .dweb-header .blueContainerWrapper {
+  .blueContainerWrapper {
     width: 100%;
     display: flex;
   }
@@ -186,8 +327,8 @@ body {
 
   
   .separator{
-    height:10px;
-    width:100%;
+    height:4px;
+    width:15%;
     background: #a3a3a8;
   }
   
@@ -219,14 +360,14 @@ body {
   }
 
   .c-trust-section .c-trust-banner__item--border {
-    border-left: 1 px solid #f0f0f5;
+    border-left: 1px solid #f0f0f5;
   }
   
   .c-trust-section .c-location-banner {
     padding: 20px 24px;
-    margin-top: 20 px;
+    margin-top: 0px;
     background-color: #e3fae8;
-    border-radius: 12 px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
   }
@@ -235,18 +376,21 @@ body {
     margin: auto;
     color: #2d2d32;
     line-height: 1.2;
-    /* max-width: 1280 px; */
     width: 100%;
 }
-
+.c-trust-section{
+  margin-bottom: 5%;
+}
 .c-location-banner__locations > span{
     padding: 5px;
+    font-size: 11px;
+    font-weight: 550;
 }
   
 
-.c-location-banner > img{
+/* .c-location-banner > img{
     margin: 8px;
-}
+} */
 
 /* round image section  */
 /* .u-d-flex {
@@ -270,8 +414,10 @@ body {
 #roundImagesection .roundImage {
     flex: 1 1 30%; 
     height: auto;
-    padding: 20px 15px;
+    padding: 20px 60px 2px 60px;
 }
+
+
 
 /* why Practo ? Section */
 
@@ -287,10 +433,10 @@ body {
  */
  .c-value-description-item{
      padding: 3%;
-     border-bottom: 2 px solid #d9d9df;
+     border-bottom: 2px solid #d9d9df;
  }
 .margin--bottom--20 {
-    margin-bottom: 20 px;
+    margin-bottom: 20px;
   }
   .c-header {
     font-weight: 700;
@@ -304,31 +450,16 @@ body {
   }
   
   .c-value-description-item__content {
-    margin-top: 8 px;
+    margin-top: 8px;
     line-height: 1.5;
   }
 
+ 
   
-  
-  
-  
-  
-  
-  /* page footer blue  */
-  /* .care-app > #footer {
-    padding-top: 80 px;
-    padding-left: 150 px;
-    padding-bottom: 220 px;
-  } */
-  
-  
-
-
-
   /* right flexible form  */
 
 .c-form-section {
-    padding: 18 px;
+    padding: 18px;
     background-color: #f0f0f5;
   }
   
@@ -357,7 +488,7 @@ body {
   /* separator again  */
   
   .seperator {
-    height: 10 px;
+    height: 10px;
     background: #f0f0f5;
   }
   
@@ -365,9 +496,9 @@ body {
   
   /* page footer blue  */
   .care-app .c-footer {
-    padding-top: 80 px;
-    padding-left: 150 px;
-    padding-bottom: 220 px;
+    padding-top: 80px;
+    padding-left: 150px;
+    padding-bottom: 220px;
   }
   
   .c-footer {
@@ -378,10 +509,10 @@ body {
   }
   
   .care-app .c-footer .logo {
-    padding-bottom: 32 px;
+    padding-bottom: 32px;
   }
   .c-footer .logo {
-    width: 150 px;
+    width: 150px;
   }
   
   .care-app .c-footer .row-1 {
@@ -395,35 +526,38 @@ body {
   }
   
   .care-app .c-footer .row-2 {
-    padding-top: 24 px;
+    padding-top: 24px;
     font-size: 16px;
     opacity: 0.8;
   } 
 
 
 
-  /* main section og right flexible part */
+  /* main section  right flexible part */
  .dweb-right-section {
     width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     padding:50px;
+
   }
   
-    .c-form-section {
+  .care-app .dweb-right-section .c-form-section {
     position: sticky;
     top: 0;
-    border: 4 px solid #28328c;
-    border-radius: 16 px;
+    border: 4px solid #28328c;
+    border-radius: 16px;
     box-shadow: 2px 2px 8px #787887;
-    padding:20px;
+    padding:10px;
   }
   .c-form-section {
-    padding: 18 px;
+    padding: 10px;
     background-color: #f0f0f5;
+    border: 4px solid #28328c;
+    border-radius: 16px;
   }
-  
+ 
   .c-form-header {
     display: flex;
     justify-content: space-between;
@@ -432,7 +566,14 @@ body {
   }
   
   .u-width-per--60 {
-    width: 60%;
+    display: flex;
+    width: 90%;
+  }
+  .u-text--bold .text-beta{
+    width: 70%;
+  }
+  .appointment_image{
+    width: 30%;
   }
   
   .text-beta {
@@ -443,21 +584,22 @@ body {
   }
   
   .c-form-section__content {
-    margin-top: 20 px;
+    margin-top: 20px;
   }
   
   .c-input__container {
     position: relative;
-    border: 1 px solid #787887;
+    border: 2px solid #787887;
     border-radius: 8 px;
-    height: 60 px;
+    height: 60px;
     background-color: #fff;
-    padding: 0 20 px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:20px;
-    border : 2px solid gr
+    padding:18px;
+    border : 1px solid grey;
+    border-radius: 8px;
   }
   
   .c-input__info--hide {
@@ -465,7 +607,7 @@ body {
   }
   
   .c-input {
-    margin: 2 px;
+    margin: 4px;
     font-weight: 700;
     border: 0;
     padding: 0;
@@ -478,32 +620,33 @@ body {
   }
   
   .c-book-form__items {
-    margin-top: 20 px;
+    margin-top: 20px;
+    margin: 2%;
   }
   
   .c-input__container {
     position: relative;
-    border: 1 px solid #787887;
-    border-radius: 8 px;
-    height: 60 px;
+    border: 1px solid #787887;
+    border-radius: 8px;
+    height: 60px;
     background-color: #fff;
-    padding: 0 20 px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   
   .c-book-form__items {
-    margin-top: 20 px;
+    margin-top: 25px;
   }
   
   .c-input__container {
     position: relative;
-    border: 1 px solid #787887;
-    border-radius: 8 px;
-    height: 60 px;
+    border: 1px solid #787887;
+    border-radius: 8px;
+    height: 60px;
     background-color: #fff;
-    padding: 0 20 px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -514,44 +657,66 @@ body {
   }
   
   .c-input {
-    margin: 2 px;
+    margin: 1.2%;
     font-weight: 700;
     border: 0;
     padding: 0;
     outline: 0;
-    margin:2px;
+   
+   
   }
   
   .c-input__icon {
     position: absolute;
     right: 0;
-    top: 12 px;
+    top: 12px;
     font-size: 30px;
     color: #787887;
   }
+  .c-value-section__item__icon {
+    background: #f0f0f5;
+    border-radius: 50%;
+    font-size: 26px;
+    height: 23px;
+    width: 23px;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 3px #888;
   
+    
+}
+.itemIcon{
+  padding: 4%;
+}
   .c-book-form__items {
-    margin-top: 20 px;
+    margin-top: 20px;
+    margin: 3.5%;
+    
   }
   
   .care-app .dweb-right-section .c-form-section .c-cta__primary {
     background-color: #28328c;
-    border: 1 px solid #28328c;
+    border: 1px solid #28328c;
     border-radius:8px;
+    padding: 4%;
+    color: #fff;
   }
-  .c-cta__primary {
+  /* .c-cta__primary {
     background-color: #199fd9;
     border: 1 px solid #199fd9;
     color: #fff;
-  }
+  } */
   .c-cta,
   .c-cta__basic,
   .c-cta__primary {
     text-align: center;
-    /* font-weight: 700;
-    border-radius: 8 px;
-    padding: 16 px 12 px; */
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 16px 12px;
     
     border-radius:8px;
     cursor: pointer;
+  }
+  .seperatorO{
+    height: 8px;
+  background: #f0f0f5;
   }
