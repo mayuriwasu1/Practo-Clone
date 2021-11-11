@@ -5,7 +5,7 @@
 
 .username {
     display: flex;
-  
+    cursor: pointer;
     align-items: center;
     font-weight: 400;
 }
@@ -23,18 +23,74 @@
      font-weight: 100%;
  }
 
+ .userdata{
+     position: absolute;
+     background-color: rgb(255, 255, 255);
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+     margin-left: -100px;
+     margin-top: 12px;
+     padding: 5px;
+     display: none;
+ }
+
+ .userdata.active{
+     width: 15%;
+    transition:1s;
+     display: block;
+    
+ }
 
  .userimgandtext {
      display: flex;
-     align-items: center;
-     position: absolute;
-     
+     padding: 15px;
+     gap: 10px;
+ }
+
+ .userdemoimg{
+     width:30%;
  }
 
  .userdemoimg {
-     width: 40%;
+     margin-right: 10px;
  }
-
  .userdemoimg > img{
      width: 100%;
+     height: 100%;
+     
+ }
+
+ .usernamenum{
+     width: 70%;
+     margin-top: 5px;
+ }
+
+ .usernamenum > p{
+     font-size: 17px;
+     margin-bottom:10%;
+ }
+
+ .usernamenum > h5{
+     font-size: 16px;
+     font-weight: 400;
+ }
+
+
+ .usergptocartpage{
+     padding: 10px;
+ }
+
+ .usergptocartpage:hover{
+     background-color: rgb(238, 238, 238);
+     cursor: pointer;
+ }
+
+ .usergptocartpage > h5{
+     font-size: 18px;
+     font-weight:400;
+ } 
+
+ .userlogout {
+     padding: 10px;
+     margin-top: 20px;
+     margin-bottom: 20px;
  }

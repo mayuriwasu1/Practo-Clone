@@ -28,7 +28,31 @@
                 <img src="./Home Page Images/practonav logo/practo.svg" alt="">
             </div>
             <div class="renavba">
-                <a href=""><button>Sign in</button></a>
+                <a href="/login/signUp/login.html"><button id="singupRe">Sign in</button></a>
+
+                <div class="userprofiles" id="userprofileshows">
+                    <div class="usernames" onclick= "shareprofiles()">
+                        <p id="userprofilenames"></p> <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="userdatas" id="resuser">
+                        <div class="userimgandtexts">
+                            <div class="userdemoimgs">
+                                <img src="./Home Page Images/Man_Silhouette2.jpg" alt="">
+                            </div>
+                            <div class="usernamenums">
+                                <p id="usernameinsides">sdas</p>
+                                <h5 id="usernumberinsides">asd</h5>
+                            </div>
+                        </div>
+                        <div class="usergptocartpages">
+                            <a href=""><p>Buy Product</p></a>
+                        </div>
+                        <div class="usergptocartpages userlogouts" onclick = "logout()">
+                            <h5>Log Out</h5>
+                        </div>
+                    </div>
+            </div>
+
             </div>
            
         </div>
@@ -103,21 +127,28 @@
                 </ul>
             </div>
             <div class="NavFourSection">
-                <div class="loginSignUp">
+                <div class="loginSignUp" id="loginbutton">
                     <a href="/login/signUp/login.html"><Button>Login / SignUp</Button></a>
                 </div>
-                <div class="userprofile">
-                        <div class="username">
-                            <p>vaman</p> <i class="fas fa-chevron-down"></i>
+                <div class="userprofile" id="userprofileshow">
+                        <div class="username" onclick="shareprofile()">
+                            <p id="userprofilename"></p> <i class="fas fa-chevron-down"></i>
                         </div>
-                        <div class="userdata">
+                        <div class="userdata ">
                             <div class="userimgandtext">
-                                <div class="userdemoimg"><img src="./Home Page Images/Man_Silhouette2.jpg" alt="">
+                                <div class="userdemoimg">
+                                    <img src="./Home Page Images/Man_Silhouette2.jpg" alt="">
                                 </div>
                                 <div class="usernamenum">
-                                    <p>Vaman</p>
-                                    <h5>9370262283</h5>
+                                    <p id="usernameinside"></p>
+                                    <h5 id="usernumberinside"></h5>
                                 </div>
+                            </div>
+                            <div class="usergptocartpage">
+                                <a href=""><p>Buy Product</p></a>
+                            </div>
+                            <div class="usergptocartpage userlogout" onclick="logout()">
+                                <h5>Log Out</h5>
                             </div>
                         </div>
                 </div>
@@ -159,14 +190,11 @@
                     </div>
                     <div class="searchdata">
                         <ul>
-                            <li style="color: #14bef0; font-weight: 700">Use My location</li>
-                            <li style="color: #14bef0; font-weight: 700">Search in entire</li>
-                            <li onclick="selects(his)"><i class="fas fa-search"></i>Pimpri-Chinchwad</li>
-                            <li onclick="selects(his)"><i class="fas fa-search"></i>Hadapsar</li>
-                            <li onclick="selects(his)"><i class="fas fa-search"></i>Kothrud</li>
-                            <li onclick="selects(his)"><i class="fas fa-search"></i>Wakad</li>
-                            <li onclick="selects(his)"><i class="fas fa-search"></i>Aundh</li>
-                            <li onclick="selects(his)"><i class="fas fa-search"></i>Baner</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Docter</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Lab Test</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Medicines</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>video</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Surgeries</li>
                             <li onclick="selects(his)"><i class="fas fa-search"></i>Pimple Saudagar</li>
                             <li onclick="selects(his)"><i class="fas fa-search"></i>Kharadi</li>
                         </ul>

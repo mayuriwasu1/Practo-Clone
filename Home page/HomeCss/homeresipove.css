@@ -143,6 +143,111 @@
 }
 
 
+#singupRe{
+    display: none;
+}
+
+
+.usernames {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 400;
+}
+
+.usernames > p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+ .usernames > .fa-chevron-down {
+     display: block;
+     font-size: 14px;
+     margin-top: 4px;
+     margin-left: 8px;
+     font-weight: 100%;
+ }
+
+ .userdatas{
+     position: absolute;
+     background-color: rgb(255, 255, 255);
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+     margin-left: -150px;
+     margin-top: 12px;
+     padding: 5px;
+     display: none;
+ }
+
+ .userdatas.active{
+     background-color: #fff;
+    width: 30%;
+    transition:1s;
+    display: block;
+    
+ }
+
+ .userimgandtexts {
+     display: flex;
+     padding: 15px;
+     gap: 10px;
+ }
+
+ .userdemoimgs{
+     width:30%;
+ }
+
+ .userdemoimgs {
+     margin-right: 10px;
+ }
+ .userdemoimgs > img{
+     width: 100%;
+     height: 100%;
+     
+ }
+
+ .usernamenums{
+     width: 70%;
+     margin-top: 5px;
+ }
+
+ .usernamenums > p{
+     font-size: 17px;
+     margin-bottom:10%;
+ }
+
+ .usernamenums > h5{
+     font-size: 16px;
+     font-weight: 400;
+ }
+
+
+ .usergptocartpages{
+     padding: 10px;
+ }
+
+ .usergptocartpages:hover{
+     background-color: rgb(238, 238, 238);
+     cursor: pointer;
+ }
+
+ .usergptocartpages > h5{
+     font-size: 18px;
+     font-weight:400;
+ } 
+
+ .userlogouts {
+     padding: 10px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+
+
+
+
+
+
+
+
 
 
 #responsivefourSection{

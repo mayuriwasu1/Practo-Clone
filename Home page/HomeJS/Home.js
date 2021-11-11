@@ -115,7 +115,17 @@ function closethermeanu() {
 
 // login fuction starts
 
-var stop = true ;
+
+function shareprofile() {
+  document.querySelector(".userdata").classList.toggle("active");
+}
+
+function shareprofiles() {
+  document.querySelector(".userdatas").classList.toggle("active");
+}
+
+
+var credentialsData = JSON.parse(localStorage.getItem("credentials")) || [];
 
 var useronetimeid = JSON.parse(localStorage.getItem("OnetimeID")) || {};
 
@@ -125,15 +135,41 @@ var userbyotpk = Object.keys(userbyotp)
 
 var useronetimeidcheck =  Object.keys(useronetimeid);
 
-if(userbyotpk.length == 0){
- 
+if(userbyotpk.length == 0 && useronetimeidcheck.length == 0){
+      document.getElementById("loginbutton").style.display = "block";
+      document.getElementById("userprofileshow").style.display = "none";
+
+      document.getElementById("singupRe").style.display = "block";
+      document.getElementById("userprofileshows").style.display = "none";
 }
 
-var credentialsData = JSON.parse(localStorage.getItem("credentials")) || [];
+if(useronetimeidcheck.length > 0){
+    var userprofile = credentialsData.filter(function(e){
+      return useronetimeid.oneTimepass == e.password
+    })
+    console.log(userprofile)
+    document.getElementById("userprofilename").textContent = userprofile[0].email
+    document.getElementById("usernameinside").textContent = userprofile[0].email
+    document.getElementById("usernumberinside").textContent = userprofile[0].contact
 
-var userprofile = credentialsData.filter(function(e){
-      return useronetimeid.OneTimeMoE == e.contact
-})
+    document.getElementById("userprofilenames").textContent = userprofile[0].email
+    document.getElementById("usernameinsides").textContent = userprofile[0].email
+    document.getElementById("usernumberinsides").textContent = userprofile[0].contact
+
+} else if(userbyotpk.length > 0){
+  var userprofiles = credentialsData.filter(function(e){
+    return userbyotp.usernumber == e.contact
+  })
+  document.getElementById("userprofilename").textContent = userprofiles[0].email
+  document.getElementById("usernameinside").textContent = userprofiles[0].email
+  document.getElementById("usernumberinside").textContent = userprofiles[0].contact
+
+  document.getElementById("userprofilenames").textContent = userprofiles[0].email
+  document.getElementById("usernameinsides").textContent = userprofiles[0].email
+  document.getElementById("usernumberinsides").textContent = userprofiles[0].contact
+}
+
+
 
 
 function logout() {
@@ -141,6 +177,11 @@ function logout() {
   localStorage.removeItem("userbyotp");
   reload = location.reload();
 }
+
+
+
+
+
 
 
 

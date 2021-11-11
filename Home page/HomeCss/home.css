@@ -383,7 +383,6 @@ a{
 
     .HomeSecondsection>.input1part .secondbar > .loctionserch1{
         width: 90%;
-        margin: auto;
         padding: 10px 0px;
     }
 
@@ -407,7 +406,7 @@ a{
 
     }
 
-    .HomeSecondsection > .input1part > .loctionmanin > .loctionserch1{
+    .loctionserch1{
         border: none;
     }
     .fa-chevron-down{
@@ -440,11 +439,22 @@ a{
         margin: auto;
         padding: 10px 0px;
     }
+    .HomeSecondsection>.input1part .secondbar > .loctionserch1{
+        margin: auto;
+        border: none;
+    }
     .HomeSecondsection>.input1part .loctionmanin> .loctionserch > input{
         width: 15%;
         font-weight: 900;
         margin-top:-4px;
 
+    }
+    .loctiondata {
+        width: 62%;
+    }
+    .searchdata{
+        width: 65%;
+        margin-left: 50px;
     }
     .HomeSecondsection > .input1part > .loctionmanin > .loctionserch{
         border: none;
