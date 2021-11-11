@@ -2,6 +2,8 @@ var submit = document.getElementById("submit")
     submit.addEventListener("click", handleSubmit)
     var credentialsData = JSON.parse(localStorage.getItem('credentials')) || [];
 
+    var useronetimeid = JSON.parse(localStorage.getItem("OnetimeID")) ;
+    
     function handleSubmit(e){
         e.preventDefault()
         var email = document.getElementById("email").value
@@ -15,13 +17,20 @@ var submit = document.getElementById("submit")
         }else {
             var isValidUser = false
         for(var i=0; i<credentialsData.length; i++){
-            if(credentialsData[i].email == email && credentialsData[i].password == pass){
+            if(credentialsData[i].email == email || credentialsData[i].contact == email && credentialsData[i].password == pass){
                 isValidUser = true
                 break;
             }
         }
         if(isValidUser){
-            // alert("Login Successfull")
+           
+            var onTimeI = {
+                OneTimeMoE : email,
+                oneTimepass:pass
+            }
+
+            localStorage.setItem("OnetimeID" , JSON.stringify(onTimeI))
+
         }else {
             error1.innerHTML =
           "<span style='color: #E35A49;font-size:11px'>" + "Invalid Mobile Number / Email ID </span>";

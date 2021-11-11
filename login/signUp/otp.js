@@ -3,6 +3,8 @@
   submit.addEventListener("click", handleSubmit);
   var credentialsData = JSON.parse(localStorage.getItem("credentials")) || [];
 
+  var userbyotp = JSON.parse(localStorage.getItem("userbyotp")) ;
+
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -21,7 +23,12 @@
       }
      
       if (isValidUser) {
-        
+        var userotp = {
+          usernumber : contact
+        }
+
+        localStorage.setItem("userbyotp" , JSON.stringify(userotp));
+
         window.location.href = "otpVerify.html"; 
       } else {
         var error = document.getElementById("error");
