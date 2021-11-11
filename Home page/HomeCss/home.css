@@ -5,6 +5,11 @@
 }
 
 
+a{
+    text-decoration: none;
+    color: #2d2d32;
+}
+
 
 /* NavBar Css part start */
 
@@ -110,7 +115,7 @@
     margin-bottom: 10px;
     padding: 0px;
 }
-.samenav2 > ul > li {
+.samenav2 > ul > a > li {
     margin: 10px 0px;
     padding: 15px;
 }
@@ -125,7 +130,7 @@
 }
 
 
-.samenav2 > ul > li:hover{
+.samenav2 > ul > a> li:hover{
    background-color: #F0F1F4    ;
 }
 
