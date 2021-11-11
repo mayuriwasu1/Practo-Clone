@@ -123,9 +123,6 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-
-
-
 function showrespovemeni(){
   document.querySelector(".respoviesNavbarleftmanu").classList.toggle('active')
 }
@@ -133,3 +130,5 @@ function showrespovemeni(){
 function closethermeanu(){
   document.querySelector(".respoviesNavbarleftmanu").classList.toggle('active')
 }
+
+
