@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP</title>
+    <link rel="stylesheet" href="./otp.css">
+   
+  </head>
+  <body>
+    <div class="new-login-area">
+      <div id="sign-in" class="login-setup-section">
+        <h3 class="request-otp-header">Please verify your mobile number</h3>
+        <div class="form-group login-label">
+          <label for="inputnumber"> Enter mobile number</label>
+          <br />
+          <input
+            type="number"
+            class="form-control input-edit"
+            placeholder="Enter mobile number"
+            id="contact"
+          />
+          <div id="error"></div>
+        </div>
+        <a href="otpVerify.html"
+          ><button type="button" id="request-otp" id="request-otp">
+            Get OTP
+          </button></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
+<script src="otp.js"></script>

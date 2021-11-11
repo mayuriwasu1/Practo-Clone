@@ -120,7 +120,7 @@
 
 
 .samenav2 > ul > li:hover{
-   background-color: #F0F1F4    ;
+   background-color: #F0F1F4;
 }
 
 #NavBar>.NavFourSection>.loginSignUp>a>button {
@@ -171,6 +171,19 @@
     color: #4A4A4A;
 }
 
+
+#loginLink:focus{
+    color: #13bef0;
+    text-decoration: underline;
+}
+
+#registerLink:focus{
+    color: #13bef0;
+    text-decoration: underline;
+}
+
+
+
 /* login form */
 
 #spSignup{
@@ -178,19 +191,20 @@
     padding: 50px;
 }
 #leftImagePart {
-   width: 50%;
-   padding: 2%;
+   width: 55%;
+   padding: 4%;
 }
 
 #leftImagePart > img{
   width: 390px;
 }
 #loginPageRight{
-    width: 50%;
-    border-bottom: 1px
-     solid rgba(245, 242, 242, 0.5);
-     padding: 7%;
+    width: 45%;
+     padding: 4%;
+     font-size: 14px;
+     font-weight: 400;
      color: #787887;
+     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
    
 }
 #leftImagePart > div{
@@ -198,20 +212,173 @@
 
 }
 input{
-    padding: 2%;
-    width: 90%;
+    padding: 3%;
+    width: 92%;
    
+}
+#button_pad{
+    padding: 3%;
 }
 #submit{
     background: #13bef0;
-    width: 96%;
+    width: 98%;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    height: 45px;
 }
+form > div{
+    padding: 0.3%;
+}
+::placeholder{
+    color:rgb(190, 188, 188);
+}
+
+input[type=text]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+
+input[type=password]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=number]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=text]:focus{
+   
+    outline: 2px solid #32c5f1;  
+}
+
+input[type=number]:focus{
+    outline: 2px solid #32c5f1;  
+
+  }
+
+  input[type=password]:focus{
+    outline: 2px solid #32c5f1;    
+  }
+
 #loginPageRight > div{
-    padding: 2% 0;
+    padding: 3% 3%;
+}
+#loginPageRight > div > form > div{
+ margin: 2% 0%;
+}
+
+#submit:focus {
+    
+    background: #32c5f1
+    
+}
+#otpd{
+    text-decoration: none;
+    color: #787887;
+}
+#remember_flex{
+    display: flex;
+    font-size: 12px;
+}
+#remember{
+  width: 5%;
+  padding: 1%;
+}
+.forget-pasword{
+  width: 30%;
+  padding: 0 1% 0 15%;
+}
+#days{
+  width: 65%;
+  
+}
+
+#forgotPassword{
+    text-decoration: none;
+    color: #13bef0;;
+}
+
+#otplogin{
+    display: flex;
+    font-size: 12px;
+}
+
+#otp_flow{
+    width: 5%;
+}
+
+#otp_login_option{
+    width: 95%;
 }
 
 
 /* facebook button */
+
+
+
+.block-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100%
+    
+}
+	.block-wrap > div{
+        width: 90%;
+		text-align: center
+    }
+
+.btn-fb{
+    padding-top: 1.5px;
+	background: #4267b2
+
+}
+	
+	.fb-content p{
+        color: rgba(white, .87)
+    }
+    .btn-fb{
+        display: inline-block;
+        color: white;
+        border-radius: 1px;
+        text-decoration: none;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+        transition: background-color .218s, border-color .218s ,box-shadow .218s
+    }
+	
+	 .fb-content{
+        display: flex;
+		align-items: center;
+		width: 320px;
+		height: 33px;
+        padding: 2%;
+     }
+		
+		.logo{
+           
+			height: inherit
+        }
+			
+		svg{
+            width: 35px;
+			height: 30px
+        }
+			
+		.fb-content >p{
+            width: 100%;
+			line-height: 1;
+			letter-spacing: .21px;
+			font-weight: 500
+			
+        }
+		#loginLink{
+            color: #00d9ff;
+        }	
 
 
 .loginBtn {
@@ -220,7 +387,8 @@ input{
     position: relative;
     /* width: 13em;  - apply for fixed size */
     margin: 0.2em;
-    padding: 0 15px 0 46px;
+    padding: 0 15px 0 40px;
+    /* padding: 1.8%; */
     border: none;
     text-align: left;
     line-height: 34px;
@@ -228,6 +396,8 @@ input{
     border-radius: 0.2em;
     font-size: 16px;
     color: #FFF;
+    height: 11%;
+    
   }
   .loginBtn:before {
     content: "";
@@ -235,8 +405,7 @@ input{
     position: absolute;
     top: 0;
     left: 0;
-    /* width: 34px;
-    height: 100%; */
+    
   }
   .loginBtn:focus {
     outline: none;
@@ -247,7 +416,6 @@ input{
 .loginBtn--facebook {
     background-color: #4C69BA;
     background-image: linear-gradient(#4C69BA, #3B55A0);
-    /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
     text-shadow: 0 -1px 0 #354C8C;
   }
   .loginBtn--facebook:before {

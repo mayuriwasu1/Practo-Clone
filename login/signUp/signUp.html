@@ -107,11 +107,12 @@
     <div  class="loginPageRight">
     <form>
       <div id="fullName">
-      <div><label>Full Name</label></div>
-      <div><input id="email" placeholder="Full Name" /></div>
+      <div  class="padding_bottom"><label>Full Name</label></div>
+      <div><input type="text" id="email" placeholder="Full Name" /></div>
+      <div class="error"></div>
     </div>
     <div id="MobileNumber">
-      <div><label>Mobile Number</label></div>
+      <div class="padding_bottom"><label>Mobile Number</label></div>
       <div>
       <select>
         <option selected value="IN">+91(IND)</option>
@@ -129,27 +130,25 @@
       </select>
    
      <input type="number"  id="contact" placeholder="Mobile Number" /></div>
+     <div class="error2"></div>
     </div>
       
       <div id="password">
-        <div><label>Create Password</label></div>
+        <div class="padding_bottom"><label>Create Password</label></div>
         <div><input type="password" id="pass" placeholder="Password" /></div>
+        <div class="error3"></div>
     </div>
    
 
     </div>
-  <!-- <div>  -->
-
-
- 
+  
+ <div id="ckeckbox_text">
 <input id="myinput" type="checkbox" />
-<label for="myinput" id="indented-checkbox-text">Receive relevant offers and promotional communication form practo.</label>
+<label for="myinput" id="indented-checkbox-text">Receive relevant offers and promotional communication<br> form practo.</label>
+</div>
 
+  <div id="iAgree">By signing up, I agree to <a href="termsCondition.html">terms</a></div>
 
-
-    <!-- <p> <input type="checkbox">Receive relevant offers and promotional communication form practo.</p>
-  </div> -->
-  <div id="iAgree">By signing up, I agree to <a href="termsandcondition.html">terms</a></div>
 
   <div id="SignInButton">
     <button  id="submit">SIGN UP</button>
@@ -159,51 +158,10 @@
     </div>
     </form>
   </body>
-
-
-
-
-  <script>
-    var submit = document.getElementById("submit");
-    submit.addEventListener("click", handleSubmit);
-
-    var credentialsData = JSON.parse(localStorage.getItem("credentials")) || [];
-
-    function handleSubmit(e) {
-      e.preventDefault();
-      var email = document.getElementById("email").value;
-      var pass = document.getElementById("pass").value;
-      var contact = document.getElementById("contact").value;
-
-      var isEmailTaken = false;
-      for (var i = 0; i < credentialsData.length; i++) {
-        if (credentialsData[i].email == email) {
-          isEmailTaken = true;
-          break;
-        }
-      }
-
-      var newCredential = {
-        email: email,
-        password: pass,
-        contact: contact,
-      };
-
-      if(email.length==0||pass.length==0||contact.length==0){
-        alert("Please Fill Info");
-      }
-      if (isEmailTaken) {
-        alert("User already exist.");
-      } else {
-        credentialsData.push(newCredential);
-        localStorage.setItem("credentials", JSON.stringify(credentialsData));
-        alert("SignIn Successful");
-        window.location.href = "login.html";
-      }
-    }
-  </script>
 </html>
 
+
+<script src="signUp.js"></script>
 
 
  

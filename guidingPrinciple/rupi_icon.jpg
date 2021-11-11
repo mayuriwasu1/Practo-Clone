@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://design.practo.com/practicon.html -->
+<html class="js sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Practicons - Practo Design</title>
+        <meta name="description" content="This space is all about what goes behind in design and research at Practo’s product development process and in the daily lives of a bunch of mission eyed, crazy designers dedicated to make healthcare a better and affordable experience for all.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="https://design.practo.com/site.webmanifest">
+        <link rel="apple-touch-icon" href="https://design.practo.com/icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" href="https://design.practo.com/favicon.ico">
+        <link rel="stylesheet" href="./rupi_icon_files/normalize.css">
+        <link rel="stylesheet" href="./rupi_icon_files/fonts_icons.min.css">
+        <link rel="stylesheet" href="./rupi_icon_files/main.css">
+        <link rel="stylesheet" href="./rupi_icon_files/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed="">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <!--[if lte IE 8]>
+          <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+          <link rel="stylesheet" href="./rupi_icon_files/grids-responsive-min.css">
+        <!--<![endif]-->
+        <div class="nav-container">
+          <div class="custom-wrapper pure-g" id="menu">
+            <div class="pure-u-1 pure-u-md-1-5 pure-u-sm-1-3">
+                <div class="pure-menu">
+                    <a href="http://design.practo.com/" class="pure-menu-heading custom-brand">
+                      <img src="./rupi_icon_files/logo.png">
+                    </a>
+                    <a href="https://design.practo.com/practicon.html#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-4-5 pure-u-sm-1-3">
+                <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
+                    <ul class="pure-menu-list">
+                      <li class="pure-menu-item"><a href="https://design.practo.com/practicon.html#how-to-use" class="pure-menu-link">How to use?</a></li>
+                      <li class="pure-menu-item"><a href="https://design.practo.com/practicon.html#icons" class="pure-menu-link">Icons</a></li>
+                      <li class="pure-menu-item"><a href="https://design.practo.com/practicon.html#typeface" class="pure-menu-link">Typeface</a></li>
+                      <li class="pure-menu-item"><a href="https://design.practo.com/practicon.html#queries" class="pure-menu-link">Queries?</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="top" class="container_odd padtop-min">
+          <div class="pure-g">
+            <div class="pure-u-1">
+              <h1 class="white">The Practicon</h1>
+            </div>
+            <div class="pure-u-1">
+              <div class="textWidthLimit white">
+                <p class="white">Let’s bake our user interfaces faster, better and sleeker. This web font gives easy access to a bunch of awesome icons along with the premium typeface - Camphor, exclusively for Practo UI.</p>
+                <hr class="blue-line">
+                <ul class="no-bullet-list">
+                  <li><p class="white"><small class="light_grey">Current Version</small><br>v12 (last updated Jun 2018)</p></li>
+                  <li><p class="white"><small class="light_grey">Managed by</small><br>Kaustubh Limaye (kaustubh.limaye@practo.com)</p></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pure-u-1">
+              <div id="how-to-use" class="white_bg">
+                <h2>How to use?</h2>
+
+                <div class="step-block">
+                  <p><b>Step 1:</b> Include this in the <code class="inline-code">&lt;head&gt;</code> section</p>
+                  <pre><code class="code-block">&lt;<span class="red">link</span> <span class="orange">rel=</span><span class="green">"stylesheet"</span> <span class="orange">type=</span><span class="green">"text/css"</span><span class="orange"> href=</span><span class="green"> "https://www.practostatic.com/fonts/v12/fonts_icons.min.css"</span>&gt; </code></pre>
+                </div>
+                <div class="step-block">
+                  <p><b>Step 2:</b> Use this mark up along with the appropriate class-names</p>
+                  <pre><code class="code-block">&lt;<span class="red">i</span> <span class="orange">class=</span><span class="green">"icon-ic_instant"</span>&gt;&lt;/<span class="red">i</span>&gt;</code></pre>
+                </div>
+                <div class="step-block">
+                  <p><b>Step 3:</b> Sit back and relax!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container_odd padtop-mid">
+          <div class="pure-g">
+            <div id="icons" class="pure-u-1 padtop-min">
+              <h2>Icons</h2>
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_done_badge"></i><div class="icon-name">icon-ic_done_badge</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_dislike_filled"></i><div class="icon-name">icon-ic_dislike_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_like_filled"></i><div class="icon-name"> icon-ic_like_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_facebook"></i><div class="icon-name"> icon-ic_facebook</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_github"></i><div class="icon-name"> icon-ic_github</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_facebook"></i><div class="icon-name"> icon-ic_facebook</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_googleplus"></i><div class="icon-name"> icon-ic_googleplus</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_linkedin"></i><div class="icon-name"> icon-ic_linkedin</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_mail2"></i><div class="icon-name"> icon-ic_mail2</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_twitter"></i><div class="icon-name"> icon-ic_twitter</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_whatsapp"></i><div class="icon-name"> icon-ic_whatsapp</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_youtube"></i><div class="icon-name"> icon-ic_youtube</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_checkbox_selected_system"></i><div class="icon-name"> icon-ic_checkbox_selected_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_checkbox_system"></i><div class="icon-name"> icon-ic_checkbox_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_call_filled"></i><div class="icon-name"> icon-ic_call_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_flag_solid_system"></i><div class="icon-name"> icon-ic_flag_solid_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_flag_system"></i><div class="icon-name"> icon-ic_flag_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_quickmessage"></i><div class="icon-name"> icon-ic_quickmessage</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_transactions"></i><div class="icon-name"> icon-ic_transactions</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_exclamation"></i><div class="icon-name"> icon-ic_exclamation</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_phone"></i><div class="icon-name"> icon-ic_phone</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_reply"></i><div class="icon-name"> icon-ic_reply</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_waittime"></i><div class="icon-name"> icon-ic_waittime</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_bold"></i><div class="icon-name"> icon-ic_bold</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_briefcase_filled"></i><div class="icon-name"> icon-ic_briefcase_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_bullet_list"></i><div class="icon-name"> icon-ic_bullet_list</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_collapse_calendar"></i><div class="icon-name"> icon-ic_collapse_calendar</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_cursor"></i><div class="icon-name"> icon-ic_cursor</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_expand_calendar"></i><div class="icon-name"> icon-ic_expand_calendar</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_eye"></i><div class="icon-name"> icon-ic_eye</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_fit_to_page"></i><div class="icon-name"> icon-ic_fit_to_page</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_font_size"></i><div class="icon-name"> icon-ic_font_size</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_graph"></i><div class="icon-name"> icon-ic_graph</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_help"></i><div class="icon-name"> icon-ic_help</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_instant_filled"></i><div class="icon-name"> icon-ic_instant_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_italics"></i><div class="icon-name"> icon-ic_italics</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_receipt"></i><div class="icon-name"> icon-ic_receipt</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_remove_text_format"></i><div class="icon-name"> icon-ic_remove_text_format</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_rotate_left"></i><div class="icon-name"> icon-ic_rotate_left</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_shrink_to_page"></i><div class="icon-name"> icon-ic_shrink_to_page</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_time_filled"></i><div class="icon-name"> icon-ic_time_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_walkin"></i><div class="icon-name"> icon-ic_walkin</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_widgets"></i><div class="icon-name"> icon-ic_widgets</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_card"></i><div class="icon-name"> icon-ic_card</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_cancel"></i><div class="icon-name"> icon-ic_cancel</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_camera"></i><div class="icon-name"> icon-ic_camera</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_care"></i><div class="icon-name"> icon-ic_care</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_calendar"></i><div class="icon-name"> icon-ic_calendar</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_delete"></i><div class="icon-name"> icon-ic_delete</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_call"></i><div class="icon-name"> icon-ic_call</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_discount"></i><div class="icon-name"> icon-ic_discount</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_gym"></i><div class="icon-name"> icon-ic_gym</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_hospital"></i><div class="icon-name"> icon-ic_hospital</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_user_system"></i><div class="icon-name"> icon-ic_user_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_cart_fill"></i><div class="icon-name"> icon-ic_cart_fill</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_cart"></i><div class="icon-name"> icon-ic_cart</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_chat"></i><div class="icon-name"> icon-ic_chat</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_clinic"></i><div class="icon-name"> icon-ic_clinic</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_communications"></i><div class="icon-name"> icon-ic_communications</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_currency"></i><div class="icon-name"> icon-ic_currency</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_bath_towel"></i><div class="icon-name"> icon-ic_bath_towel</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_bath_tub"></i><div class="icon-name"> icon-ic_bath_tub</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_birthday"></i><div class="icon-name"> icon-ic_birthday</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_blood"></i><div class="icon-name"> icon-ic_blood</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_briefcase"></i><div class="icon-name"> icon-ic_briefcase</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_ac"></i><div class="icon-name"> icon-ic_ac</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_add"></i><div class="icon-name"> icon-ic_add</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_affiliation"></i><div class="icon-name"> icon-ic_affiliation</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_afternoon"></i><div class="icon-name"> icon-ic_afternoon</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_ambulance"></i><div class="icon-name"> icon-ic_ambulance</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_appointment"></i><div class="icon-name"> icon-ic_appointment</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_attachment"></i><div class="icon-name"> icon-ic_attachment</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_awards"></i><div class="icon-name"> icon-ic_awards</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_up_cheveron"></i><div class="icon-name"> icon-ic_up_cheveron</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_star"></i><div class="icon-name"> icon-ic_star</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_star_solid"></i><div class="icon-name"> icon-ic_star_solid</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_star_half"></i><div class="icon-name"> icon-ic_star_half</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_share_system"></i><div class="icon-name"> icon-ic_share_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_settings_system"></i><div class="icon-name"> icon-ic_settings_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_search_system"></i><div class="icon-name"> icon-ic_search_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_radio_system"></i><div class="icon-name"> icon-ic_radio_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_radio_selected_system"></i><div class="icon-name"> icon-ic_radio_selected_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_alert_solid_system"></i><div class="icon-name"> icon-ic_alert_solid_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_next_cheveron"></i><div class="icon-name"> icon-ic_next_cheveron</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_mail_system"></i><div class="icon-name"> icon-ic_mail_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_location_system"></i><div class="icon-name"> icon-ic_location_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_video"></i><div class="icon-name"> icon-ic_video</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_heart_system"></i><div class="icon-name"> icon-ic_heart_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_prescription_system"></i><div class="icon-name"> icon-ic_prescription_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_heart_filled_system"></i><div class="icon-name"> icon-ic_heart_filled_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_filter_system"></i><div class="icon-name"> icon-ic_filter_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_ellipsis"></i><div class="icon-name"> icon-ic_ellipsis</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_dropdown_small"></i><div class="icon-name"> icon-ic_dropdown_small</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_drawer_system"></i><div class="icon-name"> icon-ic_drawer_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_down_cheveron"></i><div class="icon-name"> icon-ic_down_cheveron</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_instant"></i><div class="icon-name"> icon-ic_instant</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_machine"></i><div class="icon-name"> icon-ic_machine</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_newsfeed"></i><div class="icon-name"> icon-ic_newsfeed</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_delete_system"></i><div class="icon-name"> icon-ic_delete_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_cross"></i><div class="icon-name"> icon-ic_cross</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_back"></i><div class="icon-name"> icon-ic_back</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_back_cheveron"></i><div class="icon-name"> icon-ic_back_cheveron</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_attach_system"></i><div class="icon-name"> icon-ic_attach_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_alert_outline_system"></i><div class="icon-name"> icon-ic_alert_outline_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_add_system"></i><div class="icon-name"> icon-ic_add_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_add_outline_system"></i><div class="icon-name"> icon-ic_add_outline_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_add_open_system"></i><div class="icon-name"> icon-ic_add_open_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_welcome"></i><div class="icon-name"> icon-ic_welcome</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_washroom"></i><div class="icon-name"> icon-ic_washroom</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_wardrobe"></i><div class="icon-name"> icon-ic_wardrobe</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_wallet"></i><div class="icon-name"> icon-ic_wallet</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_uswr"></i><div class="icon-name"> icon-ic_uswr</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_online_presence"></i><div class="icon-name"> icon-ic_online_presence</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_unhappy"></i><div class="icon-name"> icon-ic_unhappy</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_tv"></i><div class="icon-name"> icon-ic_tv</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_trainer"></i><div class="icon-name"> icon-ic_trainer</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_time"></i><div class="icon-name"> icon-ic_time</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_sweat_towel"></i><div class="icon-name"> icon-ic_sweat_towel</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_stylist"></i><div class="icon-name"> icon-ic_stylist</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_sthethescope"></i><div class="icon-name"> icon-ic_sthethescope</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_steam"></i><div class="icon-name"> icon-ic_steam</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_star2"></i><div class="icon-name"> icon-ic_star2</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_shower"></i><div class="icon-name"> icon-ic_shower</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_share"></i><div class="icon-name"> icon-ic_share</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_settings"></i><div class="icon-name"> icon-ic_settings</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_search"></i><div class="icon-name"> icon-ic_search</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_sauna"></i><div class="icon-name"> icon-ic_sauna</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_saline"></i><div class="icon-name"> icon-ic_saline</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_rupee"></i><div class="icon-name"> icon-ic_rupee</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_rotate"></i><div class="icon-name"> icon-ic_rotate</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_reports"></i><div class="icon-name"> icon-ic_reports</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_reminder"></i><div class="icon-name"> icon-ic_reminder</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_refreshment"></i><div class="icon-name"> icon-ic_refreshment</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_Records"></i><div class="icon-name"> icon-ic_Records</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_records_3"></i><div class="icon-name"> icon-ic_records_2</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_records_3"></i><div class="icon-name"> icon-ic_records_3</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_read"></i><div class="icon-name"> icon-ic_read</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_questions"></i><div class="icon-name"> icon-ic_questions</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_qna_empty"></i><div class="icon-name"> icon-ic_qna_empty</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_profile"></i><div class="icon-name"> icon-ic_profile</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_print"></i><div class="icon-name"> icon-ic_print</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_prescription"></i><div class="icon-name"> icon-ic_prescription</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_prescription_2"></i><div class="icon-name"> icon-ic_prescription_2</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_pool"></i><div class="icon-name"> icon-ic_pool</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_pictures"></i><div class="icon-name"> icon-ic_pictures</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_parking"></i><div class="icon-name"> icon-ic_parking</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_notifications"></i><div class="icon-name"> icon-ic_notifications</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_night"></i><div class="icon-name"> icon-ic_night</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_music"></i><div class="icon-name"> icon-ic_music</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_morning"></i><div class="icon-name"> icon-ic_morning</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_minus"></i><div class="icon-name"> icon-ic_minus</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_message"></i><div class="icon-name"> icon-ic_message</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_mail"></i><div class="icon-name"> icon-ic_mail</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_loyalty"></i><div class="icon-name"> icon-ic_loyalty</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_lock"></i><div class="icon-name"> icon-ic_lock</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_location"></i><div class="icon-name"> icon-ic_location</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_link"></i><div class="icon-name"> icon-ic_link</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_like"></i><div class="icon-name"> icon-ic_like</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_library"></i><div class="icon-name"> icon-ic_library</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_kids"></i><div class="icon-name"> icon-ic_kids</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_invoice"></i><div class="icon-name"> icon-ic_invoice</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_injection"></i><div class="icon-name"> icon-ic_injection</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_info"></i><div class="icon-name"> icon-ic_info</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_image"></i><div class="icon-name"> icon-ic_image</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_therapist"></i><div class="icon-name"> icon-ic_therapist</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_height"></i><div class="icon-name"> icon-ic_height</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_heartbeat"></i><div class="icon-name"> icon-ic_heartbeat</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_heart"></i><div class="icon-name"> icon-ic_heart</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_health_interests"></i><div class="icon-name"> icon-ic_health_interests</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_happy"></i><div class="icon-name"> icon-ic_happy</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_gender"></i><div class="icon-name"> icon-ic_gender</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_food"></i><div class="icon-name"> icon-ic_food</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_folder"></i><div class="icon-name"> icon-ic_folder</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_filter"></i><div class="icon-name"> icon-ic_filter</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_explore"></i><div class="icon-name"> icon-ic_explore</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_evening"></i><div class="icon-name"> icon-ic_evening</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_establishment"></i><div class="icon-name"> icon-ic_establishment</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_edit"></i><div class="icon-name"> icon-ic_edit</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_uniform"></i><div class="icon-name"> icon-ic_uniform</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_dropdown"></i><div class="icon-name"> icon-ic_dropdown</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_drawer"></i><div class="icon-name"> icon-ic_drawer</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_drawer_2"></i><div class="icon-name"> icon-ic_drawer_2</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_download"></i><div class="icon-name"> icon-ic_download</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_done"></i><div class="icon-name"> icon-ic_done</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_doctor"></i><div class="icon-name"> icon-ic_doctor</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_doctor_2"></i><div class="icon-name"> icon-ic_doctor_2</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_distance"></i><div class="icon-name"> icon-ic_distance</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_dislike"></i><div class="icon-name"> icon-ic_dislike</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_weight"></i><div class="icon-name"> icon-ic_weight</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_wifi"></i><div class="icon-name"> icon-ic_wifi</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_direction_solid_system"></i><div class="icon-name"> icon-ic_direction_solid_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_done_open_system"></i><div class="icon-name"> icon-ic_done_open_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_done_outline_system"></i><div class="icon-name"> icon-ic_done_outline_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_done_solid_system"></i><div class="icon-name"> icon-ic_done_solid_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_minus_solid_system"></i><div class="icon-name"> icon-ic_minus_solid_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_refresh_system"></i><div class="icon-name"> icon-ic_refresh_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_brazilian_real"></i><div class="icon-name"> icon-ic_brazilian_real</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_dollar"></i><div class="icon-name"> icon-ic_dollar</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_indonesian_rupiah"></i><div class="icon-name"> icon-ic_indonesian_rupiah</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_philippines_peso"></i><div class="icon-name"> icon-ic_philippines_peso</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_rupee2"></i><div class="icon-name"> icon-ic_rupee2</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_calendar_block"></i><div class="icon-name"> icon-ic_calendar_block</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_lab_home"></i><div class="icon-name"> icon-ic_lab_home</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_records_home"></i><div class="icon-name"> icon-ic_records_home</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_services"></i><div class="icon-name"> icon-ic_services</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_share_ios"></i><div class="icon-name"> icon-ic_share_ios</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_id"></i><div class="icon-name"> icon-ic_id</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_add_fill_system"></i><div class="icon-name"> icon-ic_add_fill_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_gps_system"></i><div class="icon-name"> icon-ic_gps_system</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_backoffice_filled"></i><div class="icon-name"> icon-ic_backoffice_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_backoffice"></i><div class="icon-name"> icon-ic_backoffice</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_calendar_filled"></i><div class="icon-name"> icon-ic_calendar_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_communications_filled"></i><div class="icon-name"> icon-ic_communications_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_consult"></i><div class="icon-name"> icon-ic_consult</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_currency_filled"></i><div class="icon-name"> icon-ic_currency_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_doctor_2_filled"></i><div class="icon-name"> icon-ic_doctor_2_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_drawer_2_filled"></i><div class="icon-name"> icon-ic_drawer_2_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_export"></i><div class="icon-name"> icon-ic_export</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_healthfeed_filled"></i><div class="icon-name"> icon-ic_healthfeed_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_healthfeed"></i><div class="icon-name"> icon-ic_healthfeed</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_help_filled"></i><div class="icon-name"> icon-ic_help_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_integration_filled"></i><div class="icon-name"> icon-ic_integration_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_integration"></i><div class="icon-name"> icon-ic_integration</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_notifications_filled"></i><div class="icon-name"> icon-ic_notifications_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_patients_filled"></i><div class="icon-name"> icon-ic_patients_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_patients"></i><div class="icon-name"> icon-ic_patients</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_reach_filled"></i><div class="icon-name"> icon-ic_reach_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_reach"></i><div class="icon-name"> icon-ic_reach</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_reports_filled"></i><div class="icon-name"> icon-ic_reports_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_rotate_right"></i><div class="icon-name"> icon-ic_rotate_right</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_settings_filled"></i><div class="icon-name"> icon-ic_settings_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_consult_filled"></i><div class="icon-name"> icon-ic_consult_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_cross_solid"></i><div class="icon-name"> icon-ic_cross_solid</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_down"></i><div class="icon-name"> icon-ic_down</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_hospital_filled"></i><div class="icon-name"> icon-ic_hospital_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_lab_home_filled"></i><div class="icon-name"> icon-ic_lab_home_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_medicine_info"></i><div class="icon-name"> icon-ic_medicine_info</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_move"></i><div class="icon-name"> icon-ic_move</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_questions_filled"></i><div class="icon-name"> icon-ic_questions_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_stethoscope_filled"></i><div class="icon-name"> icon-ic_stethoscope_filled</div></div>
+            <div class="pure-u-1 pure-u-md-1-3"><i class="demo-icon icon-ic_stethoscope"></i><div class="icon-name"> icon-ic_stethoscope</div></div>
+
+            <div class="pure-u-1">
+              <hr class="grey-line">
+            </div>
+
+            <div id="typeface" class="pure-u-1 padtop-min">
+
+              <h2>Typeface</h2>
+              <p class="textWidthLimit">The Camphor™ typeface is a design where tradition inspires function. Nick Job, Camphor’s designer, was driven by his determination to avoid all calligraphic allusions, such as angular stress and organic asymmetry. Job reflects, “I wanted to draw a modern, uncluttered sans serif family with classical proportions, unashamedly English but with fewer idiosyncrasies than its influential forerunners.” <a href="https://www.fonts.com/font/monotype/camphor/story">Know more<i class="icon-ic_next_cheveron"></i></a></p>
+              <p class="textWidthLimit">Camphor is a premium typeface. Such typefaces have to be purchased before use. We have purchased two weights for our use on Practo UI - Camphor Regular and Camphor Bold.</p>
+              <br>
+              <h3>Usage</h3>
+              <pre><code class="code-block">font-family: <span class="green">'Camphor'</span>,<span class="green">'Verdana'</span>,<span class="orange"> sans-serif</span>;</code></pre>
+              <p class="textWidthLimit">The fall back typeface that we use is <code class="inline-code ">Verdana</code>. This is web-safe font available on all platforms. The second fall back typeface is the platform specific <code class="inline-code ">sans-serif</code> typeface. Default <code class="inline-code ">sans-serif</code> typeface on different platform is as follows - <code class="inline-code ">Roboto</code> on Android, <code class="inline-code ">San Francisco UI</code> on iOS, macOS and <code class="inline-code ">Segoe UI</code> on Windows.</p>
+
+              <br>
+              <br>
+
+              <img src="./rupi_icon_files/camphor_poster_1.png" width="100%">
+              <small>Poster creatively visualised by Babuma Ravanepalli</small>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div id="queries" class="container_odd padtop-min">
+          <div class="pure-g">
+            <div class="pure-u-1">
+              <h2 class="white">Doubts or requests?</h2>
+              <p class="textWidthLimit white">I'm happy to hear from you. Send me an email on — kaustubh.limaye@practo.com</p>
+            </div>
+          </div>
+        </div>
+
+
+      <script>
+      (function (window, document) {
+      var menu = document.getElementById('menu'),
+          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+      function toggleHorizontal() {
+          [].forEach.call(
+              document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+              function(el){
+                  el.classList.toggle('pure-menu-horizontal');
+              }
+          );
+      };
+
+      function toggleMenu() {
+          // set timeout so that the panel has a chance to roll up
+          // before the menu switches states
+          if (menu.classList.contains('open')) {
+              setTimeout(toggleHorizontal, 500);
+          }
+          else {
+              toggleHorizontal();
+          }
+          menu.classList.toggle('open');
+          document.getElementById('toggle').classList.toggle('x');
+      };
+
+      function closeMenu() {
+          if (menu.classList.contains('open')) {
+              toggleMenu();
+          }
+      }
+
+      document.getElementById('toggle').addEventListener('click', function (e) {
+          toggleMenu();
+          e.preventDefault();
+      });
+
+
+
+      window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+      })(this, this.document);
+
+      </script>
+
+
+
+
+
+
+
+        <script src="./rupi_icon_files/modernizr-3.5.0.min.js.download"></script>
+        <script src="./rupi_icon_files/jquery-3.2.1.min.js.download" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="./rupi_icon_files/plugins.js.download"></script>
+        <!--  <script src="js/main.js"></script> -->
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-18841050-54','auto');ga('send','pageview')
+        </script>
+        <script src="./rupi_icon_files/analytics.js.download" async="" defer=""></script>
+    
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

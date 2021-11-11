@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.new-login-area{
+  width: 30%;
+  padding:24px;
+ text-align: center;
+  margin: auto;
+  border:2px solid #ebf3fa;
+ 
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #868699;
+}
+label {
+  font-size: 12px;
+}
+.request-otp-header {
+  margin: 40px 0px;
+}
+.login-label label {
+  color: #868699;
+  font-weight: 600;
+}
+
+.fa-chevron-left {
+  cursor: pointer;
+}
+.request-otp{
+  margin-top:6px;
+  cursor:pointer;
+  border: none;
+  width: 55%;
+  background:#00d9ff;
+  color: white;
+  padding: 2%;
+  border-radius: 3px;
+}
+
+input{
+  width: 50%;
+  border-radius: 3px;
+  padding: 2%;
+  margin: 3%;
+
+}
+
+input[type=number]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+::placeholder{
+    color:rgb(190, 188, 188);
+}
+input[type=number]:focus{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+input[type=number]:focus{
+        outline: 2px solid #32c5f1;  
+    border-radius: 3px;
+    
+}

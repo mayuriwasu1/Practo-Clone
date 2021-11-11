@@ -120,7 +120,7 @@
 
 
 .samenav2 > ul > li:hover{
-   background-color: #F0F1F4    ;
+   background-color: #F0F1F4;
 }
 
 #NavBar>.NavFourSection>.loginSignUp>a>button {
@@ -147,7 +147,7 @@
 
 #titlePartOfLoginPage{
     display: flex;
-    color: #787887;
+    color: #77777e;
     padding: 2%;
 }
 
@@ -164,7 +164,6 @@
 .secondary-nav {
     display: flex;
     width: 100%;
-    
     justify-content: space-evenly;
     border-bottom: 1px
  solid rgba(216,216,216,0.5);
@@ -175,6 +174,16 @@
 #loginLink, #registerLink{
     text-decoration: none;
     color: #4A4A4A;
+}
+
+#loginLink:focus{
+    color: #13bef0;
+   
+}
+
+#registerLink:focus{
+    color: #13bef0;
+   
 }
 /* common container */
 
@@ -188,19 +197,16 @@
 
 #loginPageRight{
     width: 50%;
-    border-bottom: 1px
-     solid rgba(245, 242, 242, 0.5);
-   
+  
 }
 .loginPageRight > div {
     width: 40%;
-    border: solid 1px
-     rgba(216,216,216,0.5);
-        border-radius: 4px;
+    border-bottom:5px solid  #D3D3D3
+      
 }
 #leftImagePart > img {
    
-    width: 100%;
+    width: 94%;
     display: block;
     max-width: 100%;
     height: auto;
@@ -212,35 +218,45 @@
 
 
 form > div {
-    padding: 4%;
+    padding: 1% 5%;
 }
 
 label, select {
     color: #84848f;
     padding: 2%;
-    font: weight 2px;;
+    font: weight 2px;
+    font-size: 14px;
+    
 }
-
+.padding_bottom{
+    margin: 1% 0;
+}
 
 input{
-    padding: 2%;
-    width: 95%;
+    padding: 2.5%;
+    width: 88%;
 }
 #contact{
-    width: 65%;
+    width: 57%;
 }
 
 #submit{
-    width: 100%;
+    width: 85%;
     padding: 3%;
     background: #13bef0;
     color: #FFF;
     border-radius: 5px;
+   border: none;
+   margin: 2% 5%;
 }
 #submit:hover{
   color: #112092;
 }
 
+
+::placeholder{
+    color:rgb(190, 188, 188);
+}
 .blue-link{
     color: #ed9b2d;
     
@@ -249,44 +265,109 @@ input{
     text-decoration: none;
 }
 #joinPracto{
-    /* width: 30%; */
     padding:  2px 15px;
 }
 #doctor{
-/* width: 30%; */
-padding: 2px 20px;
-font-size: small;
+padding: 3px 5px 2px 60px;
+font-size: 14px;
+color: #84848f;
+
 }
 .blue-link{
-    /* width: 40%; */
-    padding: 2px 12px;
+    padding: 3px 2px;
 } 
 
 #titlePartOfLoginPage{
     display: flex;
-    border-bottom: 1px solid rgb(216, 213, 213);
+    border-bottom: 1px solid rgb(241, 240, 240);
 }
 #loginPageRight{
-    /* border: 1px solid rgb(212, 211, 211); */
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 #iAgree{
     font-size: x-small;
-    padding: 2% 7%;
+    padding: 2% 12%;
     color: #868699;
 }
+
 
 #iAgree > a{
     text-decoration: none;
     color: #00d9ff;
+    border: none;
 }
 #indented-checkbox-text{
-  margin-left: 2em;
+  margin-left: 0.5em;
   display: block;
   position: relative;
  
 }
 #indented-checkbox-text{
     display: inline-block;
+}
+
+#ckeckbox_text{
+    display: flex;
+    gap: 0px;
+}
+
+#myinput{
+    width: 5%;
+    padding: 5%;
+    margin: 3% 0% 1% 4%;
+}
+#indented-checkbox-text{
+    width: 95%;
+    font-size: 12px;
+}
+.padding_bottom{
+    padding: 1.8% 0;
+}
+
+input[type=text]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+
+input[type=password]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=number]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=checkbox]{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+input[type=text]:focus{
+    outline: 2px solid #32c5f1;
+    border-radius: 3px;
+   
+}
+input[type=number]:focus{
+    outline: 2px solid #32c5f1;
+    border-radius: 3px;
+   
+}
+input[type=password]:focus{
+    outline: 2px solid #32c5f1;
+    border-radius: 3px;
+   
+}
+
+select{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+}
+
+#registerLink{
+    color: #00d9ff;
 }
