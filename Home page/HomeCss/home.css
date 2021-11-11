@@ -399,6 +399,14 @@ a{
 
     }
 
+    .HomeSecondsection>.input1part .secondbar > .loctionserch1 {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+        border: none;
+        padding: 10px 0px;
+    }
+
     .loctionserch > input{
         width: 70%;
         font-weight: 900;
@@ -1081,7 +1089,7 @@ a{
 #HomeNineSection{
     margin-top: 80px;
     background-color: #f8f8fb;
-    padding:80px;
+    padding:80px 80px 50px 80px;
 }
 #HomeNineSection > .NineMainDiv{
     display: flex;
@@ -1187,6 +1195,80 @@ font-size: 20px;
 
 /* Nine Section part css End */
 
+
+
+/* Footer section start */
+
+#HomeFooterSection {
+    padding: 50px;
+    background-color: #28328c;
+}
+
+.footersection1{
+    display: flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+
+.footers1t {
+    margin-left: 80px;
+    width: 15%;
+    text-align: center;
+    text-align: left;
+}
+
+.footers1t > h2{
+    font-size: 15px;
+    font-size: 700;
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+.footers1t > ul > a {
+    font-weight: 400;
+    color: #fff;
+}
+
+.footers1t > ul > a:hover{
+
+    text-decoration: underline;
+}
+
+.footers1t > ul > a > li{
+    font-size: 15px;
+   color: #fff; 
+   font-weight: 100;
+ margin-bottom: 10px;
+   list-style: none;
+}
+
+
+.footer2sectio {
+    margin-top: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.footer2sectiontextcopy {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(252, 252, 252);
+}
+.footer2sectiontextcopy > h3{
+    font-size: 14px;
+}
+
+/* Footer section End */
+
+
+
+
+
+
+
+
+
+
 #Homeresponsivesectionmain{
     display: none;
 }
@@ -1200,7 +1282,7 @@ font-size: 20px;
     #HomeSevenSection>.SevenAllContent{
         display: none;
     }
-    #HomeEightSection ,#HomeNineSection{
+    #HomeEightSection ,#HomeNineSection , #HomeFooterSection{
         display: none;
         background-color: transparent;
     }
@@ -1214,7 +1296,7 @@ font-size: 20px;
     #HomeSevenSection>.SevenAllContent{
         display: none;
     }
-    #HomeEightSection ,#HomeNineSection{
+    #HomeEightSection ,#HomeNineSection , #HomeFooterSection{
         display: none;
         background-color: transparent;
     }
