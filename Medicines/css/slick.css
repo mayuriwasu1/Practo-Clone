@@ -137,6 +137,7 @@ body {
 #products {
   width: 1180px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 #products > h2 {
   color: #2d2d32;
@@ -227,6 +228,9 @@ img {
   margin-top: 50px;
 }
 #introducingDiv > div {
+  width: 565px;
+}
+#introducingDiv > div:nth-child(1) {
   margin-right: 25px;
 }
 #introducingDiv h3 {
@@ -269,15 +273,13 @@ img {
 /* End of CIdiv */
 
 #userSay {
-  margin-top: 40px;
-  margin-bottom: 40px;
   width: 85%;
   margin: 0 auto;
   text-align: center;
   padding: 15px;
   color: #2d2d32;
 }
-#userSay > div:nth-child(1) {
+#USheading {
   font-size: 24px;
   font-weight: 700;
 }
@@ -289,6 +291,35 @@ img {
   font-weight: 400;
   text-align: center;
 }
+#USreview {
+  justify-content: center;
+  margin-top: 25px;
+  display: flex;
+}
+#USreview > div {
+  display: flex;
+  width: 215px;
+  height: 40px;
+}
+#USreview img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0px;
+}
+#USreview > div > div {
+  margin-left: 15px;
+}
+#USreview > div > div > div:nth-child(1) {
+  color: #2d2d32;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+#USreview > div > div > div:nth-child(2) {
+  color: #b4b4be;
+  font-size: 14px;
+}
 
 /* End of userSay */
 
@@ -297,16 +328,17 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
   background: #f8f8fb;
+  margin-top: 40px;
 }
 #downloadApp > div:nth-child(1) {
   width: 40%;
   text-align: center;
 }
 #downloadApp img {
-  width: 60%;
+  width: 65%;
 }
-#numberTab {
-  display: flex;
+.contentDiv {
+  margin-top: 50px;
 }
 .contentDiv > div:nth-child(1) {
   font-size: 24px;
@@ -336,7 +368,8 @@ img {
   font-weight: 400;
 }
 #numberTab {
-  border: 1px solid black;
+  display: flex;
+  border: 1px solid #b4b4be;
   width: 315px;
   margin-top: 10px;
 }
@@ -352,6 +385,7 @@ img {
   width: 100%;
   border: 0px;
   background: #f8f8fb;
+  font-size: 16px;
 }
 #inputDiv > button {
   padding: 15px 30px;
@@ -362,6 +396,8 @@ img {
   border-radius: 5px;
   margin-left: 10px;
   border: 0px;
+  height: 52px;
+  margin-top: 10px;
 }
 #inputDiv {
   display: flex;
@@ -375,4 +411,35 @@ img {
 }
 #downloadTabs img {
   width: 100%;
+}
+
+/* End of downloadtab */
+
+#lastDiv {
+  width: 1180px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#lastDiv > div {
+  padding: 25px 15px;
+}
+#lastDiv h1 {
+  color: #2d2d32;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+#lastDiv p,
+ul {
+  color: #2d2d32;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+#marginBottomRemove > p {
+  margin-bottom: 0px;
+}
+#lastDiv ul {
+  padding-left: 20px;
 }
