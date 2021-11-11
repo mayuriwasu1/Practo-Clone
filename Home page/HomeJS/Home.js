@@ -1,4 +1,5 @@
 
+
 function showtheloction(){
   var loctiondata = document.querySelector(".loctiondata")
     loctiondata.style.display = "block"
@@ -74,6 +75,9 @@ function showsuggestioninlist(list){
 
 
 
+
+
+
 // this code for last section user get link here text
 document.querySelector("#Sendmes").addEventListener("click", Sendmes)
 
@@ -95,4 +99,37 @@ const mediaQuery = window.matchMedia('(max-width: 400px)')
 if (mediaQuery.matches) {
   document.querySelector(".heaing6 > h4").textContent = "Find doctors in top specialities";
   document.querySelector(".heaing6 > h4").style.fontSize = "medium";
+}
+
+
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+
+
+
+
+
+
+function showrespovemeni(){
+  document.querySelector(".respoviesNavbarleftmanu").classList.toggle('active')
+}
+
+function closethermeanu(){
+  document.querySelector(".respoviesNavbarleftmanu").classList.toggle('active')
 }

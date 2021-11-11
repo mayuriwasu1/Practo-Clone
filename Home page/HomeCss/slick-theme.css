@@ -237,3 +237,16 @@
         opacity: -2;
     }
 }
+
+
+@media screen and (min-width: 431px) and (max-width: 768px){
+    .slick-next , .slick-prev{
+        background-image: none;
+        background-color:transparent;
+    }
+
+    .slick-dots{
+        opacity: -2;
+    }
+
+}

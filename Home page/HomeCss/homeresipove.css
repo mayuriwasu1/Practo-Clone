@@ -1,6 +1,843 @@
 
-
-.responsive1sectionscard1{
-    background-image: url("./firstsection/card1.webp");
-    background-size:cover;
+@media screen and (max-width: 1444px){
+    body {
+        width: 1600px;
+        margin: auto;
+    }
 }
+
+
+@media screen and (min-width: 857px) and (max-width: 1024px){
+    body {
+        width: 1600px;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (min-width: 431px) and (max-width: 768px){
+    body{
+       width: 550px;
+       margin: auto;
+    }
+    #respoviesNavbarMaiandiv {
+        display: block;
+    }
+    #NavBar{
+        display: none;
+    }
+    #responsivefourSection{
+        display: block;
+    }
+
+    .resfouimgdiv1 {
+        width: 50%;
+    }
+    .resfouimgdiv1 > img{
+        width: 60%;
+    }
+
+  }
+
+@media screen and (min-width: 0px) and (max-width: 430px){
+    body{
+        width: 100%;
+    }
+    #Homepagewarp{
+        width: 100%;
+    }
+     #NavBar{
+        display: none;
+    }
+    #respoviesNavbarMaiandiv {
+        display: block;
+    }
+    #responsivefourSection{
+      display: block;
+    }
+    .allpadesrespvenav > ul > li > a {
+       padding: 2px;
+    }
+   
+}
+
+/* This section css for responsive nav bar */
+
+#respoviesNavbar{
+    background-color: #fafafa;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.respoviesNavbarleftmanu{
+    width: 80%;
+    margin-top: -70px;
+    position: absolute;
+    left: -800px;
+    height:700px;
+    transition: 0.6s;
+    background-color: rgb(255, 255, 255);
+}
+
+.respoviesNavbarleftmanu.active{
+    left: 0px;
+}
+
+.respoviesNavbarleftmanuimg {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+}
+
+.respoviesNavbarleftmanuimg > i{
+    padding: 15px;
+    color: #787887;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.allpadesrespvenav > ul > li > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #414146;
+    padding:10px;
+}
+
+.allpadesrespvenav > ul > li{
+    list-style: none;
+    padding: 8px;
+}
+
+.allpadesrespvenav > ul > li > a > i{
+    color: #787887;
+    font-size: 16px;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+
+
+.allpadesrespvenav > ul > li > a > h6{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+
+
+.renavbarimg{
+    width: 75%;
+}
+
+.renavba > a > button{
+    width: 110%;
+        height: 30px;
+        color: #14bef0;
+        padding: 5px 8px 8px 8px;
+        border-radius: 3px;
+        border: solid 1px #14bef0;
+        background-color: transparent;
+}
+
+
+
+
+#responsivefourSection{
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.resfouimgdiv1section , .resfouimgdiv2section{
+    display: flex;
+    gap: 10px;
+}
+
+.resFouSeheadingt {
+    margin-bottom: 5px;
+}
+
+.resfouimgdiv1 {
+    width: 100%;
+}
+.resfouimgdiv1 > img{
+    width: 100%;
+}
+
+/* this section is first section on responsive this is css start */
+
+#responsive1section {
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.responsive1sectionsildercards > div{
+    padding: 10px;
+    margin: 10px;
+}
+
+.responsive1sectionscards{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.responsive1sectionscard1 {
+    background-image: url("./respoviesimg/firstsection/card1.webp");
+}
+
+.responsive1sectionscard2{
+    background-image: url("./respoviesimg/firstsection/card2.webp");
+   
+}
+.responsive1sectionscard3{
+    background-image: url("./respoviesimg/firstsection/card3.webp");
+   
+}
+.responsive1sectionscard4{
+    background-image: url("./respoviesimg/firstsection/card4.webp");
+}
+
+.responsive1sectionscards > .res1cright{
+    width: 60%;
+    padding: 10px;
+}
+
+.res1cright > .res1coffer{
+    font-size: 10px;
+}
+
+.res1cright > .res1coffer > p{
+    width: 20%;
+    margin-top: 3px;
+    margin-left: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: #B6499B;
+    font-size: 100%;
+    background-color: white;
+    padding: 5px;
+}
+
+.res2ctext {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.res2ctext > h3{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.res3ctext > h5{
+    color: white;
+    margin-top: 15px;
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+.res3ctext > h5 > i{
+    font-size: 12px;
+}
+
+/* this section is first section on responsive this is css end */
+
+
+
+
+/* this section is second section on responsive this is css start */
+.responsive2sectioncadsdiv{
+    display: flex;
+    padding: 10px 10px 5px 10px;
+    gap: 5px;
+}
+
+.responsive2Sectionheding{
+    padding:10px 0px 0px 10px;
+}
+
+.responsive2Sectionheding > h6{
+   
+    font-size: 15px;
+
+}
+
+.responsive2cards{
+    width: 50%;
+    padding:10px 0px 0px 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.responsive2textdivlogo {
+    padding: 15px 10px;
+    display: flex;
+}
+
+.responsive2textdivlogo > h5 {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.responsive2textdivlogo > i{
+    margin-left: 40px;
+    font-size: 12px;
+    color: #14bef0;
+}
+
+.responsive2imgdivlogo {
+    padding: 10px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.responsive2imgdivlogo > i {
+   margin-left: 30px;
+   font-size: 12px;
+   color: #14bef0;
+}
+.responsive2imgdivlogo > img{
+    width: 70%;
+}
+
+.responsive2headingtext {
+    padding: 0px 6px 0px 6px;
+    margin-top: -7px;
+}
+
+.responsive2headingtext > h5{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+
+.responsive2imgbottomdiv{
+    padding: 10px 0px ;
+    width:100%;
+    align-items: center;
+}
+
+.responsive2imgbottomdiv > img{
+    width: 100%;
+}
+
+.responsive2imgbottomdiv2 > img{
+    margin-top: 15px;
+}
+
+/* this section is second section on responsive this is css end */
+
+
+
+
+/* this section is third section on responsive this is css start */
+
+#responsive3Section{
+    margin-top: 30px;
+    padding: 12px;
+}
+
+
+.responsive3Sectionhending {
+   padding: 10px 0px; 
+}
+
+.responsive3Sectionallcard {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.responsive3Sectionallcard::-webkit-scrollbar{
+    display: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.responsive3Sectionallcard > div {
+    width: 150px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   padding: 5px;
+    border: 1px solid rgba(109, 109, 109, 0.288);
+}
+
+.responsive3Sectioncard > a {
+   text-decoration: none;
+   color: #414146;
+   padding: 10px 10px 0px 10px;
+}
+
+
+.responsive3Sectioncardtopimg {
+    width: 150px;
+    height: 90px;
+    border-bottom: 1px solid rgba(121, 121, 121, 0.24);
+}
+
+.responsive3Sectioncardmoddeltext {
+    width: 100%;
+    margin-top: 15px;
+}
+.responsive3Sectioncardmoddeltext > h6{
+   font-size: 16px;
+}
+
+.responsive3Sectioncardbottomtext{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.responsive3Sectioncardtopimg > img {
+    width: 100%;
+    height: 90%;
+}
+
+
+/* this section is third section on responsive this is css end */
+
+
+
+
+/* this section is foruth section on responsive this is css start */
+
+
+#responsive4section{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.responsive4sectionheading {
+    padding: 0px 10px 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+.responsive4Sectionallcard {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 10px;
+    gap:8px;
+}
+
+.r4Sc1 > a {
+    text-decoration: none;
+    color: #414146;
+    padding:0px 10px;
+ }
+
+.responsive4Sectionallcard > .r4Scard{
+    width: 200px;
+    padding:0px 10px ;
+}
+
+.r4sc1heding {
+   width: 130px;
+   height: 60%;
+   margin-bottom: 20px;
+}
+
+.r4sc1heding  > p{
+    font-size: 16px;
+    color: #2d2d32;
+    line-height: 22px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.r4sc1bottomtext > span{
+    font-size: 14px;
+    color: #fff;
+}
+
+.r4sc1bottomtext > i {
+    color: #fff;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+
+.responsive4Sectionallcard > div:nth-child(1){
+    background-color: rgb(255, 218, 134);
+}
+
+.responsive4Sectionallcard > div:nth-child(2){
+    background-color: rgb(236, 170, 204);
+}
+.responsive4Sectionallcard > div:nth-child(3){
+    background-color: rgb(145, 210, 206);
+}
+.responsive4Sectionallcard > div:nth-child(4){
+    background-color: rgb(255, 218, 134);
+}
+
+/* this section is foruth section on responsive this is css end */
+
+
+
+/* this section is five section on responsive this is css start */
+
+#responsive5section{
+    margin-top: 30px;
+
+}
+
+.re5toptext{
+    padding: 0px 10px 0px 10px;
+}
+
+.re5toptext  >h2{
+    font-size: 16px;
+}
+
+.re5toptext  > .re5toptextbottomh3{
+    margin-top: 10px;
+    width: 60%;
+}
+
+.re5toptext  > .re5toptextbottomh3 h3{
+    font-size: 12px;
+    font-weight: 400;
+    color: #545457;
+}
+
+.responsive5Sectionallcard {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding: 10px;
+    font-size: inherit;
+}
+.responsive5Sectionallcard >div{
+   width:400px;
+}
+.responsive5Sectioncard > a {
+    transition: transform .1s linear 0s;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 16%);
+    display: block;
+    border-radius: 4px;
+    width:230px;
+    display: block;
+    text-decoration: none;
+    color: #414146;
+}
+
+.responsive5Sectioncardtopimg {
+    width: 100%;  
+    height: 42%; 
+}
+
+
+.responsive5Sectioncardtopimg > img {
+    width: 100%;
+    height:100%;
+}
+
+
+.res5headingte {
+    padding:5px 5px;
+  
+}
+
+.res5headingte > h3 {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.res5subhedingngte {
+    padding: 0px 8px;
+}
+.res5subhedingngte{
+    margin: 10px 0px;
+}
+.res5subhedingngte > p{
+    font-size: 12px;
+}
+
+.res5prices {
+    margin: 6px 0;
+    margin-top: 10px;
+    padding: 13px 5px;
+}
+
+.res5prices > span {
+   margin-right:6px ;
+   font-family: Camphor,sans-serif;
+}
+
+.res5prices  > span:nth-child(1) {
+    font-size:18px;
+    font-weight:400;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.res5prices  > span:nth-child(2) {
+    vertical-align: middle;
+    font-size: 11px;
+    color: #b4b4be;
+    text-decoration: line-through;
+}
+
+.res5prices  > span:nth-child(3) {    
+    vertical-align: middle;
+    font-size: 12px;
+    color: #00a500;
+}
+
+/* this section is five section on responsive this is css end */
+
+
+
+
+
+/* this section is six section on responsive this is css start */
+
+#responsive6section{
+    margin-top: 30px;
+}
+
+.res6seheadingt{
+    padding: 0px 10px 0px 10px;
+}
+
+.res6seheadingt  >h3{
+    color: #414146;
+    font-size: 16px;
+}
+
+.res6seheadingt  > .res6seheadingbottomte{
+    color: #414146;
+    margin-top: 5px;
+    width: 60%;
+}
+
+.res6seheadingt  > .res6seheadingbottomte p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #545457;
+}
+
+
+
+.responsive6Sectionallcard {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding: 10px;
+    font-size: inherit;
+}
+
+.responsive5Sectionallcard >div{
+    width:400px;
+ }
+
+.responsive6Sectioncard > a {
+    transition: transform .1s linear 0s;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 16%);
+    display: block;
+    border-radius: 4px;
+    width:160px;
+    text-decoration: none;
+    color: #414146;
+}
+
+.responsive6Sectioncardtopimg {
+    padding: 1px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.responsive6Sectioncardtopimg  > img{
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.res6headingte {
+    width: 90%;
+    height: 35px;
+    padding: 12px;
+}
+
+.res6headingte > h3{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.res6prices {
+    display: flex;
+    align-items: center;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 12px;
+        color: #14bef0;
+        line-height: 1.21;
+}
+
+
+.res6prices > i{
+    margin-left: 6px;
+    font-size: 14px;
+    width: 1em;
+}
+
+
+/* this section is six section on responsive this is css end */
+
+
+
+
+/* this section is sevenfooter section on responsive this is css start */
+
+#respovies7footersection{
+    background-color: #f0f0f5;
+    margin-top: 35px;
+    padding-bottom: 15px;
+}
+
+.res7footerimgdiv {
+    text-align: center;
+    padding: 25px 15px 0px 15px;
+}
+
+.res7defirstdiv {
+    display: flex;
+    padding: 5px 20px 0px 20px;
+    align-items: center;
+}
+.res7plogoimgdiv {
+    width: 18%;
+}
+.res7plogoimgdiv > img{
+    width: 100%;
+}
+
+.res7setextdiv {
+    width: 100%;
+ padding: 10px;
+}
+
+.res7setextdiv > h6{
+    font-size: 17px;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.res7setextdiv > p {
+    margin-top:2px;
+    font-size: 14px;
+}
+
+.res7thirdtextdiv {
+   width: 80%;
+   margin: auto;
+   padding: 5px;
+}
+
+.res7thirdtextdiv > ul {
+    list-style: none;
+   
+}
+
+
+.res7thirdtextdiv > ul > li {
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 8px;
+}
+
+.res7thirdtextdiv > ul > li > i {
+    margin-right: 6px;
+    color: #14bef0;
+    font-size: inherit;
+}
+
+
+.res7lastbuttondiv {
+    text-align: center;
+}
+.res7lastbuttondiv >a>button{
+    width: 92%;
+    padding: 15px;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    background-color: #28328c;
+}
+
+/* this section is sevenfooter section on responsive this is css end */
+
+
+/* this section is Eightfooter section on responsive this is css start */
+#responsive8footer2section{
+    margin-top: -5px;
+    padding: 0px 20px 0px 20px;
+}
+
+
+.collapsible {
+    background-color: #f0f0f5;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  
+ 
+  .active, .collapsible:hover {
+    background-color: #f0f0f5;
+  }
+  
+  .content {
+      margin-top: -10px;
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f0f0f5;
+  }
+
+  .content > a {
+      display: block;
+      padding: 10px 0px;
+     text-decoration: none;
+     font-size: 14px;
+     color: #444;
+  }
+
+  /* this section is Eightfooter section on responsive this is css end */
+
+
+  /* this section is Ninefooter section on responsive this is css start */
+
+  #responsive9footer3section {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .res9fo3stext{
+    padding: 15px;
+    background-color: #f0f0f5;
+    color: #000;
+  }
+
+  .res9fo3stext >p {
+      font-size: 10px;
+  }

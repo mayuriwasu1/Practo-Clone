@@ -17,32 +17,65 @@
 <body>
     <div id="Homepage">
         <!-- Nav bhar started  -->
+
+    <div id="respoviesNavbarMaiandiv">
+        <div id="respoviesNavbar">
+            <div class="renavbaricon">
+                <i class="fas fa-bars" onclick="showrespovemeni()"></i>
+            </div>
+            <div class="renavbarimg">
+                <img src="./Home Page Images/practonav logo/practo.svg" alt="">
+            </div>
+            <div class="renavba">
+                <a href=""><button>Sign in</button></a>
+            </div>
+           
+        </div>
+        <div class="respoviesNavbarleftmanu">
+            <div class="respoviesNavbarleftmanuimg"> <i class="fas fa-times" onclick="closethermeanu()"></i> <img src="./Home Page Images/practonav logo/practo.svg" alt=""> </div>
+
+            <div class="allpadesrespvenav">
+                <ul>
+                    <li><a href=""><i class="fas fa-search"></i><h6>Find Doctors -</h6><p> Book an appointment</p></a></li></a>
+                    <li><a href=""><i class="fas fa-video"></i><h6>Video Consult -</h6><p>  Consult top doctors</p></a></li>
+                    <li><a href=""><i class="fas fa-prescription-bottle-alt"></i><h6>Medicines -</h6><p>  Practo pharmacy</p></a></li>
+                    <li><a href=""><i class="fas fa-flask"></i><h6>Lab Tests -</h6><p>  Expert surgical care</p></a></li>
+                    <li><a href=""><i class="fas fa-book-medical"></i><h6>Surgeries -</h6><p>  Expert surgical care</p></a></li>
+                    <li><a href=""></a></li>
+
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+
         <div id="NavBar">
             <!-- Nav have four section -->
             <div class="NavFirstSection">
                 <img src="./Home Page Images/practonav logo/practo.svg" alt="" />
             </div>
             <div class="NavSecondSection">
-                <div class="second1Text">
+                <a href=""><div class="second1Text">
                     <h4>Find Doctors</h4>
                     <p>Book an appointment</p>
-                </div>
-                <div class="second2Text">
+                </div></a>
+                <a href=""><div class="second2Text">
                     <h4>Video Consult</h4>
                     <p>Consult top doctors</p>
-                </div>
-                <div class="second3Text">
+                </div></a>
+                <a href=""><div class="second3Text">
                     <h4>Medicines</h4>
                     <p>Practo pharmacy</p>
-                </div>
-                <div class="second4Text">
+                </div></a>
+                <a href=""><div class="second4Text">
                     <h4>Lab Tests</h4>
                     <p>Book tests & checkup</p>
-                </div>
-                <div class="second5Text">
+                </div></a>
+                <a href=""><div class="second5Text">
                     <h4>Surgeries</h4>
                     <p>Expert surgical care</p>
-                </div>
+                </div></a>
             </div>
             <div class="NavThirdSection">
                <ul>
@@ -50,18 +83,18 @@
                     <i class="fas fa-angle-down"></i>
                         <div id="forProvidersmanu" class="samenav2">
                             <ul>
-                                <li id="newtext">Practo Prime <span id="new">New</span></li>
-                                <li>Software for providers</li>
-                                <li>List your practice for Free</li>
-                                <li>Corporate wellness</li>
+                               <a href=""><li id="newtext">Practo Prime <span id="new">New</span></li></a> 
+                               <a href=""> <li>Software for providers</li></a>
+                               <a href=""><li>List your practice for Free</li></a> 
+                               <a href=""><li>Corporate wellness</li></a> 
                             </ul>
                         </div>
                    </li>
                    <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
                     <div id="Securitysmanu" class="samenav2">
                         <ul>
-                            <li id="newtext">Data Security</li>
-                            <li>Help</li>
+                            <a href=""><li id="newtext">Data Security</li></a>
+                           <a href=""><li>Help</li></a> 
                         </ul>
                     </div>
                   
@@ -82,8 +115,8 @@
             <div class="HomeSecondsection">
                 <div class="input1part">
                 <div class="loctionmanin secondbar">
-                    <div class="loction loctionserch" >
-                        <i class="fas fa-map-marker-alt"></i><input class="i1n" onclick="showtheloction()" type="text" placeholder="Pune">
+                    <div class="loction loctionserch1" >
+                        <i class="fas fa-map-marker-alt"></i><input class="i1n" onclick="showtheloction()" type="text" placeholder="Pune"><i class="fas fa-chevron-down"></i>
                         <i class="fas fa-times-circle" onclick="locationsuggestionnone()"></i>
                     </div>
                     <div class="loctiondata">
@@ -105,7 +138,22 @@
                 </div>
                 <div class="serachmain secondbar">
                     <div class="search loctionserch">
-                        <i class="fas fa-search"></i><input class="i2n" type="text" placeholder="Search doctors,clinics,hospitals,etc.">
+                        <i class="fas fa-search"></i><input class="i2n" type="text" onclick="showthesearch()" placeholder="Search doctors,clinics,hospitals,etc.">
+                        <i class="fas fa-times-circle" id="wrong" onclick="searchsuggestionnone()"></i>
+                    </div>
+                    <div class="searchdata">
+                        <ul>
+                            <li style="color: #14bef0; font-weight: 700">Use My location</li>
+                            <li style="color: #14bef0; font-weight: 700">Search in entire</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Pimpri-Chinchwad</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Hadapsar</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Kothrud</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Wakad</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Aundh</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Baner</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Pimple Saudagar</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Kharadi</li>
+                        </ul>
                     </div>
                 </div>
                 </div>
@@ -132,6 +180,26 @@
             </div>
             <!-- third part of end here -->
 
+
+            <div id="responsivefourSection">
+                    <div class="resFouSeheadingt">
+                        <h3>Our Offerings</h3>
+                    </div>
+                    <div class="resfouimgdiv1section">
+                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card1.webp" alt="">
+                        </div> 
+                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card2.webp" alt="">
+                        </div> 
+                    </div>
+                    <div class="resfouimgdiv2section">
+                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card3.webp" alt="">
+                        </div> 
+                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card4.webp" alt="">
+                        </div>
+                        <div class="resfouimgdiv1"> <img src="./HomeCss/respoviesimg/main third section/card5.webp" alt="">
+                        </div>
+                    </div>
+            </div>
 
             <!-- Fourth part of start here -->
             <div id="HomeFourSection">
@@ -411,7 +479,7 @@
 
     <div id="responsive1section">
         <div class="responsive1sectionsilder">
-            <div class="responsive1sectionsildercards">
+            <div class="responsive1sectionsildercards single">
                 <div class="responsive1sectionscard1 responsive1sectionscards">
                         <div class="res1cright">
                             <div class="res1coffer">
@@ -425,12 +493,499 @@
                             </div>
                         </div>
                 </div>
+                <div class="responsive1sectionscard2 responsive1sectionscards">
+                    <div class="res1cright">
+                        <div class="res1coffer">
+                            <p>OFFER</p>
+                        </div>
+                        <div class="res2ctext">
+                            <h3>Download the App & get ₹200 HealthCash</h3>
+                        </div>
+                        <div class="res3ctext">
+                            <h5>Download Now  <i class="fas fa-chevron-right"></i></h5>
+                        </div>
+                    </div>
+            </div>
+            <div class="responsive1sectionscard3 responsive1sectionscards">
+                <div class="res1cright">
+                    <div class="res1coffer">
+                        <p>OFFER</p>
+                    </div>
+                    <div class="res2ctext">
+                        <h3>Download the App & get ₹200 HealthCash</h3>
+                    </div>
+                    <div class="res3ctext">
+                        <h5>Download Now  <i class="fas fa-chevron-right"></i></h5>
+                    </div>
+                </div>
+        </div>
+        <div class="responsive1sectionscard4 responsive1sectionscards">
+            <div class="res1cright">
+                <div class="res1coffer">
+                    <p>OFFER</p>
+                </div>
+                <div class="res2ctext">
+                    <h3>Download the App & get ₹200 HealthCash</h3>
+                </div>
+                <div class="res3ctext">
+                    <h5>Download Now  <i class="fas fa-chevron-right"></i></h5>
+                </div>
+            </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="responsive2Section">
+        <div class="responsive2Sectionheding">
+            <h6>Explore healthcare</h6>
+        </div>
+            <div class="responsive2sectioncadsdiv">
+                <div class="responsive2rightcard responsive2cards">
+                    <div class="responsive2imgdivlogo">
+                        <img src="./HomeCss/respoviesimg/secondsection/practo-plus-logo.svg" alt="">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="responsive2headingtext">
+                        <h5>24x7 Health Companion</h5>
+                    </div>
+                    <div class="responsive2imgbottomdiv">
+                        <img src="./HomeCss/respoviesimg/secondsection/card1.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="responsive2leftcard responsive2cards">
+                    <div class="responsive2textdivlogo">
+                        <h5>Download App</h5>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="responsive2headingtext">
+                        <h5>Get ₹200 HealthCash</h5>
+                    </div>
+                    <div class="responsive2imgbottomdiv responsive2imgbottomdiv2">
+                        <img src="./HomeCss/respoviesimg/secondsection/card2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+    </div>    
+
+    <div id="responsive3Section">
+        <div class="responsive3Sectionhending"><h4>Find doctors in top hospitals</h4></div>
+        <div class="responsive3Sectioncardbody">
+            <div class="responsive3Sectionallcard">
+
+                <div class="responsive3Sectioncard1 responsive3Sectioncard">
+                    <a href="">
+                        <div class="responsive3Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/thirdsection/card1.jfif" alt="">
+                        </div>
+                        <div class="responsive3Sectioncardmoddeltext">
+                            <h6>Motherhood <br> Hospital</h6>
+                        </div>
+                        <div class="responsive3Sectioncardbottomtext">
+                            <h6>Indiranagar + 7 centres</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="responsive3Sectioncard1 responsive3Sectioncard">
+                    <a href="">
+                        <div class="responsive3Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/thirdsection/card2.png" alt="">
+                        </div>
+                        <div class="responsive3Sectioncardmoddeltext">
+                            <h6>Motherhood <br> Hospital</h6>
+                        </div>
+                        <div class="responsive3Sectioncardbottomtext">
+                            <h6>Indiranagar + 7 centres</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="responsive3Sectioncard1 responsive3Sectioncard">
+                    <a href="">
+                        <div class="responsive3Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/thirdsection/card3.png" alt="">
+                        </div>
+                        <div class="responsive3Sectioncardmoddeltext">
+                            <h6>Motherhood <br> Hospital</h6>
+                        </div>
+                        <div class="responsive3Sectioncardbottomtext">
+                            <h6>Indiranagar + 7 centres</h6>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="responsive3Sectioncard1 responsive3Sectioncard">
+                    <a href="">
+                        <div class="responsive3Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/thirdsection/card2.png" alt="">
+                        </div>
+                        <div class="responsive3Sectioncardmoddeltext">
+                            <h6>Motherhood <br> Hospital</h6>
+                        </div>
+                        <div class="responsive3Sectioncardbottomtext">
+                            <h6>Indiranagar + 7 centres</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="responsive3Sectioncard1 responsive3Sectioncard">
+                    <a href="">
+                        <div class="responsive3Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/thirdsection/card2.png" alt="">
+                        </div>
+                        <div class="responsive3Sectioncardmoddeltext">
+                            <h6>Motherhood <br> Hospital</h6>
+                        </div>
+                        <div class="responsive3Sectioncardbottomtext">
+                            <h6>Indiranagar + 7 centres</h6>
+                        </div>
+                    </a>
+                </div>
+
+
             </div>
         </div>
     </div>
 
 
+    <div id="responsive4section">
+            <div class="responsive4sectionheading">
+                <h5>Download Practo App</h5>
+            </div>
+        <div class="responsive4Sectionallcard">
+            <div class="r4Sc1 r4Scard">
+                <a href="">
+                    <div class="r4sc1heding">
+                        <p>Get ₹200 HealthCash on signup</p>
+                    </div>
+                    <div class="r4sc1bottomtext">
+                        <span>Download App</span><i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="r4Sc1 r4Scard">
+                <a href="">
+                    <div class="r4sc1heding">
+                        <p>Book a doctor appointment and say no to wait times</p>
+                    </div>
+                    <div class="r4sc1bottomtext">
+                        <span>Download App</span><i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="r4Sc1 r4Scard">
+                <a href="">
+                    <div class="r4sc1heding">
+                        <p>Get ₹200 HealthCash on signup</p>
+                    </div>
+                    <div class="r4sc1bottomtext">
+                        <span>Download App</span><i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="r4Sc1 r4Scard">
+                <a href="">
+                    <div class="r4sc1heding">
+                        <p>Get ₹200 HealthCash on signup</p>
+                    </div>
+                    <div class="r4sc1bottomtext">
+                        <span>Download App</span><i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
+
+    <div id="responsive5section">
+        <div class="re5toptext">
+            <h2>Affordable full body health checkups</h2>
+            <div class="re5toptextbottomh3">
+                <h3>Free home sample collection for all health checkups</h3>
+            </div>
+        </div>
+            <div class="responsive5Sectionallcard">
+                <div class="responsive5Sectioncard1 responsive5Sectioncard">
+                    <a href="">
+                        <div class="responsive5Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/five section/card.webp" alt="">
+                        </div>
+                        <div class="res5headingte">
+                            <h3>Comprehensive Young Indian Health Checkup</h3>
+                        </div>
+                        <div class="res5subhedingngte">
+                            <p>Ideal for male aged 21 to 40 years</p>
+                        </div>
+                        <div class="res5prices">
+                            <span class="current">₹2999</span><span class="original">₹3900</span><span class="discount">24% off</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="responsive5Sectioncard1 responsive5Sectioncard">
+                    <a href="">
+                        <div class="responsive5Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/five section/card2.webp" alt="">
+                        </div>
+                        <div class="res5headingte">
+                            <h3>Active Professional Health Checkup</h3>
+                        </div>
+                        <div class="res5subhedingngte">
+                            <p>Ideal for male aged 21 to 40 years</p>
+                        </div>
+                        <div class="res5prices">
+                            <span class="current">₹2999</span><span class="original">₹3900</span><span class="discount">24% off</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="responsive5Sectioncard1 responsive5Sectioncard">
+                    <a href="">
+                        <div class="responsive5Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/five section/card3.webp" alt="">
+                        </div>
+                        <div class="res5headingte">
+                            <h3>Active Professional Health Checkup</h3>
+                        </div>
+                        <div class="res5subhedingngte">
+                            <p>Ideal for male aged 21 to 40 years</p>
+                        </div>
+                        <div class="res5prices">
+                            <span class="current">₹2999</span><span class="original">₹3900</span><span class="discount">24% off</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="responsive5Sectioncard1 responsive5Sectioncard">
+                    <a href="">
+                        <div class="responsive5Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/five section/card4.webp" alt="">
+                        </div>
+                        <div class="res5headingte">
+                            <h3>Active Professional Health Checkup</h3>
+                        </div>
+                        <div class="res5subhedingngte">
+                            <p>Ideal for male aged 21 to 40 years</p>
+                        </div>
+                        <div class="res5prices">
+                            <span class="current">₹2999</span><span class="original">₹3900</span><span class="discount">24% off</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="responsive5Sectioncard1 responsive5Sectioncard">
+                    <a href="">
+                        <div class="responsive5Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/five section/card5.webp" alt="">
+                        </div>
+                        <div class="res5headingte">
+                            <h3>Active Professional Health Checkup</h3>
+                        </div>
+                        <div class="res5subhedingngte">
+                            <p>Ideal for male aged 21 to 40 years</p>
+                        </div>
+                        <div class="res5prices">
+                            <span class="current">₹2999</span><span class="original">₹3900</span><span class="discount">24% off</span>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    <div id="responsive6section">
+            <div class="res6seheadingt">
+                <h3>Ask top doctors about</h3>
+                <div class="res6seheadingbottomte">
+                    <p>30,000+ doctors across 20+ specialities</p>
+                </div>
+            </div>
+            <div class="responsive6Sectionallcard">
+                <div class="responsive6Sectioncard1 responsive6Sectioncard">
+                    <a href="">
+                        <div class="responsive6Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/six section/card1.png" alt="">
+                        </div>
+                        <div class="res6headingte">
+                            <h3>Hairloss, pimples or skin issues?</h3>
+                        </div>
+                        <div class="res6prices">
+                            <span><p>Consult Now</p></span><i class="fas fa-angle-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="responsive6Sectioncard1 responsive6Sectioncard">
+                    <a href="">
+                        <div class="responsive6Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/six section/card2.webp" alt="">
+                        </div>
+                        <div class="res6headingte">
+                            <h3>Irregular periods or pregnancy doubts?</h3>
+                        </div>
+                        <div class="res6prices">
+                            <span><p>Consult Now</p></span><i class="fas fa-angle-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="responsive6Sectioncard1 responsive6Sectioncard">
+                    <a href="">
+                        <div class="responsive6Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/six section/card3.webp" alt="">
+                        </div>
+                        <div class="res6headingte">
+                            <h3>Comprehensive Young Indian Health Checkup</h3>
+                        </div>
+                        <div class="res6prices">
+                            <span><p>Consult Now</p></span><i class="fas fa-angle-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="responsive6Sectioncard1 responsive6Sectioncard">
+                    <a href="">
+                        <div class="responsive6Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/six section/card4.webp" alt="">
+                        </div>
+                        <div class="res6headingte">
+                            <h3>Comprehensive Young Indian Health Checkup</h3>
+                        </div>
+                        <div class="res6prices">
+                            <span><p>Consult Now</p></span><i class="fas fa-angle-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="responsive6Sectioncard1 responsive6Sectioncard">
+                    <a href="">
+                        <div class="responsive6Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/six section/card5.webp" alt="">
+                        </div>
+                        <div class="res6headingte">
+                            <h3>Comprehensive Young Indian Health Checkup</h3>
+                        </div>
+                        <div class="res6prices">
+                            <span><p>Consult Now</p></span><i class="fas fa-angle-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="responsive6Sectioncard1 responsive6Sectioncard">
+                    <a href="">
+                        <div class="responsive6Sectioncardtopimg">
+                            <img src="./HomeCss/respoviesimg/six section/card6.webp" alt="">
+                        </div>
+                        <div class="res6headingte">
+                            <h3>Comprehensive Young Indian Health Checkup</h3>
+                        </div>
+                        <div class="res6prices">
+                            <span><p>Consult Now</p></span><i class="fas fa-angle-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+    <div id="respovies7footersection">
+            <div class="res7footerimgdiv">
+                <img src="./HomeCss/respoviesimg/sevenfooter1/app-download-banner.svg" alt="">
+            </div>
+            <div class="res7sediv">
+                <div class="res7defirstdiv">
+                    <div class="res7plogoimgdiv">
+                        <img src="./HomeCss/respoviesimg/sevenfooter1/proctoimg.png" alt="">
+                    </div>
+                    <div class="res7setextdiv">
+                        <h6>Download the Practo app</h6>
+                        <p>Get Rs. 200 HealthCash</p>
+                    </div>
+                 </div>
+                <div class="res7thirdtextdiv">
+                    <ul>
+                        <li class="app-download__bottom__description"><i class="fas fa-check"></i>Get Rs. 200 HealthCash</li>
+                        <li class="app-download__bottom__description"><i class="fas fa-check"></i>Live medicine order tracking</li>
+                        <li class="app-download__bottom__description"><i class="fas fa-check"></i>Exclusive healthcare packages</li>
+                    </ul>
+                </div>
+                <div class="res7lastbuttondiv">
+                    <a href=""><button>Download the app now</button></a>
+                </div>
+            </div>
+    </div>    
+
+    <div id="responsive8footer2section">
+
+        <button type="button" class="collapsible">Practo</button>
+        <div class="content">
+                <a href="">About</a>
+                <a href="">Blog</a>
+                <a href="">Careers</a>
+                <a href="">Press</a>
+                <a href="">Contact Us</a> 
+        </div>
+        <button type="button" class="collapsible">For Patients</button>
+        <div class="content">
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+            <a href="">Press</a>
+            <a href="">Contact Us</a>
+        </div>
+        <button type="button" class="collapsible">For Doctors</button>
+        <div class="content">
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+            <a href="">Press</a>
+            <a href="">Contact Us</a>
+        </div>
+        <button type="button" class="collapsible">For Clinics</button>
+        <div class="content">
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+            <a href="">Press</a>
+            <a href="">Contact Us</a>
+        </div>
+        <button type="button" class="collapsible">For Hospitals</button>
+        <div class="content">
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+            <a href="">Press</a>
+            <a href="">Contact Us</a>
+        </div>
+        <button type="button" class="collapsible">More</button>
+        <div class="content">
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+            <a href="">Press</a>
+            <a href="">Contact Us</a>
+        </div>
+        <button type="button" class="collapsible">Social</button>
+        <div class="content">
+            <a href="">Facebook</a>
+            <a href="">Insgram</a>
+            <a href="">Careers</a>
+            <a href="">Press</a>
+            <a href="">Contact Us</a>
+        </div>
+
+    </div>
+
+    <div id="responsive9footer3section">
+        <div class="res9fo3s">
+            <img src="./Home Page Images/practonav logo/practo.svg" alt="">
+        </div>
+        <div class="res9fo3stext">
+            <p>Copyright © 2017, Practo. All rights reserved.</p>
+        </div>
+    </div>
 
 </div>
 
@@ -442,6 +997,7 @@
         <script src="./HomeJS/slick.min.js"></script>
         <script src="./HomeJS/silder1.js"></script>
         <script src="HomeJS/Home.js"></script>
+        <script src="./HomeJS/serch.js"></script>
 </body>
 
 </html>
