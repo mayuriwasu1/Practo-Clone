@@ -115,7 +115,7 @@
             <div class="HomeSecondsection">
                 <div class="input1part">
                 <div class="loctionmanin secondbar">
-                    <div class="loction loctionserch" >
+                    <div class="loction loctionserch1" >
                         <i class="fas fa-map-marker-alt"></i><input class="i1n" onclick="showtheloction()" type="text" placeholder="Pune"><i class="fas fa-chevron-down"></i>
                         <i class="fas fa-times-circle" onclick="locationsuggestionnone()"></i>
                     </div>
@@ -138,7 +138,22 @@
                 </div>
                 <div class="serachmain secondbar">
                     <div class="search loctionserch">
-                        <i class="fas fa-search"></i><input class="i2n" type="text" placeholder="Search doctors,clinics,hospitals,etc.">
+                        <i class="fas fa-search"></i><input class="i2n" type="text" onclick="showthesearch()" placeholder="Search doctors,clinics,hospitals,etc.">
+                        <i class="fas fa-times-circle" id="wrong" onclick="searchsuggestionnone()"></i>
+                    </div>
+                    <div class="searchdata">
+                        <ul>
+                            <li style="color: #14bef0; font-weight: 700">Use My location</li>
+                            <li style="color: #14bef0; font-weight: 700">Search in entire</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Pimpri-Chinchwad</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Hadapsar</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Kothrud</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Wakad</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Aundh</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Baner</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Pimple Saudagar</li>
+                            <li onclick="selects(his)"><i class="fas fa-search"></i>Kharadi</li>
+                        </ul>
                     </div>
                 </div>
                 </div>
@@ -982,6 +997,7 @@
         <script src="./HomeJS/slick.min.js"></script>
         <script src="./HomeJS/silder1.js"></script>
         <script src="HomeJS/Home.js"></script>
+        <script src="./HomeJS/serch.js"></script>
 </body>
 
 </html>

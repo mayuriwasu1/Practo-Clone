@@ -185,15 +185,22 @@
     display: flex;
 }
 
-.HomeSecondsection>.input1part .secondbar > .loctionserch > input {
+.HomeSecondsection>.input1part .secondbar > .loctionserch1 > input , .loctionserch  >input{
     width: 90%;
     border: none;
     font-size: 13px;
     outline: none;
-  
 }
 
-.HomeSecondsection>.input1part .secondbar > .loctionserch {
+
+.HomeSecondsection>.input1part .secondbar > .loctionserch1 {
+    border: 1px solid rgba(148, 148, 148, 0.37);
+    border-radius: 2px;
+    width: 350px;
+    padding: 10px 12px 12px 8px;
+}
+
+.secondbar > .loctionserch{
     border: 1px solid rgba(148, 148, 148, 0.37);
     border-radius: 2px;
     width: 350px;
@@ -204,13 +211,19 @@
     display: none;
 }
 
-.HomeSecondsection>.input1part .secondbar > .loctionserch > i {
+.HomeSecondsection>.input1part .secondbar > .loctionserch1 > i {
     margin-right: 10px;
     margin-left: 6px;
     color: #5e5e61;
     font-size: 13px;
 }
-
+ 
+.secondbar > .loctionserch > i {
+    margin-right: 10px;
+    margin-left: 6px;
+    color: #5e5e61;
+    font-size: 13px;
+}
 
 .loctiondata{
     position: absolute;
@@ -223,7 +236,7 @@
     display: flex;
 }
 
-.fa-times-circle{
+.loctionserch1 > .fa-times-circle{
     font-size: 15px;
     display: none;
 }
@@ -264,6 +277,67 @@
     margin-right: 10px;
 }
 
+
+
+
+.search{
+    display: flex;
+}
+
+.search > .fa-times-circle{
+    font-size: 15px;
+    display: none;
+}
+
+
+.serachmain:active .searchdata{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+.searchdata{
+    position: absolute;
+    width: 24.4%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+    display: none;
+}
+
+.searchdata > ul {
+    list-style: none;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgba(95, 95, 95, 0.582);
+}
+
+.searchdata  li {
+    border-bottom:1px solid rgba(156, 156, 156, 0.185); 
+    padding: 15px 5px ;
+    font-size: 14px;
+    font-weight:400;
+}
+
+.searchdata li{
+    display: block;
+}
+
+.searchdata li:hover{
+    background-color: #d1d1d142;
+}
+
+.searchdata  li  i {
+    background-color: #cacaca3d;
+    border-radius: 50%;
+    color: #787887;
+    padding: 8px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+
+
 .HomeSecondsection>.adimg>img {
     width: 60%;
     height: 95%;
@@ -292,23 +366,43 @@
     }
 
     
-    .HomeSecondsection>.input1part .secondbar > .loctionserch > input {
+    .HomeSecondsection>.input1part .secondbar > .loctionserch1 > input {
         
         width: 70%;
     }
 
-    .HomeSecondsection>.input1part .secondbar > .loctionserch{
+    .secondbar > .loctionserch > input {
+        
+        width: 70%;
+    }
+
+    .HomeSecondsection>.input1part .secondbar > .loctionserch1{
         width: 90%;
         margin: auto;
         padding: 10px 0px;
     }
-    .HomeSecondsection>.input1part .loctionmanin> .loctionserch > input{
+
+    .secondbar > .loctionserch{
+        width: 90%;
+        margin: auto;
+        padding: 10px 0px;
+    }
+
+    .HomeSecondsection>.input1part .loctionmanin> .loctionserch1 > input{
         width: 70%;
         font-weight: 900;
         margin-top:-4px;
 
     }
-    .HomeSecondsection > .input1part > .loctionmanin > .loctionserch{
+
+    .loctionserch > input{
+        width: 70%;
+        font-weight: 900;
+        margin-top:-4px;
+
+    }
+
+    .HomeSecondsection > .input1part > .loctionmanin > .loctionserch1{
         border: none;
     }
     .fa-chevron-down{
@@ -378,7 +472,7 @@
     padding: 5px 5px 0px 5px;
     background-image: linear-gradient(105.21deg, rgb(55, 67, 171) 2.85%, rgb(20, 27, 86) 99.41%);
     border-radius: 32px;
-    height: 306px;
+    height: 300px;
     margin-top: 40px;
     color: #fff;
 }
@@ -422,8 +516,8 @@
 }
 
 #HomethirdSection>.thirdlinerback>.rightsideimg>img {
-    margin-left: -20px;
-    width: 86%;
+    margin-left: -27px;
+    width: 84%;
     margin-top: -5.6%;
 }
 

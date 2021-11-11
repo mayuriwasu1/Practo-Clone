@@ -1,4 +1,5 @@
 
+
 function showtheloction(){
   var loctiondata = document.querySelector(".loctiondata")
     loctiondata.style.display = "block"
@@ -68,6 +69,9 @@ function showsuggestioninlist(list){
    suggbox.innerHTML = listData;
 
 }
+
+
+
 
 
 
