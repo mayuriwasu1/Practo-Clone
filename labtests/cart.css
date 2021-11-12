@@ -1,0 +1,71 @@
+body {
+  background-color: #f0f0f5;
+}
+#mainwrap {
+  width: 1180px;
+  height: 811px;
+  border: 1px solid red;
+  margin: auto;
+  display: flex;
+}
+#detailswrap {
+  width: 780px;
+  height: 811px;
+  border: 1px solid red;
+  background-color: #fff;
+}
+#amntwrap{
+    width: 380px;
+    height: 433px;
+    border: 1px solid green;
+    background-color: #fff;
+    margin-left: 20px;
+}
+#progressbar{
+    height: 101px;
+    border: 1px solid brown;
+}
+#patdetails{
+    width: 380px;
+    height: 689px;
+    margin: auto;
+    border: 1px solid blue;
+}
+#patdetails>h2{
+    color: #414146;
+    font-size: 24px;
+    font-weight: 700;
+}
+#patdetails>h2+div{
+    border: 1px solid black;
+}
+#Age{
+    margin-top: 30px;
+    border: 1px solid black;
+}
+#gender{
+    margin-top: 30px;
+    border: 1px solid black;
+}
+#Mobnumber{
+     margin-top: 30px;
+    border: 1px solid black;
+}
+#Email{
+     margin-top: 30px;
+    border: 1px solid black;
+}
+#continuebtn{
+    width: 340px;
+    height: 48px;
+    border: 1px solid violet;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8px;
+    line-height: 45px;
+    border: 1px solid #199fd9;
+    background: #199fd9;
+    font-weight: 700;
+    margin-top: 50px;
+    color: #fff;
+}

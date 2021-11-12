@@ -41,6 +41,7 @@ hr{
 
 #searchbar{
     font-size: 0;
+    margin-right: 500px;
 }
 #searchbar-1{
     width: 230px;
@@ -64,10 +65,60 @@ hr{
 
 #cart{
     border:1px solid #cacad3;
-    margin-left:504px ;
     width:85px;
+    padding: 10px;
     border-radius: 3px;
+    background-color: #fff;
 }
+#cartbtn_maindiv{
+    border: 1px solid red;
+    width: 22%;
+    height: 450px;
+    position: absolute;
+    right: 0px;
+    margin-right: 43px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #cacad3;
+}
+#carthead{
+    width:100%;
+    height: 45px;
+    border-bottom:1px solid #cacad3;
+    
+}
+#title_head{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+#your_cart{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#test_num{
+    margin-left: 5px;
+    font-size: 12px; 
+}
+#cartitem_div{
+    border: 1px solid black;
+    width: 100%;
+    height: 246px;
+    margin-top: 3px;
+}
+#item_logodiv{
+    width: 100%;
+    height: 99px;
+    border: 1px solid orangered;
+}
+#item_pricediv{
+    border:1px solid greenyellow;
+    height: 25px;
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
                          /* <!-- SEARCH BAR AND CART SECTION ends here--> */
 
                          /* <!-- FIRST IMAGE BOX STARTS HERE    --> */
@@ -775,3 +826,4 @@ hr{
     color: #14bef0;
     text-decoration: none;
 }
+

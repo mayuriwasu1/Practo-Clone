@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+</head>
+<body>
+        <div id="mainwrap">
+            <div id="detailswrap">
+                <div id="progressbar">
+                </div>
+                <div id="patdetails">
+                    <h2>Add patient details</h2>
+                    <div id=patname>
+                         <label>Patient Name <span>*</span></label><br>
+                         <input type="text" id="patname_input">
+                         <div id="patname_err"></div>
+                        </div>
+                         <div id=Age>
+                            <label>Date of Birth<span>*</span></label><br>
+                                <input type="number" id="dob_val"> <span>
+                                    <select name="" id="">
+                                        <option value="Years">Years</option>
+                                        <option value="Months">Months</option>
+                                        <option value="Days">Days</option>
+                                </select></span>  
+                                <div id="DOBerror_msg">
+
+                                </div>
+                        </div>
+                        <div id="gender">
+                            <label>Gender<span>*</span></label><br>
+                          <input type="radio" name="" id=""> <span>Male</span>
+                          <input type="radio" name="" id=""> <span>Female</span>
+                        <input type="radio" name="" id=""> <span>Other</span>
+                        </div>
+                        <div id="Mobnumber">
+                            <label>Mobile Number<span>*</span></label><br>
+                            <input type="number" name="" id="">
+                        </div>
+                        <div id="Email">
+                            <label>Email<span>*</span></label><br>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div id="continuebtn">Continue
+
+                        </div>
+
+                    
+                </div>
+
+            </div>
+            <div id="amntwrap"></div>
+        </div>
+        
+</body>
+</html>
+<script src="cart.js"></script>
