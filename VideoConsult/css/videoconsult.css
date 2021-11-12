@@ -447,6 +447,8 @@ a {
   bottom: 0px;
   max-width: 230px;
   max-height: 90%;
+  width: 90px;
+  height: 100px;
 }
 .colorDiv {
   display: flex;
