@@ -1,0 +1,284 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+  height: 60px;
+  /* border: 1px solid red; */
+}
+.patient_looking_doctor {
+  /* border: 1px solid green; */
+  background-color: rgb(40, 50, 140);
+  height: 650px;
+  display: flex;
+  gap: 100px;
+}
+#createAccount {
+  height: 75%;
+  width: 35%;
+  margin-left: 8%;
+  margin-top: 40px;
+  /* border: 1px solid green; */
+}
+#createAccount > #createAccount_heading {
+  color: white;
+  font-size: 40px;
+  margin-top: 0%;
+}
+#subheading {
+  color: white;
+  font-weight: lighter;
+  line-height: 30px;
+}
+.firstStep {
+  color: white;
+  font-weight: lighter;
+}
+.name {
+  color: white;
+  font-size: 13px;
+  padding-top: 10px;
+}
+.fullname {
+  height: 35px;
+  width: 85%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.select{
+  height: 50px;
+  width: 40px;
+  border: 1px solid red;
+}
+#continue_button {
+  height: 38px;
+  background-color: rgb(255, 160, 0);
+  color: white;
+  width: 85%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.login {
+  color: rgb(255, 160, 0);
+}
+
+#looking_doctor_img_div {
+  /* border: 1px solid green; */
+  height: 75%;
+  width: 45%;
+  margin-top: 40px;
+}
+#looking_doctor_img_div > img {
+  height: 98%;
+  width: 98%;
+}
+.editProfile {
+  height: 600px;
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  gap: 110px;
+}
+.edit_profile_img_div {
+  height: 80%;
+  width: 25%;
+  /* border: 1px solid brown; */
+  margin-left: 15%;
+  margin-top: 50px;
+}
+.edit_profile_img_div > img {
+  height: 98%;
+  width: 98%;
+}
+.edit_profile_data_div {
+  /* border: 1px solid brown; */
+  height: 80%;
+  margin-top: 50px;
+  width: 40%;
+  padding-top: 0%;
+}
+.main_heading {
+  color: rgb(65, 65, 70);
+  font-size: 37px;
+  font-weight: bold;
+}
+.extra_info {
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgb(77, 77, 81);
+}
+#patient_feedback_div {
+  height: 600px;
+  width: 100%;
+  background-color: rgb(240, 240, 245);
+  display: flex;
+  gap: 120px;
+}
+#patient_feedback_div > .feedback_data {
+  /* border: 1px solid red; */
+  height: 60%;
+  width: 33%;
+  margin-top: 50px;
+  margin-left: 9%;
+}
+.feedback_img_div {
+  /* border: 1px solid red; */
+  height: 65%;
+  width: 40%;
+  margin-top: 50px;
+}
+.feedback_img_div > img {
+  height: 98%;
+  width: 98%;
+}
+#improve_prof_div {
+  height: 550px;
+  width: 100%;
+  /* border: 1px solid rebeccapurple; */
+  display: flex;
+  gap: 70px;
+}
+#improve_prof_div > .improve_prof_img {
+  /* border: 1px solid red; */
+  height: 75%;
+  width: 40%;
+  margin-top: 50px;
+  margin-left: 9%;
+}
+.improve_prof_img > img {
+  height: 98%;
+  width: 98%;
+}
+.improve_prof_data {
+  /* border: 1px solid red; */
+  height: 85%;
+  width: 40%;
+  margin-top: 50px;
+}
+#simple_steps_div {
+  height: 550px;
+  width: 100%;
+  background-color: rgb(240, 240, 245);
+}
+#heading_section {
+  /* margin-top: 50px; */
+  margin-left: 9%;
+  /* border: 1px solid tomato; */
+}
+.info_details {
+  /* border: 1px solid tomato; */
+  width: 85%;
+  height: 200px;
+  margin-left: 9%;
+  display: flex;
+  gap: 100px;
+}
+.flex_divs {
+  height: 98%;
+  width: 30%;
+  /* border: 1px solid green; */
+}
+.icon {
+  height: 300px;
+  width: 100px;
+  color: rgb(43, 53, 137);
+}
+.icon_part {
+  height: 60px;
+  width: 60px;
+  /* border: 1px solid blue; */
+}
+.icon_part > img {
+  height: 100%;
+  width: 100%;
+}
+.create_your_prof {
+  height: 48px;
+  width: 160px;
+  background-color: rgb(255, 160, 0);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 45%;
+  margin-top: 100px;
+}
+.note {
+  margin-left: 25%;
+  font-weight: bold;
+  color: rgb(70, 73, 83);
+  font-size: 15px;
+}
+
+#download_app_div {
+  height: 650px;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  /* border: 1px solid blue; */
+}
+.download_app_img {
+  height: 90%;
+  width: 30%;
+  /* border: 1px solid green; */
+  margin-left: 15%;
+  margin-top: 40px;
+}
+.download_app_img >img {
+  height: 98%;
+  width: 98%;
+}
+.sub{
+  color: rgb(70,73,83);
+  font-weight: lighter;
+}
+.icon{
+  font-size: 10px;
+  font-weight: lighter;
+  color: rgb(255,160,0);
+  margin-right: 10px;
+}
+#button_section{
+  height: 48px;
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  gap: 15px;
+}
+
+.store_button{
+  height: 100%;
+  width: 30%;
+  background-color: black;
+  color:  white;
+  outline: none;
+  border: none;
+  display: flex;
+  outline: none;
+  border: none;
+}
+.playstore{
+  background-color: black;
+  display: flex;
+  border-radius: 5px;
+}
+.playstore_icon {
+  color: white;
+  font-size: 30px;
+  padding-top: 5px;
+}
+.subheading {
+  font-size: 10px;
+  color: white;
+  font-weight: lighter;
+}
+.heading {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+}

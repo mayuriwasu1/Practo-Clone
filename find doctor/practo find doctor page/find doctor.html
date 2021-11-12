@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Practo | Book Doctor Appoinment</title>
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="slick/slick.css" />
     <script
@@ -21,32 +21,32 @@
     <link rel="stylesheet" href="findDoctor.css" />
   </head>
   <body>
-     <div id="NavBar"> 
-       <!-- Nav have four section -->
+    <div id="NavBar">
+      <!-- Nav have four section -->
       <div class="NavFirstSection">
-          <img src="../images/practo nav logo.svg" alt="" />
+         <a href="/Home page/Home.html"><img src="/PractoImg/practonav logo/practo.svg" alt="" /></a> 
       </div>
       <div class="NavSecondSection">
-          <div class="second1Text">
+          <a href="./find doctor.html"><div class="second1Text">
               <h4>Find Doctors</h4>
               <p>Book an appointment</p>
-          </div>
-          <div class="second2Text">
+          </div></a>
+          <a href="/VideoConsult/VideoConsult.html"><div class="second2Text">
               <h4>Video Consult</h4>
               <p>Consult top doctors</p>
-          </div>
-          <div class="second3Text">
-              <h4>M</h4>
+          </div></a>
+          <a href="/Medicines/Medicine.html"><div class="second3Text">
+              <h4>Medicines</h4>
               <p>Practo pharmacy</p>
-          </div>
-          <div class="second4Text">
+          </div></a>
+          <a href="/labtests/Labtests.html"><div class="second4Text">
               <h4>Lab Tests</h4>
               <p>Book tests & checkup</p>
-          </div>
-          <div class="second5Text">
+          </div></a>
+          <a href="/Surgeries/surgeries.html"><div class="second5Text">
               <h4>Surgeries</h4>
               <p>Expert surgical care</p>
-          </div>
+          </div></a>
       </div>
       <div class="NavThirdSection">
          <ul>
@@ -54,18 +54,18 @@
               <i class="fas fa-angle-down"></i>
                   <div id="forProvidersmanu" class="samenav2">
                       <ul>
-                          <li id="newtext">Practo Prime <span id="new">New</span></li>
-                          <li>Software for providers</li>
-                          <li>List your practice for Free</li>
-                          <li>Corporate wellness</li>
+                         <a href="#"><li id="newtext">Practo Prime <span id="new">New</span></li></a> 
+                         <a href="#"> <li>Software for providers</li></a>
+                         <a href="/find doctor/practo find doctor page/doctor profile/doctor profile.html"><li>List your practice for Free</li></a> 
+                         <a href="#"><li>Corporate wellness</li></a> 
                       </ul>
                   </div>
              </li>
              <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
               <div id="Securitysmanu" class="samenav2">
                   <ul>
-                      <li id="newtext">Data Security</li>
-                      <li>Help</li>
+                      <a href=""><li id="newtext">Data Security</li></a>
+                     <a href=""><li>Help</li></a> 
                   </ul>
               </div>
             
@@ -73,11 +73,33 @@
           </ul>
       </div>
       <div class="NavFourSection">
-          <div class="loginSignUp">
-              <a href=""><Button>Login / SignUp</Button></a>
+          <div class="loginSignUp" id="loginbutton">
+              <a href="/login/signUp/login.html"><Button>Login / SignUp</Button></a>
           </div>
+          <!-- <div class="userprofile" id="userprofileshow">
+                  <div class="username" onclick="shareprofile()">
+                      <p id="userprofilename"></p> <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <div class="userdata ">
+                      <div class="userimgandtext">
+                          <div class="userdemoimg">
+                              <img src="./Home Page Images/Man_Silhouette2.jpg" alt="">
+                          </div>
+                          <div class="usernamenum">
+                              <p id="usernameinside"></p>
+                              <h5 id="usernumberinside"></h5>
+                          </div>
+                      </div>
+                      <div class="usergptocartpage">
+                          <a href=""><p>Buy Product</p></a>
+                      </div>
+                      <div class="usergptocartpage userlogout" onclick="logout()">
+                          <h5>Log Out</h5>
+                      </div>
+                  </div>
+          </div> -->
       </div>
-  </div> 
+  </div>
     <div id="searchdiv">
      <div class="main_image">
       <div class="main_text">
@@ -85,7 +107,7 @@
         <h2>Find and Book</h2>
       </div>
       <div id="input">
-        <input id="place" type="text" placeholder="Kolkata" />
+        <input id="place" type="text" placeholder= "Kolkata" />
         <input
           id="clinic"
           type="text"
@@ -195,14 +217,14 @@
             <button class="button">Read More</button>
           </div>
           <div id="safety_image">
-            <img id="safetyimg" src="../images/practo3.png" alt="" />
+            <img id="safetyimg" src="./images/practo3.png" alt="" />
           </div>
         </div>
 
         <div id="certificate">
           <div class="certificate_div">
             <div class="certificate_img">
-              <img src="../images/practo_c1.png" alt="" />
+              <img src="./images/practo_c1.png" alt="" />
             </div>
             <div class="certificate_data">
               <span>256-bit</span>
@@ -211,7 +233,7 @@
           </div>
           <div class="certificate_div">
             <div class="certificate_img">
-              <img src="../images/practo_c2.png" alt="" />
+              <img src="./images/practo_c2.png" alt="" />
             </div>
             <div class="certificate_data">
               <span>ISO 27001</span>
@@ -220,7 +242,7 @@
           </div>
           <div class="certificate_div">
             <div class="certificate_img">
-              <img src="../images/practo_c3.png" alt="" />
+              <img src="./images/practo_c3.png" alt="" />
             </div>
             <div class="certificate_data">
               <span>HIPAA</span>
@@ -229,7 +251,7 @@
           </div>
           <div class="certificate_div">
             <div class="certificate_img">
-              <img src="../images/practo_c4.png" alt="" />
+              <img src="./images/practo_c4.png" alt="" />
             </div>
             <div class="certificate_data">
               <span>DSCI</span>
@@ -372,7 +394,7 @@
           class="video"
           controls
           loop
-          src="../practo videos/video1.webm"
+          src="./practo videos/video1.webm"
         ></video>
       </div>
     </div>
@@ -381,7 +403,7 @@
         <video
           class="video"
           controls
-          src="../practo videos/video2.webm"
+          src="./practo videos/video2.webm"
         ></video>
       </div>
       <div id="consult_doctor">
@@ -521,43 +543,43 @@
       <h1>Read top articles from health experts</h1>
       <div class="slider_artical multiple-items">
         <div class="slider_image">
-          <img src="../images/health6.jpg" alt="" />
-          <h5>Ayurved Panchakarma For</h5>
-          <h5>Healthy Life</h5>
+          <img src="./images/health6.jpg" alt="" />
+          <h5>Ayurved Panchakarma For Healthy Life</h5>
+          
           <h6>Dr.Atulkumar Bedre , Ayurveda</h6>
           <h6>379 Likes . 43283 Views</h6>
         </div>
 
         <div class="slider_image">
-          <img src="../images/health2.jpg" alt="" />
-          <h5>7 Habits of Emotionally</h5>
-          <h5>Evolved People</h5>
+          <img src="./images/health2.jpg" alt="" />
+          <h5>7 Habits of Emotionally Evolved People</h5>
+          
           <h6>Dr.Guruprasad Sivakamat , Pychologist</h6>
           <h6>361 Likes . 35540 Views</h6>
         </div>
 
         <div class="slider_image">
-          <img src="../images/health3.jpg" alt="" />
+          <img src="./images/health3.jpg" alt="" />
           <h5>Masturbation - Good or Bad</h5>
           <h6>Dr.Anish Kumar Gupta , Andrologist</h6>
           <h6>268 Likes . 35546 Views</h6>
         </div>
 
         <div class="slider_image">
-          <img src="../images/health5.jpg" alt="" />
+          <img src="./images/health5.jpg" alt="" />
           <h5>What's in my Bread</h5>
           <h6>Ms. Teheseeb, diatician , Nutriontost</h6>
           <h6>268 Likes . 35546 Views</h6>
         </div>
 
         <div class="slider_image">
-          <img src="../images/health8.jpg" alt="" />
+          <img src="./images/health8.jpg" alt="" />
           <h5>52 Effortless ways to loose weight</h5>
           <h6>Ms. Swati, Kapoor , Dietitionist</h6>
           <h6>268 Likes . 35546 Views</h6>
         </div>
         <div class="slider_image">
-          <img src="../images/health9.jpg" alt="" />
+          <img src="./images/health9.jpg" alt="" />
           <h5>10 tips to get gorgious hair</h5>
           <h6>Ms. Swati, Kapoor , Dietitionist</h6>
           <h6>268 Likes . 35546 Views</h6>
@@ -676,12 +698,12 @@
        <!-- .................. SLIDING PART END .....................    -->
       </div>
       <div id="medicine_image">
-        <img src="../images/med1.svg" alt="">
+        <img src="./images/med1.svg" alt="">
       </div>
     </div>
     <div class="secure_app">
       <div class="secure_app_img">
-        <img src="../images/med2.svg" alt="">
+        <img src="./images/med2.svg" alt="">
       </div>
       <div id="medical_record">
         <div class="medical_record_header">
@@ -812,12 +834,12 @@
         </div>
       </div>
       <div class="healthcare_provider_image">
-        <img src="../images/healthcare1.png" alt="">
+        <img src="./images/healthcare1.png" alt="">
       </div>
     </div>
     <div class="download_app">
       <div class="app_img">
-        <img src="../images/appimg1.png" alt="">
+        <img src="./images/appimg1.png" alt="">
       </div>
       <div id="download_practo">
         <div>

@@ -185,3 +185,22 @@ function logout() {
 
 
 
+function Gotosurgi(){
+  window.location.href = "/Surgeries/surgeries.html"
+}
+
+
+
+document.querySelector(".card").addEventListener("click", function(){
+  window.location.href = "/VideoConsult/VideoConsult.html"
+})
+
+
+document.querySelector(".allIcon").addEventListener("click", function(){
+  window.location.href = "/VideoConsult/VideoConsult.html"
+})
+
+
+document.querySelector(".cardslider1").addEventListener("click", function(){
+  window.location.href = "/labtests/Labtests.html"
+})
