@@ -434,7 +434,7 @@ body {
     
   }
   
-  .c-value-description-item__content {
+  .c-value-description-item__content{
     margin-top: 8px;
     line-height: 1.2rem;
   }
@@ -553,11 +553,25 @@ body {
     margin-top: 20px;
   }
 .whyPracto_icon{
-  padding: 2% 2% 2% 0;
+  padding: 1% 1.2%;
+  background: #f0f0f5;
+  border-radius: 50%;
+  font-size: 26px;
+  height: 34px;
+  width: 34px;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 3px #888;
+
 }
+
+
 .c-value-description-item__content{
   font-size: 14px;
   font-weight: 400;
+ 
+}
+.c-value-description-item__header__text >h3{
+  margin-left: 15px;
 }
 
   /* main section  right flexible part */
@@ -566,7 +580,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    padding:50px;
+    padding: 0 0 50px 0;
 
   }
   
@@ -617,7 +631,7 @@ body {
   .c-input__container {
     position: relative;
     border: 2px solid #787887;
-    border-radius: 8 px;
+    border-radius: 8px;
     height: 60px;
     background-color: #fff;
     padding: 0 20px;
@@ -709,15 +723,39 @@ body {
     background: #f0f0f5;
     border-radius: 50%;
     font-size: 26px;
-    height: 23px;
-    width: 23px;
+    height: 35px;
+    width: 35px;
     flex-shrink: 0;
     box-shadow: 0px 0px 3px #888;
+    padding: 1% 1.2%;
   
     
 }
+.itemIcon > img {
+margin-right: 15px;
+
+}
+.itemIcon > .itemtext{
+  padding-top: 2% 0;
+  font-weight: 200;
+}
+.c-value-section__item__icon i {
+  background: #f0f0f5;
+  border-radius: 50%;
+  font-size: 26px;
+  height: 30px;
+  width: 40px;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 3px #888;
+
+  
+}
 .itemIcon{
-  padding: 4%;
+  padding: 2.3%;
+  display: flex;
+}
+.itemtext{
+  padding-bottom: 0;
 }
   .c-book-form__items {
     margin-top: 20px;
@@ -775,15 +813,17 @@ padding: 0 15px;
     padding: 25px 5px;
   }
 .slider_carts_top{
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .slider_carts_bottom{
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .flex_text{
   display: flex;
-  padding: 14px 0;
+  padding: 8px 0;
+  color: #787887;
+
 }
 
 .slider_no_1{
@@ -813,7 +853,7 @@ padding: 0 15px;
   }
 .slider_no_2{
   width: 50%;
-  padding: 3%;
+  padding: 3% 0;
 }
 
 .slider_cart{
@@ -823,6 +863,13 @@ padding: 0 15px;
  
 .cart_image{
   border-radius: 50%;
+ 
+}
+.cart_text > p{
+  margin-top: 6px;
+}
+.flex_text > p{
+  padding-top:4px ;
 }
   /* 2nd slider */
 
@@ -837,4 +884,5 @@ padding: 0 15px;
 
 .slider_cart > p {
   font-size: 13px;
+  padding: 8px;
 }
