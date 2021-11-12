@@ -11,6 +11,10 @@ body {
     box-sizing: border-box;
   }
   
+  a{
+    text-decoration: none;
+    color: black;
+  }
   /* NavBar Css part start */
 
 #respoviesNavbarMaiandiv {
@@ -69,6 +73,7 @@ body {
   padding: 8px;
   font-weight: 200;
   cursor: pointer;
+
 }
 
 
@@ -78,6 +83,7 @@ body {
   position: relative;
   list-style: none;
   gap:0px;
+  z-index: 1;
 }
 
 #forProvidersmanu , #Securitysmanu{
@@ -263,8 +269,7 @@ body {
   
   .care-app .dweb-header .blueContainerWrapper .right-section .remarks {
     color: #fff;
-   
- /* position: absolute; */
+ position: absolute;
     bottom: 20px;
     left: 50px;
     z-index: 1;
@@ -387,22 +392,8 @@ body {
     font-weight: 550;
 }
   
+/* round image section */
 
-/* .c-location-banner > img{
-    margin: 8px;
-} */
-
-/* round image section  */
-/* .u-d-flex {
-    display: flex;
-}
-.surgery-list {
-    flex-wrap: wrap;
-}
-
-.round_img_section{
-    padding: 20px;
-} */
  #roundImagesection {
     display: flex;
     flex-wrap: wrap;
@@ -414,48 +405,68 @@ body {
 #roundImagesection .roundImage {
     flex: 1 1 30%; 
     height: auto;
-    padding: 20px 60px 2px 60px;
+    padding: 20px 59px 2px 59px;
 }
 
-
-
-/* why Practo ? Section */
-
-/* #whyPractoSection{
-    display: flex;
-    box-sizing: border-box;
-   
-} */
-
-/* .whyPracto_icon{
-    padding: 18px;
-}
- */
  .c-value-description-item{
      padding: 3%;
      border-bottom: 2px solid #d9d9df;
  }
 .margin--bottom--20 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
-  .c-header {
+  .c-header > h2{
     font-weight: 700;
     font-size: 22px;
+    color: #2d2d32;
   }
   
-  
+  .providedSurgeries{
+    margin: 3% 2% 2% 0;
+    
+  }
+  .providedSurgeries > div{
+    font-weight: 400;
+  }
   .c-value-description-item__header {
     display: flex;
     align-items: center;
+    
   }
   
-  .c-value-description-item__content {
+  .c-value-description-item__content{
     margin-top: 8px;
-    line-height: 1.5;
+    line-height: 1.2rem;
+  }
+.General_Surgery_title{
+  display: flex;
+}
+.title{
+  padding: 2% 3%;
+}
+ .collapsible{
+   border: none;
+   background-color: Transparent;
+   cursor:pointer;
+   margin-left: 80%;
+   
+ }
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  margin-left: 10px;
+  
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+  .roundImage{
+    font-size: 13px;
   }
 
- 
-  
   /* right flexible form  */
 
 .c-form-section {
@@ -484,7 +495,11 @@ body {
    .dweb-hide {
     display: none;
   }
-  
+  #select_location{
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+  }
   /* separator again  */
   
   .seperator {
@@ -531,7 +546,33 @@ body {
     opacity: 0.8;
   } 
 
+  /* why practo ? section */
+  .c-header{
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+.whyPracto_icon{
+  padding: 1% 1.2%;
+  background: #f0f0f5;
+  border-radius: 50%;
+  font-size: 26px;
+  height: 34px;
+  width: 34px;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 3px #888;
 
+}
+
+
+.c-value-description-item__content{
+  font-size: 14px;
+  font-weight: 400;
+ 
+}
+.c-value-description-item__header__text >h3{
+  margin-left: 15px;
+}
 
   /* main section  right flexible part */
  .dweb-right-section {
@@ -539,7 +580,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    padding:50px;
+    padding: 0 0 50px 0;
 
   }
   
@@ -590,7 +631,7 @@ body {
   .c-input__container {
     position: relative;
     border: 2px solid #787887;
-    border-radius: 8 px;
+    border-radius: 8px;
     height: 60px;
     background-color: #fff;
     padding: 0 20px;
@@ -639,6 +680,11 @@ body {
   .c-book-form__items {
     margin-top: 25px;
   }
+
+   #option{
+    
+    padding:0 10px;
+  }
   
   .c-input__container {
     position: relative;
@@ -677,15 +723,39 @@ body {
     background: #f0f0f5;
     border-radius: 50%;
     font-size: 26px;
-    height: 23px;
-    width: 23px;
+    height: 35px;
+    width: 35px;
     flex-shrink: 0;
     box-shadow: 0px 0px 3px #888;
+    padding: 1% 1.2%;
   
     
 }
+.itemIcon > img {
+margin-right: 15px;
+
+}
+.itemIcon > .itemtext{
+  padding-top: 2% 0;
+  font-weight: 200;
+}
+.c-value-section__item__icon i {
+  background: #f0f0f5;
+  border-radius: 50%;
+  font-size: 26px;
+  height: 30px;
+  width: 40px;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 3px #888;
+
+  
+}
 .itemIcon{
-  padding: 4%;
+  padding: 2.3%;
+  display: flex;
+}
+.itemtext{
+  padding-bottom: 0;
 }
   .c-book-form__items {
     margin-top: 20px;
@@ -700,11 +770,7 @@ body {
     padding: 4%;
     color: #fff;
   }
-  /* .c-cta__primary {
-    background-color: #199fd9;
-    border: 1 px solid #199fd9;
-    color: #fff;
-  } */
+  
   .c-cta,
   .c-cta__basic,
   .c-cta__primary {
@@ -720,3 +786,103 @@ body {
     height: 8px;
   background: #f0f0f5;
   }
+
+  /* 1st slider */
+.slider_1_heading{
+  font-size: 24px;
+  padding: 5px 15px;
+  display: flex;
+  font-weight: 700;
+}
+.slider_1_heading > img{
+  padding: 0 15px 1px 0;
+  
+  background-color: transparent;
+}
+
+.slider_1_heading  > #slider_head{
+padding: 0 15px;
+}
+
+  .slider_carts_top{
+    display: flex;
+    
+  }
+
+  .slider_carts{
+    padding: 25px 5px;
+  }
+.slider_carts_top{
+  padding: 10px 0;
+}
+.slider_carts_bottom{
+  padding: 10px 0;
+}
+
+.flex_text{
+  display: flex;
+  padding: 8px 0;
+  color: #787887;
+
+}
+
+.slider_no_1{
+  width: 50%;
+}
+.cart_image > img{
+  border-radius: 50%;
+  margin-right: 23px;
+}
+
+.flex_text > img{
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+.cart_text{
+  color: #2d2d32;
+  font-size: 14px;
+}
+
+  .slider_carts_bottom{
+    display: flex;
+  }
+
+  #separator_last{
+    width: 50%;
+  }
+.slider_no_2{
+  width: 50%;
+  padding: 3% 0;
+}
+
+.slider_cart{
+  padding: 0.5%;
+  border-radius: 8px;
+}
+ 
+.cart_image{
+  border-radius: 50%;
+ 
+}
+.cart_text > p{
+  margin-top: 6px;
+}
+.flex_text > p{
+  padding-top:4px ;
+}
+  /* 2nd slider */
+
+  .slider_cart{
+    border: 1px solid rgb(219, 219, 219);
+  }
+.slider_2_heading{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5px 5px;
+}
+
+.slider_cart > p {
+  font-size: 13px;
+  padding: 8px;
+}
