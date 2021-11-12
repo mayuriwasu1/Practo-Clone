@@ -8,7 +8,8 @@
       Practo Care Surgeries - You are in Safe Hands
     </title>
     <link rel="stylesheet" href="./surgeries.css">
-   
+   <link  rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+   <link  rel="stylesheet" href="slick-1.8.1/slick/slick.css">
   </head>
   <body>
 
@@ -105,7 +106,7 @@
           </div>
       </div>
       <!-- Nav bhar end  -->
-      <!-- <hr> -->
+    
     <!-- main container having id = aap  -->
     <div id="app">
       <div class="care-app">                       <!-- div for main container -->
@@ -270,6 +271,7 @@
         <div class="providedSurgeries">
          <h2>Surgeries we provide</h2>  
         </div>
+        <div class="General_Surgery_title">
               <div class="General_Surgery"> 
                 <img
                   alt="General Surgery"
@@ -279,10 +281,11 @@
                   class="margin--right--16"
                 />
               </div>
-              <div>General Surgery </div>
+              <div class="title">General Surgery </div>
+            </div>
               <div>
                
-                <button type="button" class="collapsible">Open Section 2</button>
+                <button type="button" class="collapsible">10<i class="arrow down"></i></button>
                 <div class="Collapsible">
             <div id="roundImagesection">
              
@@ -450,7 +453,7 @@
           </div>
         </div>
         <div class="seperatorO"></div>
-
+        <div class="seperatorO"></div>
         <!-- why practo ? section  -->
 
         <div id="whyPractoSection">
@@ -586,6 +589,7 @@
               </div>
             </div>
           </div>
+
         </div>
         <div class="seperatorO"></div>
         <div class="dweb-right-section">
@@ -600,11 +604,11 @@
                   <img height="99" width="86" src="	https://www.practostatic.com/consumer-home/practo-care/1631021888/call.png">
                 </div>
               </div>
-              <!-- <div><div class="LazyLoad"></div></div> -->
+              
             </div>
             <div class="c-form-section__content">
               <div class="c-book-form__items">
-                <!-- <div> -->
+               
                   <div
                     class="c-input__container"
                     role="presentation"
@@ -642,6 +646,7 @@
                     role="presentation"
                     tabindex="0"
                   >
+                  
                     <div class="c-input__info--hide">Location*</div>
                     <input
                       type="text"
@@ -651,6 +656,21 @@
                       readonly=""
                       value=""
                     /><i class="icon-ic_next_cheveron c-input__icon"></i>
+                    <select id="select_location">
+                      <option class="option" value="0">Bangalore</option>
+                      <option class="option" value="1">Mumbai</option>
+                      <option class="option" value="2">Hyderabad</option>
+                      <option class="option" value="3">Chennai</option>
+                      <option class="option" value="4">Kolkata</option>
+                      <option class="option" value="5">Jaipur</option>
+                      <option class="option" value="6">Pune</option>
+                      <option class="option" value="7">Nagpur</option>
+                      <option class="option" value="8">Bhopal</option>
+                      <option class="option" value="9">Patna</option>
+                      <option class="option" value="10">Ranchi</option>
+                      <option class="option" value="11">Agartala</option>
+                      <option class="option" value="12">Dehradun</option>
+                    </select>
                   </div>
                 </div>
                 <div class="c-book-form__items">
@@ -662,12 +682,280 @@
             </div>
          
           </div> 
+       </div>
+      
+    
+
+
+<!-- slider one -->
+
+
+<div class="slider_1_heading">
+  <div> <img height="25px" width="25px" src="./surgeriesImages/location_icon.jpg"></div>
+  <div id="slider_head">Our Doctors in</div>
+</div>
+<div class="slider_no_1" > 
+  <div class="slick-slider_one single-item">
+
+    <!-- first card -->
+    <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="./Surgeries/surgeriesImages/doctor_1.jpg">
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Shabeer Ahmed</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="./Surgeries/surgeriesImages/thumbsUp.jpg">
+        <div>96% :35 years of Exp.</div> 
         </div>
       </div>
     </div>
-</div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="https://imagesx.practo.com/providers/64cccc9f-83e1-4631-8998-9a59095f5b83.jpg?i_type=t_70x70">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. Gautham S L</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="https://cdn-icons.flaticon.com/png/128/3073/premium/3073454.png?token=exp=1636655245~hmac=33c3d44194a0fc7b76e3b1063bb965f6">
+             100% :13 years of Exp.
+            </div>
 
+          </div>
+          </div>
+
+    </div>
+   
+ <!-- 2nd card -->
+     
+     <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="https://imagesx.practo.com/providers/0e51ad5e-c458-4e08-99ac-9e2aed3a1d41.jpg?i_type=t_70x70">
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Nanda Rajaneesh</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="https://cdn-icons.flaticon.com/png/128/3073/premium/3073454.png?token=exp=1636655245~hmac=33c3d44194a0fc7b76e3b1063bb965f6">
+         83% :26 years of Exp.
+        </div>
+      </div>
+    </div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="https://imagesx.practo.com/providers/64cccc9f-83e1-4631-8998-9a59095f5b83.jpg?i_type=t_70x70">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. Abdul Razack.G.S</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="https://cdn-icons.flaticon.com/png/128/3073/premium/3073454.png?token=exp=1636655245~hmac=33c3d44194a0fc7b76e3b1063bb965f6">
+             82% :19 years of Exp.
+            </div>
+
+          </div>
+          </div>
+
+    </div>
+   
+     <!-- 3rd card -->
+     <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="/Surgeries/surgeriesImages/doctor_1.jpg">
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Sujay BR</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="/Surgeries/surgeriesImages/thumbsUp.jpg">
+         95% :16 years of Exp.
+        </div>
+      </div>
+    </div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="doctor_1.jpg">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. Tarun Javali</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="/Surgeries/surgeriesImages/thumbsUp.jpg">
+             97% :10 years of Exp.
+            </div>
+
+          </div>
+          </div>
+
+    </div>
+   
+
+     <!-- 4th card -->
+     <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="https://imagesx.practo.com/providers/0e51ad5e-c458-4e08-99ac-9e2aed3a1d41.jpg?i_type=t_70x70">
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Niranjan P</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="/Surgeries/surgeriesImages/thumbsUp.jpg">
+         100% :25 years of Exp.
+        </div>
+      </div>
+    </div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="https://imagesx.practo.com/providers/64cccc9f-83e1-4631-8998-9a59095f5b83.jpg?i_type=t_70x70">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. K.N. Srikanth</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="/Surgeries/surgeriesImages/thumbsUp.jpg">
+             100% :25 years of Exp.
+            </div>
+
+          </div>
+          </div>
+
+    </div>
+    
+
+    <!-- 5th card -->
+     <div class="slider_carts">
+     
+      <div class="slider_carts_top">
+      <div class="cart_image">
+      <img src="https://imagesx.practo.com/providers/0e51ad5e-c458-4e08-99ac-9e2aed3a1d41.jpg?i_type=t_70x70">
+      </div>
+      
+      <div class="cart_text">
+       <h4>Dr. Ananda B B</h4>
+       <p>General Surgeon</p>
+       <div class="flex_text">
+         <img height="25px" width="25px" src="/Surgeries/surgeriesImages/thumbsUp.jpg">
+         100% :21 years of Exp.
+        </div>
+      </div>
+    </div>
+     
+    <div class="slider_carts_bottom">
+        <div class="cart_image">
+          <img src="https://imagesx.practo.com/providers/64cccc9f-83e1-4631-8998-9a59095f5b83.jpg?i_type=t_70x70">
+          </div>
+          
+          <div class="cart_text">
+           <h4>Dr. Sumanth Bhoopal</h4>
+           <p>General Surgeon</p>
+           <div class="flex_text">
+             <img height="25px" width="25px" src="/Surgeries/surgeriesImages/thumbsUp.jpg">
+             97% :18 years of Exp.
+            </div>
+
+          </div>
+          </div>
+
+    </div>
+   
+  </div>
 </div>
+ <!-- first slider end -->
+ <div id="separator_last" class="seperatorO"></div>
+<!-- slider two -->
+<div class="slider_2_heading">
+ <h3> What customers say</h3> 
+</div>
+<div class="slider_no_2">
+        <div class="slick-slider_two single-item">
+            
+                    <div class="slider_cart">
+                          <h4>Mahaveer singh</h4>
+                          <p>Ahmedabad</p>
+                        <p>
+                          Practo Care supported me throughout my surgery with
+                          insurance, documents and other assistance. I
+                          consulted a well-known expert for my piles
+                          treatment. I’d recommend Practo Care to anyone who
+                          needs a surgery.
+                        </p>
+                      
+                    </div>
+                 
+
+                    <div class="slider_cart">
+                            <h4>Rajesh Yadav</h4>
+                            <p>Bangalore</p>
+                         <p>
+                          I’d definitely recommend Practo Care for their
+                          support at every step of my pilonidal sinus
+                          treatment. The doctor was highly experienced and the
+                          surgery went well. The team took care of everything
+                          from day one to the day of discharge very
+                          efficiently.
+                        </p>
+                    </div>
+                      
+                 
+                    <div class="slider_cart">
+                            <h4>Vivek</h4>
+                            <p>Delhi</p>
+                          <p>Thanks to Practo Care, I could focus on my
+                          recovery while the team took care of all the
+                          paperwork, logistics and financial support. The
+                          doctor was good and clearly explained the issue and
+                          treatment. After that, from consultation to
+                          discharge, everything was handled smoothly by Practo
+                          Care. Very happy with my experience.
+                          </p>
+                        </div>
+                     
+                        
+                          <div class="slider_cart">
+                           <h4>Iqbal ahmed quereshi</h4>
+                            <p>Thane</p>
+                          <p>I contacted Practo Care for my piles
+                          treatment. The doctor was very approachable and
+                          listed out the best options. After that, the
+                          insurance, coordination and other formalities were
+                          taken care of by the Practo Care team. Overall, a
+                          seamless experience.
+                        </p>
+                        </div>
+                     
+                     
+            </div> 
+          </div>        
+            </div>
+          </div>  
+
+          </div>
+
+        </div>
+          <!--closing of main container -->
+<!-- footer part -->
 <div class="mweb-hide">
 <div class="c-footer">
   <div class="logo">
@@ -683,16 +971,10 @@
   <p class="row-2">Made by Practeons @ Bangalore.</p>
 </div>
 </div>
-<div class="seperator"></div>
-<div class="seperator"></div>
-
 </div>
-<div id="modal-wrapper"></div>
- 
-
-
-
 </body>
+<script src="slick-1.8.1/slick/jquery-3.6.0.min.js"></script>
+<script src="slick-1.8.1/slick/slick.min.js"></script>
 </html>
 
 
