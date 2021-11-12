@@ -231,7 +231,7 @@ img {
   width: 565px;
 }
 #introducingDiv > div:nth-child(1) {
-  margin-right: 25px;
+  margin-right: 35px;
 }
 #introducingDiv h3 {
   color: #4a90e2;
@@ -291,32 +291,32 @@ img {
   font-weight: 400;
   text-align: center;
 }
-#USreview {
+.USreview {
   justify-content: center;
   margin-top: 25px;
   display: flex;
 }
-#USreview > div {
+.USreview > div {
   display: flex;
   width: 215px;
   height: 40px;
 }
-#USreview img {
+.USreview img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
   margin: 0px;
 }
-#USreview > div > div {
+.USreview > div > div {
   margin-left: 15px;
 }
-#USreview > div > div > div:nth-child(1) {
+.USreview > div > div > div:nth-child(1) {
   color: #2d2d32;
   font-size: 14px;
   font-weight: 700;
   text-align: left;
 }
-#USreview > div > div > div:nth-child(2) {
+.USreview > div > div > div:nth-child(2) {
   color: #b4b4be;
   font-size: 14px;
 }

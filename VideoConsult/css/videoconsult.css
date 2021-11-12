@@ -55,12 +55,28 @@ a {
 }
 
 #docterStrip {
+  display: flex;
   height: 42px;
   max-height: 100%;
   display: flex;
   margin: 0px;
 }
-
+#docterStrip > span:nth-child(1) {
+  z-index: 4;
+}
+#docterStrip > span:nth-child(2) {
+  z-index: 3;
+  transform: translateX(-10px);
+}
+#docterStrip > span:nth-child(3) {
+  z-index: 2;
+  transform: translateX(-20px);
+}
+#docterStrip > span:nth-child(4) {
+  z-index: 1;
+  transform: translateX(-30px);
+  padding-left: 20px;
+}
 .eachImage {
   width: 42px;
   height: 42px;
@@ -153,9 +169,10 @@ a {
   font-weight: 400;
   margin-right: 5px;
 }
-.icon-ic_prescription {
-  background: url(/VideoConsult/Images/rximage.png);
+.icon_prescription {
+  background: url(/VideoConsult/Images/rximage.png) no-repeat;
   height: 16px;
+  width: 17px;
   background-size: 14px 16px;
   margin-left: 16px;
   margin-right: 5px;
@@ -219,23 +236,25 @@ a {
 }
 
 #head1,
-#head2,
 #head3 {
   width: 88%;
   margin: auto;
 }
-
+.head2 {
+  width: 88%;
+  margin: auto;
+}
 #head1 > div {
   display: inline-block;
 }
-#head2 > div {
+.head2 > div {
   display: inline-block;
 }
 .firstSlide {
   margin-top: 10px;
 }
 
-#startButton {
+.startButton {
   margin: 0px;
   text-align: center;
   font-size: 14px;
@@ -252,7 +271,7 @@ a {
   border: 1px solid #979797;
 }
 
-#head2 > a {
+.head2 > a {
   top: 420px;
   right: 60px;
   width: 150px;
@@ -296,7 +315,7 @@ a {
   margin: 0px 4px;
   text-align: center;
 }
-#head2 > div:nth-child(2) {
+.head2 > div:nth-child(2) {
   margin-top: 20px;
   float: right;
   border-radius: 8px;
@@ -322,6 +341,16 @@ a {
   color: #14bef0;
   margin-bottom: 21px;
   width: auto;
+}
+#ourDocters {
+  margin-top: 30px;
+}
+#ourDocters > h2 {
+  font-size: 30px;
+  width: 90%;
+  margin: auto;
+  line-height: 1.5;
+  padding: 20px 0;
 }
 
 /* specialities end */
@@ -398,14 +427,7 @@ a {
 .thirdS3 {
   background-color: #feba7f;
 }
-#colorDivimg {
-  display: flex;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  height: 50px;
-}
-#colorDivcontent {
+.colorDivcontent {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -414,6 +436,19 @@ a {
   vertical-align: top;
   justify-content: space-between;
 }
+.colorDivimg {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  max-width: 230px;
+  max-height: 90%;
+}
+.colorDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 350px;
+}
 .thirdS img {
   position: absolute;
   bottom: 0;
@@ -421,7 +456,6 @@ a {
   max-width: 230px;
 }
 .thirdS b {
-  color: #2e6f5a;
   width: max-content;
   font-size: 16px;
   height: 27px;
@@ -445,6 +479,15 @@ a {
   padding: 10px;
   padding-left: 0px;
 }
+#pinktext {
+  color: #e72ea7;
+}
+#greentext {
+  color: #2e6f5a;
+}
+#orangetext {
+  color: #b05201;
+}
 .icon-ic_next_cheveron {
   width: 16px;
   height: 16px;
@@ -462,41 +505,59 @@ a {
 
 /* docters */
 
-#docters {
+.docter {
   display: flex;
   position: relative;
-  width: 100%;
   max-width: 271px;
   border-radius: 6px;
   height: auto;
   border: 1px solid #f0f0f5;
-  padding: 10px;
-  margin: 20px;
+  padding: 15px;
+  margin-right: 20px;
 }
-
-#docters > div > img {
+.docter > div {
+  display: inline;
+}
+.docter > section {
+  display: flex;
+}
+.docter img {
   width: 54px;
   height: 54px;
   border-radius: 100%;
 }
-#docters h4 {
-  margin: 12px 0;
+.docter h4 {
+  margin-bottom: 5px;
 }
-#docters p {
+.docter p {
   font-size: 12px;
   line-height: 1.5;
+  overflow: hidden;
   padding: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-#docters > div > label {
+.docter label {
   position: relative;
+  bottom: 10px;
+  left: 10px;
+  background: #ffeb01;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 2.5px;
+  font-weight: 700;
 }
-
+.docter > div:nth-child(2) {
+  margin-left: 10px;
+}
 /* Start of How it works */
 
 #howItWorks {
   margin: auto;
   width: 90%;
   text-align: center;
+  padding: 25px 50px;
+  margin-top: 30px;
 }
 
 #hiwBox {
@@ -651,17 +712,18 @@ a {
   margin: 30px;
 }
 
-#videoDiv {
+.videoDiv {
   margin-top: 55px;
 }
 
-#videoDiv iframe {
+#removeBorder {
   height: 289px;
   width: 100%;
-  border: 2px solid initial;
+  border: 0px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 25%);
 }
 
-#videoTab {
+.videoTab {
   display: flex;
   margin: auto;
   width: 90%;
@@ -670,27 +732,35 @@ a {
   margin-top: 20px;
 }
 
-#videoTab > div {
+.videoTab > div {
   max-width: 514px;
   min-width: 376px;
   margin-right: 62px;
-}
-
-#head4 {
-  width: 90%;
-  margin: auto;
-}
-#head4 > h2 {
-  padding-left: 20px;
 }
 #head5 {
   width: 90%;
   margin: auto;
 }
-#head4 > h2 {
-  padding-bottom: 40px;
+.head4 > h2 {
+  padding-bottom: 30px;
+  padding-left: 20px;
+  font-size: 30px;
+  line-height: 1.5;
+  width: 90%;
+  margin: auto;
 }
-#tickMark {
+.icon-ic_done_open_system {
+  content: "\e9a8";
+  color: #14bef0;
+  font-size: 21px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+#tickMark1,
+#tickMark2,
+#tickMark3,
+#tickMark4,
+#tickMark5 {
   font-size: 30px;
   color: #414146;
   font-weight: bold;
@@ -701,6 +771,7 @@ iframe + p {
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 6px;
+  color: #414146;
 }
 
 .opinions {
@@ -708,66 +779,148 @@ iframe + p {
   width: 90%;
   margin: auto;
 }
-.opinions img,
-p {
+.opinions img {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+.opinions p {
   display: inline-block;
 }
-
-#none {
+.none {
   display: inline-block;
   vertical-align: top;
-  padding-top: 10px;
+}
+.none h4 {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  font-weight: bold;
+}
+.experirences {
+  padding: 15px;
+  margin-right: 20px;
+  border: 1px solid #f0f0f5;
+  box-shadow: 0 3px 6px 0 rgb(45 45 51 / 8%);
+  min-height: 180px;
+}
+.experirences p {
+  margin-top: 3px;
+  line-height: 1.4;
+  color: #414146;
+}
+.experirences strong {
+  color: #414146;
 }
 .opinions p:nth-child(2) {
   display: block;
 }
-
-#faqDetails,
-#healthQuaries {
+.experirences > p {
+  margin-top: 16px;
+  line-height: 1.43;
+}
+#faqDetails {
   display: grid;
-  gap: 10%;
+  gap: 5%;
   width: 90%;
   margin: auto;
   grid-template-columns: auto auto;
 }
-
+#faqDiv {
+  margin-top: 100px;
+}
 #faqDetails > div {
-  /* width: 40%; */
   display: inline-block;
   max-width: 480px;
   min-width: 470px;
-  border-bottom: 1px solid gray;
   padding-bottom: 5px;
+}
+#faqDetails summary {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.43;
+  color: #414146;
+  padding: 15px 0;
+}
+#faqDetails p {
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  color: #787887;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(240, 240, 245, 0.5);
+}
+#faqDetails a {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(240, 240, 245, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  color: #787887;
 }
 
 #head5 {
   margin-top: 100px;
+  padding-bottom: 50px;
 }
-
+#healthQuaries {
+  display: flex;
+  gap: 5%;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
 #healthQuaries > div {
   display: inline-block;
   max-width: 480px;
-  border-bottom: 1px solid gray;
-  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f5;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  width: 30%;
 }
 
-#healthQuaries {
-  grid-template-columns: auto auto auto;
+#healthQuaries b {
+  font-size: 14px;
 }
-
+#healthQuaries > div > div {
+  display: flex;
+  gap: 50%;
+}
+#healthQuaries span {
+  font-size: 14px;
+  display: block;
+  line-height: 1.43;
+  color: #414146;
+  padding-top: 10px;
+}
+#healthQuaries > div:last-child {
+  flex: 0 0 100%;
+  text-align: right;
+  max-width: none;
+  border-bottom: 0px;
+}
 #healthConcerns {
   height: 155px;
   background-color: #2d2d32;
-  margin-top: 100px;
+  margin-top: 10px;
   display: flex;
 }
 
-#healthConcerns h2,
-h4 {
+#healthConcerns h2 {
   color: #fff;
   margin-left: 0px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
-
+#healthConcerns h4 {
+  padding: 0px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.38;
+  padding-bottom: 12px;
+}
 #healthConcerns > div {
   display: inline-block;
   margin: auto;
@@ -784,9 +937,10 @@ h4 {
   display: block;
   line-height: 1.56;
   padding: 9px 32px;
+  font-weight: bold;
   font-size: 18px;
   border-radius: 4px;
-  width: 309px;
+  width: 243px;
   margin: auto;
   text-align: center;
 }
@@ -804,15 +958,10 @@ h4 {
 #downloadApp ul {
   list-style: none;
   line-height: 1.5;
-  padding: 0px;
+  padding: 35px 0px;
 }
-
-.icon-ic_done_open_system {
-  content: "\e9a8";
-  color: #14bef0;
-  font-size: 21px;
-  font-weight: 700;
-  vertical-align: middle;
+#downloadApp li {
+  margin-top: 11px;
 }
 
 #downloadApp > div {
@@ -825,7 +974,7 @@ h4 {
 }
 
 #downloadApp img {
-  height: 526px;
+  height: 533px;
   width: 300px;
 }
 
@@ -836,10 +985,13 @@ h4 {
 #downloadApp form > div {
   display: flex;
   background-color: #fff;
+  width: 312px;
 }
 
 #downloadApp input {
   border: white;
+  text-align: center;
+  border-left: 1px solid #cacad3;
 }
 
 #downloadApp button {
@@ -870,18 +1022,31 @@ h4 {
   display: flex;
   gap: 15px;
 }
-
-#downloadApp h2,
-p {
-  padding: 0px;
+#downloadTabs img {
+  width: 130px;
+  height: 40px;
 }
-
+#downloadApp h2 {
+  padding: 0px;
+  font-size: 36px;
+  line-height: 1.28;
+}
+#downloadApp h4 {
+  color: #414146;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
 #downloadApp p {
+  font-weight: 500;
+  font-size: 16px;
   margin-top: 5px;
+  color: #414146;
 }
 
 #bottomDiv {
   padding: 55px;
+  max-width: 1280px;
 }
 #bottomDiv p {
   font-size: 12px;
@@ -898,6 +1063,10 @@ p {
   margin-top: 10px;
   text-decoration: none;
   font-weight: 400;
+  display: inline;
+}
+#bottomDiv span {
+  color: #787887;
 }
 #bottomDiv p:nth-child(1) {
   margin-top: 0px;
