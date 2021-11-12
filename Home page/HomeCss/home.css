@@ -11,11 +11,15 @@ a{
 }
 
 
-/* NavBar Css part start */
+
 
 #respoviesNavbarMaiandiv {
     display: none;
 }
+
+
+
+/* NavBar Css part start */
 
 #NavBar {
     display: grid;
