@@ -10,24 +10,30 @@ body {
 /* OnePicSlide start */
 
 #onePicSlide img {
-  max-height: 275px;
+  max-height: 285px;
   width: 100%;
   padding-top: 15px;
   margin-top: 0px;
-  padding-top: 0px;
+  padding-top: 25px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 #slide1 {
   background-color: rgb(228, 242, 235);
+  /* padding: 20px 60px 0px 20px; */
 }
 #slide2 {
   background-color: rgb(238, 235, 248);
+  /* padding: 20px 60px 0px 20px; */
 }
 #slide3 {
   background-color: #e7f1f7;
+  /* padding: 20px 60px 0px 20px; */
 }
 #slide4 {
   background-color: rgb(247, 232, 230);
+  /* padding: 20px 60px 0px 20px; */
 }
 
 /* OnePicSlide ends */
@@ -35,10 +41,15 @@ body {
 /* products start */
 
 #products {
-  /* width: 1180px; */
   margin: 0 auto;
   margin-top: 50px;
   width: 90%;
+}
+#products > div > p {
+  margin-top: 30px;
+  color: #414146;
+  font-weight: 400;
+  font-size: 16px;
 }
 #products > h2 {
   color: #2d2d32;
@@ -355,6 +366,9 @@ ul {
 p {
   margin: 0px;
 }
+.second2Text > h4 {
+  color: #28328c;
+}
 .second1Text > h4,
 p {
   margin: 0px;
@@ -367,10 +381,11 @@ p {
   display: grid;
   grid-template-columns: 13% 50% 18% 10%;
   justify-content: center;
-  padding: 20px;
-  padding-top: 0px;
+  padding: 20px 20px 0px;
   align-items: center;
   padding-bottom: 0px;
+  border-bottom: 1px solid #f0f0f5;
+  background-color: #fafafa;
 }
 
 #NavBar > .NavFirstSection {
@@ -380,6 +395,7 @@ p {
 
 #NavBar > .NavFirstSection > img {
   width: 72%;
+  margin: 0px;
 }
 
 #NavBar > .NavSecondSection {
@@ -423,6 +439,7 @@ p {
   list-style: none;
   gap: 0px;
   z-index: 1;
+  padding-left: 0px;
 }
 
 #forProvidersmanu,
