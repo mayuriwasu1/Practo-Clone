@@ -8,6 +8,11 @@
 a {
   text-decoration: none;
 }
+
+form p {
+  color: lawngreen;
+  font-size: 16px;
+}
 /*First box starts*/
 .pinkBox {
   font-weight: 400;
@@ -529,13 +534,16 @@ a {
 .docter h4 {
   margin-bottom: 5px;
 }
-.docter p {
+.docter > div > p {
   font-size: 12px;
   line-height: 1.5;
   overflow: hidden;
   padding: 0px;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.docter > div {
+  width: 80%;
 }
 .docter label {
   position: relative;

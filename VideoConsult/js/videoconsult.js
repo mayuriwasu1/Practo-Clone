@@ -81,3 +81,16 @@ document.querySelector("#HQfooter>span").addEventListener("click", function () {
     hide3.style.display = "block";
   }
 });
+
+// Adding arrow
+
+console.log(document.querySelectorAll(".slick-prev"));
+
+document
+  .querySelector("#inputNum>button")
+  .addEventListener("submit", function (e) {
+    var verification = document.createElement("p");
+    verification.textContent = "Verification link sent";
+    form.append(verification);
+    e.preventDefault();
+  });
