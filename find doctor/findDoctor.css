@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: rgb(240,240,245);
   margin: 0%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,7 +11,7 @@ body {
  
   height: 80px;
   align-items: center;
- 
+  background-color:  white;
 }
 
 #NavBar > .NavFirstSection {
@@ -52,7 +52,7 @@ body {
 #NavBar > .NavThirdSection > ul > li {
   color: #414146;
   font-size: 14px;
- 
+
   font-weight: 200;
   cursor: pointer;
 }
@@ -63,6 +63,7 @@ body {
   position: relative;
   list-style: none;
   gap: 5px;
+  z-index: 1;
 }
 
 #forProvidersmanu,
@@ -152,7 +153,7 @@ body {
   margin-top: 20px;
   min-height: 480px;
   width: 100%;
-  border: 1px solid rgb(40,49,140);
+  border: 1px solid rgb(40, 49, 140);
 }
 .main_text {
   position: absolute;
@@ -190,6 +191,10 @@ body {
 #popular h5 {
   padding-left: 5%;
   color: rgb(141, 147, 179);
+  
+}
+#popular> h5 :hover{
+  color: white;
 }
 #health_provider {
   height: 75px;
@@ -259,8 +264,8 @@ body {
   padding-top: 20px;
   color: rgb(184, 187, 195);
 }
-.anchor{
-  color:  white;
+.anchor {
+  color: white;
   text-decoration: none;
 }
 #safetydiv {
@@ -364,6 +369,7 @@ body {
   width: 100%;
   /* border: 1px solid green; */
   display: flex;
+  background-color:  white;
 }
 #appoinment > #find_doctor {
   height: 500px;
@@ -483,28 +489,36 @@ span {
   height: 600px;
   width: 100%;
   /* border: 1px solid blue; */
+  background-color: white;
 }
+/* #health_expert :hover{
+  transform: scale(1);
+  box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
+} */
 #health_expert h1 {
   text-align: center;
   margin-top: 5%;
   font-size: 40px;
   color: rgb(65, 65, 70);
 }
-.slider_artical {
+.multiple-items {
   display: flex;
   height: 60%;
   width: 80%;
-  /* border: 1px solid red; */
+  
   margin: auto;
 }
 
+
 .slider_image {
-  /* border: 1px solid blue; */
+  border: 1px solid green;
   height: 98%;
   width: 30%;
   margin: 10px;
   margin-top: 10px;
   border-radius: 2px;
+ 
+  /* box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px; */
 }
 .slider_image :hover {
   box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
@@ -520,6 +534,7 @@ span {
   line-height: 20px;
   margin-left: 20px;
   color: rgb(65, 65, 70);
+  line-height: 18px;
 }
 
 .slider_image > h6 {
@@ -589,6 +604,7 @@ span {
   /* border: 1px solid purple; */
   display: flex;
   gap: 100px;
+  background-color: white;
 }
 .secure_app_img {
   height: 250px;
@@ -611,6 +627,7 @@ span {
 }
 .record_info {
   margin-top: 30px;
+ 
 }
 .healthcare_providers {
   height: 700px;
@@ -688,4 +705,4 @@ span {
   gap: 20px;
   border: none;
   outline: none;
-} */
+}
