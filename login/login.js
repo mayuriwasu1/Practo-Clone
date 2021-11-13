@@ -30,7 +30,7 @@ var submit = document.getElementById("submit")
             }
 
             localStorage.setItem("OnetimeID" , JSON.stringify(onTimeI))
-            window.location.href = "/Home page/Home.html";
+            window.location.href = "../Home page/Home.html";
 
         }else {
             error1.innerHTML =

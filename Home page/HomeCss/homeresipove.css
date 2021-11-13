@@ -1,15 +1,8 @@
 
-@media screen and (max-width: 1444px){
-    body {
-        width: 90%;
-        margin: auto;
-    }
-}
 
-
-@media screen and (min-width: 857px) and (max-width: 1024px){
+@media screen and (min-width: 857px) and (max-width: 1444px){
     body {
-        width: 1600px;
+        width: 100%;
         margin: auto;
     }
 }
