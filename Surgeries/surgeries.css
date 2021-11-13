@@ -11,7 +11,10 @@ body {
     box-sizing: border-box;
   }
   
-
+  a{
+    text-decoration: none;
+    color: #2d2d32;
+}
   
 
   /* blue div section  */
@@ -436,7 +439,10 @@ body {
     padding: 0 0 50px 0;
 
   }
-  
+  .c-book-form__items > div > a{
+    color: white;
+
+  }
   .care-app .dweb-right-section .c-form-section {
     position: sticky;
     top: 0;
@@ -747,16 +753,12 @@ a{
 }
 /* NavBar Css part start */
 
-/* NavBar Css part start */
-
-
-
 
 #NavBar {
   display: grid;
   grid-template-columns: 11% 45% 17% 10%;
   justify-content: center;
-  padding: 20px;
+  padding: 15px 0 0 0;
   align-items: center;
 }
 
@@ -885,4 +887,8 @@ z-index: 1;
 #NavBar>.NavFourSection>.loginSignUp>a>button:hover {
   border: solid 1px#00d9ff;
   color: #00d9ff;
+}
+#blue_border{
+  border-bottom: 5px solid #14bef0;
+  padding-bottom: 12px;
 }

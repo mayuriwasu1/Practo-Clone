@@ -4,70 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../Home page/Home Page Images/title logo/favicon.webp"  type = "image/x-icon">
     <title>Sing Up</title>
     <link rel="stylesheet" href="./signUp.css">
   </head>
   <body>
 
         <!-- Nav bhar started  -->
-        <div id="NavBar">
-          <!-- Nav have four section -->
-          <div class="NavFirstSection">
-              <img src="https://raw.githubusercontent.com/Vaman93/Practo-Clone/b7b33f403d69bdc774e2709e3a52022e0806a482/Home%20page/Home%20Page%20Images/practonav%20logo/practo.svg?token=AWIMW2UACUUQULAN6FI3DSTBQJTOK" alt="" />
-          </div>
-          <div class="NavSecondSection">
-              <div class="second1Text">
-                  <h4>Find Doctors</h4>
-                  <p>Book an appointment</p>
-              </div>
-              <div class="second2Text">
-                  <h4>Video Consult</h4>
-                  <p>Consult top doctors</p>
-              </div>
-              <div class="second3Text">
-                  <h4>Medicines</h4>
-                  <p>Practo pharmacy</p>
-              </div>
-              <div class="second4Text">
-                  <h4>Lab Tests</h4>
-                  <p>Book tests & checkup</p>
-              </div>
-              <div class="second5Text">
-                  <h4>Surgeries</h4>
-                  <p>Expert surgical care</p>
-              </div>
-          </div>
-          <div class="NavThirdSection">
-             <ul>
-                 <li id="forProvider" onclick="menuClick()">For Providers
-                  <i class="fas fa-angle-down"></i>
-                      <div id="forProvidersmanu" class="samenav2">
-                          <ul>
-                              <li id="newtext">Practo Prime <span id="new">New</span></li>
-                              <li>Software for providers</li>
-                              <li>List your practice for Free</li>
-                              <li>Corporate wellness</li>
-                          </ul>
-                      </div>
-                 </li>
-                 <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
-                  <div id="Securitysmanu" class="samenav2">
-                      <ul>
-                          <li id="newtext">Data Security</li>
-                          <li>Help</li>
-                      </ul>
-                  </div>
-                
-                 </li>
-              </ul>
-          </div>
-          <div class="NavFourSection">
-              <div class="loginSignUp">
-                  <a href=""><Button>Login / SignUp</Button></a>
-              </div>
-          </div>
-      </div>
+      
       <!-- Nav bar end  -->
+      <div id="NavBar">
+        <!-- Nav have four section -->
+        <div class="NavFirstSection">
+           <a href="../Home page/Home.html"><img src="../PractoImg/practonav logo/practo.svg" alt="" /></a> 
+        </div>
+        <div class="NavSecondSection">
+            <a href="../find doctor/practo find doctor page/find doctor.html"><div class="second1Text">
+                <h4>Find Doctors</h4>
+                <p>Book an appointment</p>
+            </div></a>
+            <a href="../VideoConsult/VideoConsult.html"><div class="second2Text">
+                <h4>Video Consult</h4>
+                <p>Consult top doctors</p>
+            </div></a>
+            <a href="../Medicines/Medicine.html"><div class="second3Text">
+                <h4>Medicines</h4>
+                <p>Practo pharmacy</p>
+            </div></a>
+            <a href="../labtests/Labtests.html"><div class="second4Text">
+                <h4>Lab Tests</h4>
+                <p>Book tests & checkup</p>
+            </div></a>
+            <a href="../Surgeries/surgeries.html"><div class="second5Text" >
+                <h4>Surgeries</h4>
+                <p>Expert surgical care</p>
+            </div></a>
+        </div>
+        <div class="NavThirdSection">
+           <ul>
+               <li id="forProvider" onclick="menuClick()">For Providers
+                <i class="fas fa-angle-down"></i>
+                    <div id="forProvidersmanu" class="samenav2">
+                        <ul>
+                           <a href="#"><li id="newtext">Practo Prime <span id="new">New</span></li></a> 
+                           <a href="#"> <li>Software for providers</li></a>
+                           <a href="../find doctor/practo find doctor page/doctor profile/doctor profile.html"><li>List your practice for Free</li></a> 
+                           <a href="#"><li>Corporate wellness</li></a> 
+                        </ul>
+                    </div>
+               </li>
+               <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+                <div id="Securitysmanu" class="samenav2">
+                    <ul>
+                        <a href=""><li id="newtext">Data Security</li></a>
+                       <a href=""><li>Help</li></a> 
+                    </ul>
+                </div>
+              
+               </li>
+            </ul>
+        </div>
+        <div class="NavFourSection">
+            <div class="loginSignUp" id="loginbutton">
+                <a href="login.html"><Button>Login / SignUp</Button></a>
+            </div>
+        </div>
+    </div>
       <hr>
       <!-- login nav bar -->
 
@@ -84,7 +86,7 @@
         <!-- main part of login page -->
         <div id="commonContainer">
     <div id="leftImagePart">
-      <img src="https://accounts.practo.com/static/images/illustration.png" alt="logInImage">
+      <img src="login_img.jpg" alt="logInImage">
     </div>
 
 

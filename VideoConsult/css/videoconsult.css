@@ -447,6 +447,8 @@ a {
   bottom: 0px;
   max-width: 230px;
   max-height: 90%;
+  width: 90px;
+  height: 100px;
 }
 .colorDiv {
   display: flex;
@@ -513,15 +515,13 @@ a {
 .docter {
   display: flex;
   position: relative;
-  max-width: 271px;
+  max-width: 237px;
+  max-height: 75px;
   border-radius: 6px;
   height: auto;
   border: 1px solid #f0f0f5;
   padding: 15px;
   margin-right: 20px;
-}
-.docter > div {
-  display: inline;
 }
 .docter > section {
   display: flex;
@@ -534,6 +534,11 @@ a {
 .docter h4 {
   margin-bottom: 5px;
 }
+.docter > div:nth-child(2) {
+  width: 80%;
+  max-width: 285px;
+  max-height: 107px;
+}
 .docter > div > p {
   font-size: 12px;
   line-height: 1.5;
@@ -543,7 +548,10 @@ a {
   text-overflow: ellipsis;
 }
 .docter > div {
-  width: 80%;
+  display: block;
+  width: 30%;
+  max-width: 285px;
+  max-height: 107px;
 }
 .docter label {
   position: relative;
@@ -1098,7 +1106,6 @@ iframe + p {
   align-items: center;
   padding-bottom: 0px;
 }
-
 #NavBar > .NavFirstSection {
   width: 95%;
   align-items: center;
@@ -1148,6 +1155,7 @@ iframe + p {
   position: relative;
   list-style: none;
   gap: 0px;
+  padding-left: 0px;
   z-index: 1;
 }
 

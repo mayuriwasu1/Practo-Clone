@@ -12,7 +12,64 @@
     ></script>
   </head>
   <body>
-    <div id="navbar"></div>
+    <div id="NavBar">
+      <!-- Nav have four section -->
+      <div class="NavFirstSection">
+         <a href="/Home page/Home.html"><img src="/PractoImg/practonav logo/practo.svg" alt="" /></a> 
+      </div>
+      <div class="NavSecondSection">
+          <a href="./find doctor.html"><div class="second1Text">
+              <h4>Find Doctors</h4>
+              <p>Book an appointment</p>
+          </div></a>
+          <a href="/VideoConsult/VideoConsult.html"><div class="second2Text">
+              <h4>Video Consult</h4>
+              <p>Consult top doctors</p>
+          </div></a>
+          <a href="/Medicines/Medicine.html"><div class="second3Text">
+              <h4>Medicines</h4>
+              <p>Practo pharmacy</p>
+          </div></a>
+          <a href="/labtests/Labtests.html"><div class="second4Text">
+              <h4>Lab Tests</h4>
+              <p>Book tests & checkup</p>
+          </div></a>
+          <a href="/Surgeries/surgeries.html"><div class="second5Text">
+              <h4>Surgeries</h4>
+              <p>Expert surgical care</p>
+          </div></a>
+      </div>
+      <div class="NavThirdSection">
+         <ul>
+             <li id="forProvider" onclick="menuClick()">For Providers
+              <i class="fas fa-angle-down"></i>
+                  <div id="forProvidersmanu" class="samenav2">
+                      <ul>
+                         <a href="#"><li id="newtext">Practo Prime <span id="new">New</span></li></a> 
+                         <a href="#"> <li>Software for providers</li></a>
+                         <a href="/find doctor/practo find doctor page/doctor profile/doctor profile.html"><li>List your practice for Free</li></a> 
+                         <a href="#"><li>Corporate wellness</li></a> 
+                      </ul>
+                  </div>
+             </li>
+             <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+              <div id="Securitysmanu" class="samenav2">
+                  <ul>
+                      <a href=""><li id="newtext">Data Security</li></a>
+                     <a href=""><li>Help</li></a> 
+                  </ul>
+              </div>
+            
+             </li>
+          </ul>
+      </div>
+      <div class="NavFourSection">
+          <div class="loginSignUp" id="loginbutton">
+              <a href="/login/signUp/login.html"><Button>Login / SignUp</Button></a>
+          </div>
+         
+      </div>
+  </div>
     <!-- .......1st main div............ -->
     <div class="patient_looking_doctor">
       <!-- .... data div ..... -->
@@ -47,7 +104,7 @@
       </div>
       <!-- ....... data div end...... -->
       <div id="looking_doctor_img_div">
-        <img src="../practo find doctor page/images/doctorprof1.png" alt="" />
+        <img src="../images/doctorprof1.png" alt="" />
       </div>
     </div>
     <!-- .........1st main div end........... -->
@@ -55,7 +112,7 @@
     <!-- ..........2nd main div start........ -->
     <div class="editProfile">
       <div class="edit_profile_img_div">
-        <img src="./images/editprof.png" alt="" />
+        <img src="../images/editprof.png" alt="" />
       </div>
       <div class="edit_profile_data_div">
         <h1 class="main_heading">
@@ -92,7 +149,7 @@
         </h4>
       </div>
       <div class="feedback_img_div">
-        <img src="./images/feedback.png" alt="" />
+        <img src="../images/feedback.png" alt="" />
       </div>
     </div>
     <!-- ..........3rd main div end........ -->
@@ -100,7 +157,7 @@
     <!-- ..........4th main div start........ -->
     <div id="improve_prof_div">
       <div class="improve_prof_img">
-        <img src="./images/improve.png" alt="" />
+        <img src="../images/improve.png" alt="" />
       </div>
       <div class="improve_prof_data">
         <h1 class="main_heading">Improve your profile with tips from us</h1>
@@ -126,7 +183,7 @@
       <div class="info_details">
         <div class="flex_divs">
           <div class="icon_part">
-            <img src="./images/xyz.png" alt="" />
+            <img src="../images/xyz.png" alt="" />
           </div>
           <h4>Register or find yourself on Practo.com</h4>
           <h4 class="extra_info">
@@ -136,7 +193,7 @@
         </div>
         <div class="flex_divs">
           <div class="icon_part">
-            <img src="./images/xyz2.png" alt="" />
+            <img src="../images/xyz2.png" alt="" />
           </div>
           <h4>Add your profile information</h4>
           <h4 class="extra_info">
@@ -146,7 +203,7 @@
         </div>
         <div class="flex_divs">
           <div class="icon_part">
-            <img src="./images/xyz3.png" alt="" />
+            <img src="../images/xyz3.png" alt="" />
           </div>
           <h4>Help us verify your details</h4>
           <h4 class="extra_info">
@@ -169,7 +226,7 @@
 
     <div id="download_app_div">
       <div class="download_app_img">
-        <img src="./images/app_image.png" alt="" />
+        <img src="../images/app_image.png" alt="" />
       </div>
       <div class="improve_prof_data">
         <h1 class="main_heading">Download Practo Pro app</h1>
