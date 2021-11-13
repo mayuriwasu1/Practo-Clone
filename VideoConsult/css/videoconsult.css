@@ -13,6 +13,7 @@ form p {
   color: lawngreen;
   font-size: 16px;
 }
+
 /*First box starts*/
 .pinkBox {
   font-weight: 400;
@@ -575,7 +576,9 @@ a {
   padding: 25px 50px;
   margin-top: 30px;
 }
-
+#howItWorks > h1 {
+  padding-bottom: 30px;
+}
 #hiwBox {
   display: flex;
   justify-content: space-around;
@@ -876,7 +879,9 @@ iframe + p {
   text-align: left;
   color: #787887;
 }
-
+#faqDetails a > span {
+  color: #787887;
+}
 #head5 {
   margin-top: 100px;
   padding-bottom: 50px;
@@ -902,7 +907,7 @@ iframe + p {
 }
 #healthQuaries > div > div {
   display: flex;
-  gap: 50%;
+  gap: 20%;
 }
 #healthQuaries span {
   font-size: 14px;
@@ -1158,7 +1163,13 @@ iframe + p {
   padding-left: 0px;
   z-index: 1;
 }
-
+#NavBar > .NavThirdSection > ul > li {
+  color: #414146;
+  font-size: 14px;
+  padding: 8px;
+  font-weight: 200;
+  cursor: pointer;
+}
 #forProvidersmanu,
 #Securitysmanu {
   display: none;
@@ -1227,4 +1238,5 @@ iframe + p {
   border: solid 1px#00d9ff;
   color: #00d9ff;
 }
+
 /* NavBar Css part end */
