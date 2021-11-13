@@ -1,113 +1,68 @@
-var slider_sec3_data = [
-  {
-    name: "COVID RTPCR",
-    price: 800,
-    button: document.getElementById("sec3_adddiv_1"),
-  },
-  {
-    name: "Fasting Blood Sugar",
-    price: 150,
-    button: document.getElementById("sec3_adddiv_2"),
-  },
-  {
-    name: "Beta HCE",
-    price: 294,
-    button: document.getElementById("sec3_adddiv_3"),
-  },
-  {
-    name: "Vitamin B12",
-    price: 490,
-    button: document.getElementById("sec3_adddiv_4"),
-  },
-  {
-    name: "Hba1C",
-    price: 270,
-    button: document.getElementById("sec3_adddiv_5"),
-  },
-  {
-    name: "Liver Function Test",
-    price: 560,
-    button: document.getElementById("sec3_adddiv_6"),
-  },
-  {
-    name: "Lipid Profile",
-    price: 434,
-    button: document.getElementById("sec3_adddiv_7"),
-  },
-  {
-    name: "Complete Blood Count",
-    price: 300,
-    button: document.getElementById("sec3_adddiv_8"),
-  },
-  {
-    name: "Thyroid Profile",
-    price: 400,
-    button: document.getElementById("sec3_adddiv_9"),
-  },
-];
+var cartarr = JSON.parse(localStorage.getItem("cartitems")) || [];
+function addcart(item, amt) {
+  //  displaypop(cartarr);
+ 
+  var obj = {
+    name: item,
+    price: amt,
+  };
+  cartarr.push(obj);
+  localStorage.setItem("cartitems", JSON.stringify(cartarr));
+}
+var cartbutton = document.querySelector("#cart");
+cartbutton.addEventListener("click", function () {
+  displaypop(cartarr);
+});
+var cartcount = 0;
+function displaypop(cartarr) {
+  var cartarr = JSON.parse(localStorage.getItem("cartitems"))||[];
+    var cartitem_div = document.getElementById("cartitem_div");
+    cartitem_div.innerHTML="";
+    cartarr.map(function (item) {
+    var item_maindiv = document.createElement("div");
+    item_maindiv.setAttribute("class", "item_maindiv");
+    var item_pricediv = document.createElement("div");
+    item_pricediv.setAttribute("class", "item_pricediv");
+    var itemname = document.createElement("div");
+    itemname.setAttribute("class", "itemname");
+    itemname.textContent = item.name;
+    var itemprice = document.createElement("div");
+    itemprice.setAttribute("class", "itemprice");
+    itemprice.textContent = "₹" + " " + item.price;
+    var logo_div = document.createElement("div");
+    logo_div.setAttribute("id", "logo_div");
+    var logo_div_img = document.createElement("img");
+    logo_div_img.setAttribute(
+      "src",
+      "https://prod-dx.s3.amazonaws.com/dx/labs/Practo_Labs.png"
+    );
+    var logo_div_txt = document.createElement("div");
+    logo_div_txt.textContent = "By Practo Labs";
+    logo_div.append(logo_div_img, logo_div_txt);
+    item_pricediv.append(itemname, itemprice);
+    item_maindiv.append(item_pricediv, logo_div);
+    var cartitem_div = document.getElementById("cartitem_div");
+    cartitem_div.append(item_maindiv);
+    var testnum = document.getElementById("test_num");
+    testnum.textContent = cartarr.length + " " + "Test";
+  });
 
-
-  
-  
-    
-var prodarr = JSON.parse(localStorage.getItem("cartitems")) || [];
-var cartdiv= document.querySelector("#cartdiv");
-var cartbutton=document.querySelector("#cart");
-
- slider_sec3_data.map(function (item) {
-   item.button.addEventListener("click", function () {
-     displayItems();
-     addCart(item);
-   });
-   
-   function addCart(item) {
-     var prodarr = JSON.parse(localStorage.getItem("cartitems")) || [];
-     console.log("working");
-     prodarr.push(item);
-     localStorage.setItem("cartitems", JSON.stringify(prodarr));
-   }
-   cartbutton.addEventListener("click", displayItems);
-   function displayItems() {
-     console.log("workin");
-
-     var maindiv = document.createElement("div");
-     maindiv.setAttribute("id", "cartbtn_maindiv");
-     cartdiv.append(maindiv);
-     var head = document.createElement("div");
-     head.setAttribute("id", "carthead");
-     var title_head = document.createElement("div");
-     title_head.setAttribute("id", "title_head");
-     var your_cart = document.createElement("span");
-     your_cart.setAttribute("id", "your_cart");
-     your_cart.textContent = "Your Cart";
-     var test_num = document.createElement("span");
-     test_num.setAttribute("id", "test_num");
-     test_num.textContent = prodarr.length + " " + "Test";
-     title_head.append(your_cart, test_num);
-     var cartitem_div = document.createElement("div");
-     cartitem_div.setAttribute("id", "cartitem_div");
-     var item_logodiv = document.createElement("div");
-     item_logodiv.setAttribute("id", "item_logodiv");
-     var item_pricediv = document.createElement("div");
-     item_pricediv.setAttribute("id", "item_pricediv");
-     var itemname = document.createElement("div");
-     itemname.setAttribute("id", "itemname");
-     itemname.textContent = item.name;
-     var itemprice = document.createElement("div");
-     itemprice.setAttribute("id", "itemprice");
-     itemprice.textContent = item.price;
-
-     item_pricediv.append(itemname, itemprice);
-     item_logodiv.append(item_pricediv);
-     cartitem_div.append(item_logodiv);
-     head.append(title_head);
-     maindiv.append(head, cartitem_div);
-   }
+  cartcount++;
+  if (cartcount % 2 != 0) {
+    document.getElementById("cartpop").style.display = "none";
+  } else {
+    document.getElementById("cartpop").style.display = "block";
+  }
+  var totalamount=cartarr.reduce(function(acc,cv) {
+     return acc+Number(cv.price);        
+    },0)
+  var total = document.getElementById("totalamnt_amt");
+  total.textContent="₹"+" "+(totalamount+150);
+ 
+}
+ window.addEventListener("load", (event) => {
+   document.getElementById("cartpop").style.display = "none";
  });
-
-
-
-
 
 
 // <!-- SLIDER 1 J QUERY -->

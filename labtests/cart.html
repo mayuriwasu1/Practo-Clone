@@ -5,45 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <title>Cart</title>
 </head>
 <body>
         <div id="mainwrap">
+            
             <div id="detailswrap">
-                <div id="progressbar">
-                </div>
                 <div id="patdetails">
                     <h2>Add patient details</h2>
                     <div id=patname>
                          <label>Patient Name <span>*</span></label><br>
-                         <input type="text" id="patname_input">
+                         <input type="text" id="patname_input" placeholder="John Doe">
                          <div id="patname_err"></div>
                         </div>
-                         <div id=Age>
-                            <label>Date of Birth<span>*</span></label><br>
-                                <input type="number" id="dob_val"> <span>
-                                    <select name="" id="">
-                                        <option value="Years">Years</option>
-                                        <option value="Months">Months</option>
-                                        <option value="Days">Days</option>
-                                </select></span>  
-                                <div id="DOBerror_msg">
-
-                                </div>
-                        </div>
                         <div id="gender">
-                            <label>Gender<span>*</span></label><br>
-                          <input type="radio" name="" id=""> <span>Male</span>
-                          <input type="radio" name="" id=""> <span>Female</span>
-                        <input type="radio" name="" id=""> <span>Other</span>
+                            <label id="genderlabel">Gender <span>*</span></label><br>
+                            <div id="genderinput">
+                          <input type="radio" name="" id="maleinput"> <span>Male</span>
+                          <input type="radio" name="" id="femaleinput"> <span>Female</span>
+                        <input type="radio" name="" id="otherinput"> <span>Other</span>
+                        </div>
                         </div>
                         <div id="Mobnumber">
-                            <label>Mobile Number<span>*</span></label><br>
-                            <input type="number" name="" id="">
+                            <label>Mobile Number <span>*</span></label><br>
+                            <input type="number" name="" id="Mobnumber_input">
                         </div>
                         <div id="Email">
                             <label>Email<span>*</span></label><br>
-                            <input type="text" name="" id="">
+                            <input type="text" name="" id="email_input" placeholder="you@practo.com">
                         </div>
                         <div id="continuebtn">Continue
 
@@ -53,7 +43,33 @@
                 </div>
 
             </div>
-            <div id="amntwrap"></div>
+            <div id="amntwrap">
+                <div id="cartpop">
+                    <div id="cartpop_head">
+                        <div class="your_cart">Your Cart</div>
+                        <div id="test_num"></div>
+                    </div>
+                    <div id="cartitem_div">
+                    </div>
+                    <div id="coupon_apply">
+                        <div id="coupon_apply_innerdiv">
+                            <i class="fas fa-gift  gift_icon"></i> <span class="apply_btn">Apply Coupon</span> <i class="fas fa-chevron-right  apply_rightarr"></i>
+                        </div>
+                    </div>
+                    <div id="pickup_charge">
+                        <div id="pickup_charge_innerdiv">
+                            <div id="pickup_charge_txt">Pick up charges</div>
+                            <div id="pickup_charge_amt">₹ 150</div>
+                        </div>
+                    </div>
+                    <div id="totalamnt">
+                        <div id="totalamnt_innerdiv">
+                            <div id="totalamnt_txt">Total</div>
+                            <div id="totalamnt_amt"></div>
+                        </div>
+                    </div>
+
+            </div>
         </div>
         
 </body>
