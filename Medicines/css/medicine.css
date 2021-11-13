@@ -11,7 +11,8 @@ body {
 
 #onePicSlide img {
   max-height: 285px;
-  width: 100%;
+  width: 85%;
+  margin: auto;
   padding-top: 15px;
   margin-top: 0px;
   padding-top: 25px;
@@ -33,7 +34,6 @@ body {
 }
 #slide4 {
   background-color: rgb(247, 232, 230);
-  /* padding: 20px 60px 0px 20px; */
 }
 
 /* OnePicSlide ends */
@@ -176,10 +176,8 @@ img {
   margin-bottom: 50px;
 }
 #CIdiv > div {
-  /* width: 1180px; */
   margin: 0 auto;
   padding: 15px 15px 0 15px;
-  max-height: 280px;
 }
 
 /* End of CIdiv */
@@ -329,6 +327,7 @@ img {
 
 #lastDiv {
   /* width: 1180px; */
+  width: 85%;
   margin: 0 auto;
   text-align: justify;
 }
@@ -355,7 +354,11 @@ ul {
 #lastDiv ul {
   padding-left: 20px;
 }
-
+#seemore {
+  border: 0px;
+  color: #28328c;
+  background-color: #fff;
+}
 /* NavBar Css part start */
 
 .second2Text {
@@ -446,7 +449,14 @@ p {
 #Securitysmanu {
   display: none;
 }
-
+#forProvidersmanu > ul > a {
+  text-decoration: none;
+  color: #414146;
+}
+#Securitysmanu > ul > a {
+  text-decoration: none;
+  color: #414146;
+}
 #forProvider:hover #forProvidersmanu {
   display: block;
   width: 230px;
