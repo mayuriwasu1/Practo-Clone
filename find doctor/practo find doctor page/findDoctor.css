@@ -724,3 +724,66 @@ span {
   padding-bottom: 5px;
 }
 
+#HomeFooterSection {
+  padding: 50px;
+  background-color: #28328c;
+}
+
+.footersection1{
+  display: flex;
+  justify-content: center;
+  margin-bottom:50px;
+}
+
+.footers1t {
+  margin-left: 80px;
+  width: 15%;
+  text-align: center;
+  text-align: left;
+}
+
+.footers1t > h2{
+  font-size: 15px;
+  font-size: 700;
+  color:#fff;
+  margin-bottom: 20px;
+}
+
+.footers1t > ul > a {
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footers1t > ul > a:hover{
+
+  text-decoration: underline;
+}
+
+.footers1t > ul > a > li{
+  font-size: 15px;
+ color: #fff; 
+ font-weight: 100;
+margin-bottom: 10px;
+ list-style: none;
+}
+
+.footers1t > ul{
+  padding: 0;
+}
+
+.footer2sectio {
+  margin-top: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.footer2sectiontextcopy {
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(252, 252, 252);
+}
+.footer2sectiontextcopy > h3{
+  font-size: 14px;
+}
+
