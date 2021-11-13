@@ -5,6 +5,14 @@
   }
 } */
 
+<<<<<<< HEAD
+
+@media screen and (min-width: 857px) and (max-width: 1444px){
+    body {
+        width: 100%;
+        margin: auto;
+    }
+=======
 @media screen and (min-width: 857px) and (max-width: 1444px) {
   body {
     width: 100%;
@@ -33,6 +41,7 @@
   .resfouimgdiv1 > img {
     width: 60%;
   }
+>>>>>>> 7199ad03a4f5b1a1ff50e1ec770225cf97b6193a
 }
 
 @media screen and (min-width: 0px) and (max-width: 430px) {
