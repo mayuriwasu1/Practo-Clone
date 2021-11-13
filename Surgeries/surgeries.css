@@ -439,7 +439,10 @@ body {
     padding: 0 0 50px 0;
 
   }
-  
+  .c-book-form__items > div > a{
+    color: white;
+
+  }
   .care-app .dweb-right-section .c-form-section {
     position: sticky;
     top: 0;
