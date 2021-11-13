@@ -67,9 +67,11 @@ body {
 }
 #popular h5 a {
   color: rgb(141, 147, 179);
+  text-decoration: none;
 }
 #popular> h5 :hover{
   color: white;
+  text-decoration: underline;
 }
 #health_provider {
   height: 75px;
@@ -103,15 +105,20 @@ body {
 .services_text {
   justify-content: center;
   margin-top: 15px;
+ 
+ 
 }
 
-.services:hover {
+#health_provider .services a:hover {
   color: white;
-  transform: scale(0.5px);
+  transform: scale(1px);
+}
+#health_provider .services .icon:hover{
+  color: white;
 }
 .icon2 {
   font-size: 15px;
-  color: white;
+  color:rgb(159, 163, 200) ;
   font-weight: normal;
   padding-left: 45%;
   padding-top: 10%;
@@ -127,6 +134,7 @@ body {
   width: 10px;
   color: blueviolet;
 }
+
 #health_provider ul {
   list-style: none;
   color: white;
@@ -140,7 +148,7 @@ body {
   color: rgb(184, 187, 195);
 }
 .anchor {
-  color: white;
+  color: rgb(159, 163, 200);
   text-decoration: none;
 }
 #safetydiv {
