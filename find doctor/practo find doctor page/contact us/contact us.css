@@ -157,7 +157,7 @@ body {
 
 #get_direction > a {
   text-decoration: none;
-
+padding: 2px;
 }
 
 #get_direction > a > button{
@@ -174,10 +174,12 @@ body {
  
 }
 #adress{
-  height: 98%;
-  width: 70%;
+  height: 108%;
+  width: 80%;
+  padding: 3px;
+
   /* border: 1px solid blue; */
-  color: blue;
+  color: black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
   
