@@ -13,154 +13,10 @@ body {
   
   a{
     text-decoration: none;
-    color: black;
-  }
-  /* NavBar Css part start */
-
-#respoviesNavbarMaiandiv {
-  display: none;
+    color: #2d2d32;
 }
-
-#NavBar {
-  display: grid;
-  grid-template-columns: 11% 45% 17% 10%;
-  justify-content: center;
-  padding: 20px;
-  align-items: center;
-}
-
-#NavBar>.NavFirstSection {
-  width: 95%;
-  align-items: center;
-}
-
-#NavBar>.NavFirstSection>img {
-  width: 72%;
-}
-
-#NavBar>.NavSecondSection {
-  display: flex;
-  gap: 12px;
-  cursor: pointer;
-}
-
-
-
-#NavBar>.NavSecondSection> a {
-  width: 20%;
-  padding: 4px;
-  text-decoration: none;
-}
-
-#NavBar>.NavSecondSection> a > div>h4 {
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 550;
-  color: #2d2d32;
-}
-
-#NavBar>.NavSecondSection> a > div>p {
-  font-size: 12px;
-  color: #787887;
-}
-#NavBar>.NavSecondSection> a > div>h4:hover{
-  color: #112092;
-}
-
-#NavBar>.NavThirdSection > ul > li{
-  color: #414146;
-  font-size: 14px;
-  padding: 8px;
-  font-weight: 200;
-  cursor: pointer;
-
-}
-
-
-#NavBar>.NavThirdSection > ul{
-  align-items: center;
-  display: flex;
-  position: relative;
-  list-style: none;
-  gap:0px;
-  z-index: 1;
-}
-
-#forProvidersmanu , #Securitysmanu{
-  display: none;
-
-}
-
-#forProvider:hover #forProvidersmanu{
-
-  display: block;
- width: 230px;
-  margin-left: -100px;
-  position: absolute;
-  left:100;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-#SecurityHelpNav:hover #Securitysmanu{
-  display: block;
-  width: 230px;
-   margin-left: -60px;
-   position: absolute;
-   left:100;
-   background-color: #ffffff;
-   border-radius: 5px;
-   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.samenav2 > ul {
-  list-style: none;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0px;
-}
-.samenav2 > ul > li {
-  margin: 10px 0px;
-  padding: 15px;
-}
-#new{
-  background-color: rgb(255, 174, 0);
-  font-size: 12px;
-  padding: 6px;
-  color: #fff;
- float: right;
- margin-right: 20px;
- margin-top: -2px;
-}
-
-
-.samenav2 > ul > li:hover{
- background-color: #F0F1F4    ;
-}
-
-#NavBar>.NavFourSection>.loginSignUp>a>button {
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  background-color: transparent;
-  color: #787887;
-  border-radius: 4px;
-  border: solid 1px#d3d3d3;
-  padding: 8px 10px;
-}
-
-#NavBar>.NavFourSection>.loginSignUp>a>button:hover {
-  border: solid 1px#00d9ff;
-  color: #00d9ff;
-}
-
-
-/* NavBar Css part end */
-
   
+
   /* blue div section  */
   #app {
     
@@ -885,4 +741,151 @@ padding: 0 15px;
 .slider_cart > p {
   font-size: 13px;
   padding: 8px;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+/* NavBar Css part start */
+
+
+#NavBar {
+  display: grid;
+  grid-template-columns: 11% 45% 17% 10%;
+  justify-content: center;
+  padding: 15px 0 0 0;
+  align-items: center;
+}
+
+#NavBar>.NavFirstSection {
+  width: 95%;
+  align-items: center;
+}
+
+#NavBar>.NavFirstSection> a > img {
+  width: 72%;
+}
+
+#NavBar>.NavSecondSection {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+
+
+#NavBar>.NavSecondSection> a {
+  width: 20%;
+  padding: 4px;
+  text-decoration: none;
+}
+
+#NavBar>.NavSecondSection> a > div>h4 {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 550;
+  color: #2d2d32;
+}
+
+#NavBar>.NavSecondSection> a > div>p {
+  font-size: 12px;
+  color: #787887;
+}
+#NavBar>.NavSecondSection> a > div>h4:hover{
+  color: #112092;
+}
+
+#NavBar>.NavThirdSection > ul > li{
+  color: #414146;
+  font-size: 14px;
+  padding: 8px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+
+#NavBar>.NavThirdSection > ul{
+  align-items: center;
+  display: flex;
+  position: relative;
+  list-style: none;
+  gap:0px;
+}
+
+#forProvidersmanu , #Securitysmanu{
+  display: none;
+
+}
+
+#forProvider:hover #forProvidersmanu{
+  z-index: 1;
+  display: block;
+ width: 230px;
+  margin-left: -100px;
+  position: absolute;
+  left:100;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#SecurityHelpNav:hover #Securitysmanu{
+  display: block;
+  width: 230px;
+   margin-left: -60px;
+   position: absolute;
+z-index: 1;
+   background-color: #ffffff;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.samenav2 > ul {
+  list-style: none;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+
+}
+.samenav2 > ul > a > li {
+  margin: 10px 0px;
+  padding: 15px;
+}
+#new{
+  background-color: rgb(255, 174, 0);
+  font-size: 12px;
+  padding: 6px;
+  color: #fff;
+ float: right;
+ margin-right: 20px;
+ margin-top: -2px;
+}
+
+
+.samenav2 > ul > a> li:hover{
+ background-color: #F0F1F4    ;
+}
+
+#NavBar>.NavFourSection>.loginSignUp>a>button {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #787887;
+  border-radius: 4px;
+  border: solid 1px#d3d3d3;
+  padding: 8px 10px;
+}
+
+#NavBar>.NavFourSection>.loginSignUp>a>button:hover {
+  border: solid 1px#00d9ff;
+  color: #00d9ff;
+}
+#blue_border{
+  border-bottom: 5px solid #14bef0;
+  padding-bottom: 12px;
 }
