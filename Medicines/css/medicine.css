@@ -396,7 +396,7 @@ p {
   align-items: center;
 }
 
-#NavBar > .NavFirstSection > img {
+#NavBar > .NavFirstSection > a > img {
   width: 72%;
   margin: 0px;
 }
