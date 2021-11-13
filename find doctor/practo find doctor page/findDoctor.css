@@ -63,6 +63,10 @@ body {
   padding-left: 5%;
   color: rgb(141, 147, 179);
   
+  
+}
+#popular h5 a {
+  color: rgb(141, 147, 179);
 }
 #popular> h5 :hover{
   color: white;
@@ -312,6 +316,7 @@ body {
 .video {
   height: 100%;
   width: 100%;
+  
 }
 #waiting_room {
   background-color: rgb(240, 240, 245);
@@ -630,6 +635,7 @@ span {
   padding: 8px;
   font-weight: 200;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #NavBar > .NavThirdSection > ul {
@@ -639,11 +645,13 @@ span {
   list-style: none;
   gap: 0px;
   z-index: 1;
+  text-decoration: none;
 }
 
 #forProvidersmanu,
 #Securitysmanu {
   display: none;
+ 
 }
 
 #forProvider:hover #forProvidersmanu {
@@ -655,6 +663,7 @@ span {
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  
 }
 
 #SecurityHelpNav:hover #Securitysmanu {
