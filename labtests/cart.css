@@ -1,0 +1,226 @@
+body {
+  background-color: #f0f0f5;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#mainwrap {
+  width: 1180px;
+  height: 811px;
+  margin: auto;
+  display: flex;
+}
+#detailswrap {
+  width: 780px;
+  height: 811px;
+  background-color: #fff;
+}
+/* #amntwrap{
+    width: 380px;
+    height: 433px;
+    border: 1px solid green;
+    background-color: #fff;
+    margin-left: 20px;
+} */
+#patdetails{
+    width: 380px;
+    height: 689px;
+    margin: auto;
+}
+#patdetails>h2{
+    color: #414146;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 0px;
+}
+
+#gender{
+    margin-top: 60px;
+}
+#Mobnumber{
+    margin-top: 60px;
+}
+#Email{
+    margin-top: 60px;
+}
+#continuebtn{
+    width: 320px;
+    height: 48px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8px;
+    line-height: 45px;
+    border: 1px solid #199fd9;
+    background: #199fd9;
+    font-weight: 700;
+    margin-top: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+#patname_input,#Mobnumber_input,#email_input{
+    height: 33px;
+    margin-top: 5px;
+    width: 320px;
+    border-radius: 3px;
+    border: 1px solid #e3e3ec;
+    color:#333;
+}
+#genderinput{
+    margin-top: 5px;
+}
+#patname{
+    margin-top: 45px;
+}
+#patname_input:hover{
+    border: 1px solid #199fd9;
+}
+#Mobnumber_input:hover{
+    border: 1px solid #199fd9;
+}
+#email_input:hover{
+    border: 1px solid #199fd9;
+}
+#patname>label>span{
+    color: red;
+}
+#gender>label>span{
+    color: red;
+}
+#Mobnumber>label>span{
+    color: red;
+}
+#Email>label>span{
+    color: red;
+}
+
+#cartpop {
+  border: 1px solid #cacad3;
+  position: absolute;
+  right: 44px;
+  width: 370px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+#cartpop_head {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #cacad3;
+  display: flex;
+  padding-bottom: 15px;
+}
+.your_cart {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+#test_num {
+  margin-top: 10px;
+  font-size: 12px;
+  width: 50px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+
+#cartitem_div {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-top: 3px;
+}
+.item_maindiv {
+  width: 100%;
+  height: 99px;
+  /* border: 1px solid orangered; */
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.itemname {
+  font-weight: 700;
+  font-size: 15px;
+}
+.itemprice {
+  margin-right: 35px;
+}
+.item_pricediv {
+  /* border:1px solid greenyellow; */
+  height: 25px;
+  margin-top: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+#logo_div {
+  /* border: 1px solid blue; */
+  width: 95%;
+  height: 23px;
+  font-size: 13px;
+  display: flex;
+  margin-top: 15px;
+}
+#logo_div > img {
+  width: 50px;
+  height: 23px;
+}
+#logo_div > :nth-child(2) {
+  width: 95px;
+  height: 23px;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+#coupon_apply {
+  width: 95%;
+  height: 49px;
+  border: 1px dashed rgb(180, 180, 190);
+  color: #414146;
+  margin-left: 8px;
+}
+.apply_btn {
+  font-size: 16px;
+  font-weight: 700;
+}
+.apply_rightarr {
+  font-size: 20px;
+  float: right;
+  margin-right: 10px;
+}
+#coupon_apply_innerdiv {
+  margin-top: 13px;
+  margin-left: 10px;
+}
+.gift_icon {
+  font-size: 20px;
+  margin-right: 3px;
+}
+#pickup_charge {
+  width: 320px;
+  height: 28px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f5;
+  margin-left: 12px;
+}
+#pickup_charge_innerdiv {
+  width: 100%;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+}
+#totalamnt {
+  width: 360px;
+  height: 40px;
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f7f7fa;
+}
+#totalamnt_innerdiv {
+  padding-top: 10px;
+  padding-left: 30px;
+  display: flex;
+}
+#totalamnt_amt {
+  margin-left: 215px;
+
+}
