@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/d829865ea3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/medicine.css"/>
     <link
       rel="stylesheet"
       type="text/css"
@@ -14,18 +16,113 @@
     />
   </head>
   <body>
+    <!-- Nav bhar started  -->
+
+    <div id="respoviesNavbarMaiandiv">
+      <div id="respoviesNavbar">
+          <div class="renavbaricon">
+              <i class="fas fa-bars" onclick="showrespovemeni()"></i>
+          </div>
+          <div class="renavbarimg">
+              <img src="Images/practo-Nav_logo.svg" alt="">
+          </div>
+          <div class="renavba">
+              <a href=""><button>Sign in</button></a>
+          </div>
+         
+      </div>
+      <div class="respoviesNavbarleftmanu">
+          <div class="respoviesNavbarleftmanuimg"> <i class="fas fa-times" onclick="closethermeanu()"></i> <img src="./Home Page Images/practonav logo/practo.svg" alt=""> </div>
+
+          <div class="allpadesrespvenav">
+              <ul>
+                  <li><a href=""><i class="fas fa-search"></i><h6>Find Doctors -</h6><p> Book an appointment</p></a></li></a>
+                  <li><a href=""><i class="fas fa-video"></i><h6>Video Consult -</h6><p>  Consult top doctors</p></a></li>
+                  <li><a href=""><i class="fas fa-prescription-bottle-alt"></i><h6>Medicines -</h6><p>  Practo pharmacy</p></a></li>
+                  <li><a href=""><i class="fas fa-flask"></i><h6>Lab Tests -</h6><p>  Expert surgical care</p></a></li>
+                  <li><a href=""><i class="fas fa-book-medical"></i><h6>Surgeries -</h6><p>  Expert surgical care</p></a></li>
+                  <li><a href=""></a></li>
+
+              </ul>
+          </div>
+          
+      </div>
+  </div>
+
+
+      <div id="NavBar">
+          <!-- Nav have four section -->
+          <div class="NavFirstSection">
+              <img src="Images/practo-logo.svg" alt="" />
+          </div>
+          <div class="NavSecondSection">
+              <a href=""><div class="second1Text">
+                  <h4>Find Doctors</h4>
+                  <p>Book an appointment</p>
+              </div></a>
+              <a href=""><div class="second1Text">
+                  <h4>Video Consult</h4>
+                  <p>Consult top doctors</p>
+              </div></a>
+              <a href=""><div class="second2Text">
+                  <h4>Medicines</h4>
+                  <p>Practo pharmacy</p>
+              </div></a>
+              <a href=""><div class="second1Text">
+                  <h4>Lab Tests</h4>
+                  <p>Book tests & checkup</p>
+              </div></a>
+              <a href=""><div class="second1Text">
+                  <h4>Surgeries</h4>
+                  <p>Expert surgical care</p>
+              </div></a>
+          </div>
+          <div class="NavThirdSection">
+             <ul>
+                 <li id="forProvider" onclick="menuClick()">For Providers
+                  <i class="fas fa-angle-down"></i>
+                      <div id="forProvidersmanu" class="samenav2">
+                          <ul>
+                             <a href=""><li id="newtext">Practo Prime <span id="new">New</span></li></a> 
+                             <a href=""> <li>Software for providers</li></a>
+                             <a href=""><li>List your practice for Free</li></a> 
+                             <a href=""><li>Corporate wellness</li></a> 
+                          </ul>
+                      </div>
+                 </li>
+                 <li id="SecurityHelpNav">Security Help   <i class="fas fa-angle-down"></i>
+                  <div id="Securitysmanu" class="samenav2">
+                      <ul>
+                          <a href=""><li id="newtext">Data Security</li></a>
+                         <a href=""><li>Help</li></a> 
+                      </ul>
+                  </div>
+                
+                 </li>
+              </ul>
+          </div>
+          <div class="NavFourSection">
+              <div class="loginSignUp">
+                  <a href=""><Button>Login / SignUp</Button></a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Nav bhar end  -->
+
+
     <div id="onePicSlide">
-      <div>
-        <img src="Images/slide1.png" alt="slide1" id="slide1" />
+      <div id="slide1">
+        <img src="Images/slide1.png" alt="slide1"  />
       </div>
-      <div>
-        <img src="Images/slide2.png" alt="slide2" id="slide2" />
+      <div id="slide2">
+        <img src="Images/slide2.png" alt="slide2"  />
       </div>
-      <div>
-        <img src="Images/slide3.webp" alt="slide3" id="slide3" />
+      <div id="slide3">
+        <img src="Images/slide3.webp" alt="slide3"  />
       </div>
-      <div>
-        <img src="Images/slide4.png" alt="slide4" id="slide4" />
+      <div id="slide4">
+        <img src="Images/slide4.png" alt="slide4"  />
       </div>
     </div>
 
