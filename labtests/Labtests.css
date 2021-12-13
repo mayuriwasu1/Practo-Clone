@@ -13,6 +13,7 @@ a {
   margin-top: 20px;
   display: flex;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 .container {
   width: 90%;
@@ -45,13 +46,12 @@ a {
 }
 #cart {
   padding: 10px;
-  margin-left: 198px;
   width: 80px;
   background-color: #fff;
   border: 1px solid #cacad3;
   font-size: 14px;
 }
-#cart>i{
+#cart > i {
   margin-right: 10px;
 }
 #cartpop {
@@ -902,7 +902,7 @@ h5 {
 
 #NavBar {
   display: grid;
-  grid-template-columns: 12% 50% 20% 8%;
+  grid-template-columns: 12% 50% 20% 9%;
   justify-content: center;
   align-items: center;
   border-bottom: 3px solid #f0f0f5;
@@ -936,7 +936,6 @@ h5 {
   font-weight: 550;
   color: #2d2d32;
   margin-bottom: 2px;
-
 }
 
 #NavBar > .NavSecondSection > a > div > p {
@@ -964,10 +963,9 @@ h5 {
   gap: 30px;
   padding-left: 0px;
 }
-.NavThirdSection>ul>li>i{
+.NavThirdSection > ul > li > i {
   margin-left: 4px;
 }
-
 
 #forProvidersmanu,
 #Securitysmanu {
@@ -1038,12 +1036,11 @@ h5 {
   color: #00d9ff;
 }
 
-.second4Text{
+.second4Text {
   border-bottom: 5px solid #14bef0;
 }
 
 /* Footer  */
-
 
 #HomeFooterSection {
   padding: 50px;
@@ -1068,7 +1065,7 @@ h5 {
   margin-bottom: 20px;
 }
 
-.footers1t > ul{
+.footers1t > ul {
   padding-left: 0px;
 }
 
