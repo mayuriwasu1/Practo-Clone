@@ -1,24 +1,26 @@
 var cartarr = JSON.parse(localStorage.getItem("cartitems")) || [];
 function addcart(item, amt) {
-  //  displaypop(cartarr);
- 
   var obj = {
     name: item,
     price: amt,
   };
   cartarr.push(obj);
   localStorage.setItem("cartitems", JSON.stringify(cartarr));
+  displaypop(cartarr);
 }
 var cartbutton = document.querySelector("#cart");
 cartbutton.addEventListener("click", function () {
   displaypop(cartarr);
 });
 var cartcount = 0;
+
 function displaypop(cartarr) {
-  var cartarr = JSON.parse(localStorage.getItem("cartitems"))||[];
-    var cartitem_div = document.getElementById("cartitem_div");
-    cartitem_div.innerHTML="";
-    cartarr.map(function (item) {
+  document.getElementById("cartpop").style.display = "block";
+  var cartarr = JSON.parse(localStorage.getItem("cartitems")) || [];
+  var cartitem_div = document.getElementById("cartitem_div");
+  cartitem_div.innerHTML = "";
+
+  cartarr.map(function (item) {
     var item_maindiv = document.createElement("div");
     item_maindiv.setAttribute("class", "item_maindiv");
     var item_pricediv = document.createElement("div");
@@ -34,36 +36,32 @@ function displaypop(cartarr) {
     var logo_div_img = document.createElement("img");
     logo_div_img.setAttribute(
       "src",
-      "https://prod-dx.s3.amazonaws.com/dx/labs/Practo_Labs.png"
+      "./images/Practo_Labs (1).png"
     );
     var logo_div_txt = document.createElement("div");
     logo_div_txt.textContent = "By Practo Labs";
     logo_div.append(logo_div_img, logo_div_txt);
     item_pricediv.append(itemname, itemprice);
     item_maindiv.append(item_pricediv, logo_div);
-    var cartitem_div = document.getElementById("cartitem_div");
     cartitem_div.append(item_maindiv);
     var testnum = document.getElementById("test_num");
     testnum.textContent = cartarr.length + " " + "Test";
   });
+  var totalamount = cartarr.reduce(function (acc, cv) {
+    return acc + Number(cv.price);
+  }, 0);
+
+  var total = document.getElementById("totalamnt_amt");
+  total.textContent = "₹" + " " + (totalamount + 150);
 
   cartcount++;
   if (cartcount % 2 != 0) {
     document.getElementById("cartpop").style.display = "none";
-  } else {
-    document.getElementById("cartpop").style.display = "block";
   }
-  var totalamount=cartarr.reduce(function(acc,cv) {
-     return acc+Number(cv.price);        
-    },0)
-  var total = document.getElementById("totalamnt_amt");
-  total.textContent="₹"+" "+(totalamount+150);
- 
 }
- window.addEventListener("load", (event) => {
-   document.getElementById("cartpop").style.display = "none";
- });
-
+window.addEventListener("load", (event) => {
+  document.getElementById("cartpop").style.display = "none";
+});
 
 // <!-- SLIDER 1 J QUERY -->
 $("#slider_sec3").slick({

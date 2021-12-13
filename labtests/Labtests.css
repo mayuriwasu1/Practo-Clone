@@ -4,9 +4,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
 }
-a{
-  text-decoration:none;
-  color:black;
+a {
+  text-decoration: none;
+  color: black;
 }
 /* <!-- SEARCH BAR AND CART SECTION starts here--> */
 #sear_cart {
@@ -15,7 +15,7 @@ a{
   margin-bottom: 20px;
 }
 .container {
-  max-width: 86%;
+  width: 90%;
   margin: auto;
 }
 
@@ -43,11 +43,16 @@ a{
   border-left: white;
   border-radius: 3px;
 }
-#cart{
+#cart {
   padding: 10px;
+  margin-left: 198px;
   width: 80px;
   background-color: #fff;
   border: 1px solid #cacad3;
+  font-size: 14px;
+}
+#cart>i{
+  margin-right: 10px;
 }
 #cartpop {
   border: 1px solid #cacad3;
@@ -59,6 +64,7 @@ a{
   border-radius: 3px;
   background-color: #fff;
   z-index: 9;
+  display: none;
 }
 #cartpop_head {
   width: 100%;
@@ -82,14 +88,12 @@ a{
 }
 
 #cartitem_div {
-  /* border: 1px solid black; */
   width: 100%;
   margin-top: 3px;
 }
 .item_maindiv {
   width: 100%;
   height: 99px;
-  /* border: 1px solid orangered; */
   padding-left: 10px;
   padding-top: 15px;
 }
@@ -101,14 +105,12 @@ a{
   margin-right: 35px;
 }
 .item_pricediv {
-  /* border:1px solid greenyellow; */
   height: 25px;
   margin-top: 3px;
   display: flex;
   justify-content: space-between;
 }
 #logo_div {
-  /* border: 1px solid blue; */
   width: 95%;
   height: 23px;
   font-size: 13px;
@@ -164,7 +166,7 @@ a{
   font-size: 13px;
   font-weight: 700;
 }
-#pickup_charge_amt{
+#pickup_charge_amt {
   margin-right: 15px;
 }
 #totalamnt {
@@ -182,9 +184,8 @@ a{
 }
 #totalamnt_amt {
   margin-left: 170px;
-
 }
-#proceed_btn{
+#proceed_btn {
   width: 253px;
   height: 39px;
   background-color: #30932f;
@@ -195,10 +196,10 @@ a{
   font-weight: 600;
   font-size: 15px;
 }
-#proceed_btn_txt{
+#proceed_btn_txt {
   padding-top: 10px;
 }
-#proceed_link{
+#proceed_link {
   text-decoration: none;
   cursor: pointer;
 }
@@ -208,9 +209,12 @@ a{
 #first_imgdiv {
   margin-top: 23px;
 }
+#first_imgdiv > img {
+  width: 100%;
+}
 .sec_two {
   height: 84px;
-  width: 1180px;
+  width: 100%;
   background-color: #28328c;
   margin-top: 24px;
   border-radius: 8px;
@@ -218,14 +222,12 @@ a{
   justify-content: space-between;
 }
 #booktest {
-  /* border: 1px solid red; */
   width: 428.69px;
   margin-left: 24px;
   display: flex;
 }
 #sectwo_img {
   margin-top: 10px;
-  /* border: 1px solid red; */
   width: 56px;
 }
 #sectwo_img > img {
@@ -233,7 +235,6 @@ a{
 }
 #sectwo_txt {
   width: 328px;
-  /* border: 1px solid red; */
   color: #fff;
   line-height: 5px;
   padding-top: 8px;
@@ -268,7 +269,7 @@ a{
 /* THIRD SECTION SLIDER */
 #slider_sec3,
 #slider_sec4 {
-  width: 1180px;
+  width: 100%;
 }
 .sec3_slidbox {
   border: 1px solid #f0f0f5;
@@ -386,7 +387,7 @@ h5 {
 /* <!-- FIFTH SECTION starts here --> */
 .sec5_slider {
   margin-top: 18px;
-  width: 1200px;
+  width: 100%;
 }
 .sec5_sliderbox {
   border: 1.5px solid #ebebeb;
@@ -395,14 +396,6 @@ h5 {
 .sec5_slider_img > img {
   width: 100%;
 }
-/* .sec5_img_gradient{
-    height: 100px;
-    width: 371px;
-    border: 1px solid red;
-    position:absolute;
-    background-image: linear-gradient(
-180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.85) 55%,#fff);
-} */
 .sec5_slider_title {
   line-height: 5px;
   padding-left: 10px;
@@ -481,7 +474,7 @@ h5 {
 .seperator_sec5 {
   background-color: rgb(224, 224, 224);
   height: 10px;
-  width: 1180px;
+  width: 100%;
   border: transparent;
   margin-top: 15px;
 }
@@ -550,7 +543,7 @@ h5 {
   margin-top: 15px;
   background-color: rgb(224, 224, 224);
   height: 10px;
-  width: 1180px;
+  width: 100%;
   border: transparent;
 }
 /* <!-- SEVENTH SECTION starts here --> */
@@ -583,7 +576,6 @@ h5 {
   font-weight: 500;
   width: 382px;
   height: 75px;
-  /* border: 1px solid red; */
 }
 .sec7_wrap1 > img {
   height: 36px;
@@ -815,7 +807,6 @@ h5 {
 #appdiv {
   width: 420px;
   height: 400px;
-  /* border: 1px solid red; */
   margin-top: 20px;
   padding-top: 70px;
   margin-right: 50px;
@@ -907,150 +898,161 @@ h5 {
   color: #14bef0;
   text-decoration: none;
 }
+/* Navigation bar */
 
 #NavBar {
-    display: grid;
-    grid-template-columns: 11% 45% 17% 10%;
-    justify-content: center;
-  
-    align-items: center;
+  display: grid;
+  grid-template-columns: 12% 50% 20% 8%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #f0f0f5;
 }
 
-#NavBar>.NavFirstSection {
-    width: 95%;
-    align-items: center;
+#NavBar > .NavFirstSection {
+  width: 95%;
+  align-items: center;
+  margin-top: 10px;
 }
 
-#NavBar>.NavFirstSection> a > img {
-    width: 72%;
+#NavBar > .NavFirstSection > a > img {
+  width: 72%;
 }
 
-#NavBar>.NavSecondSection {
-    display: flex;
-    gap: 2px;
-    cursor: pointer;
+#NavBar > .NavSecondSection {
+  display: flex;
+  gap: 2px;
+  cursor: pointer;
 }
 
+#NavBar > .NavSecondSection > a {
+  width: 20%;
 
-
-#NavBar>.NavSecondSection> a {
-    width: 20%;
-   
-    text-decoration: none;
+  text-decoration: none;
 }
 
-#NavBar>.NavSecondSection> a > div>h4 {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 550;
-    color: #2d2d32;
-}
-
-#NavBar>.NavSecondSection> a > div>p {
-    font-size: 12px;
-    color: #787887;
-}
-#NavBar>.NavSecondSection> a > div>h4:hover{
-    color: #112092;
-}
-
-#NavBar>.NavThirdSection > ul > li{
-    color: #414146;
-    font-size: 14px;
-    padding: 8px;
-    font-weight: 200;
-    cursor: pointer;
-}
-
-
-#NavBar>.NavThirdSection > ul{
-    align-items: center;
-    display: flex;
-    position: relative;
-    list-style: none;
-    gap:0px;
-}
-
-#forProvidersmanu , #Securitysmanu{
-    display: none;
+#NavBar > .NavSecondSection > a > div > h4 {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 550;
+  color: #2d2d32;
+  margin-bottom: 2px;
 
 }
 
-#forProvider:hover #forProvidersmanu{
-
-    display: block;
-   width: 230px;
-    margin-left: -100px;
-    position: absolute;
-    left:100;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+#NavBar > .NavSecondSection > a > div > p {
+  font-size: 12px;
+  color: #787887;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+#NavBar > .NavSecondSection > a > div > h4:hover {
+  color: #112092;
 }
 
-#SecurityHelpNav:hover #Securitysmanu{
-    display: block;
-    width: 230px;
-     margin-left: -60px;
-     position: absolute;
-     left:100;
-     background-color: #ffffff;
-     border-radius: 5px;
-     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+#NavBar > .NavThirdSection > ul > li {
+  color: #414146;
+  font-size: 15px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+#NavBar > .NavThirdSection > ul {
+  align-items: center;
+  display: flex;
+  position: relative;
+  list-style: none;
+  gap: 30px;
+  padding-left: 0px;
+}
+.NavThirdSection>ul>li>i{
+  margin-left: 4px;
+}
+
+
+#forProvidersmanu,
+#Securitysmanu {
+  display: none;
+}
+
+#forProvider:hover #forProvidersmanu {
+  display: block;
+  width: 230px;
+  margin-left: -100px;
+  position: absolute;
+  left: 100;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#SecurityHelpNav:hover #Securitysmanu {
+  display: block;
+  width: 230px;
+  margin-left: -60px;
+  position: absolute;
+  left: 100;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .samenav2 > ul {
-    list-style: none;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0px;
+  list-style: none;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
 }
 .samenav2 > ul > a > li {
-    margin: 10px 0px;
-    padding: 15px;
+  margin: 10px 0px;
+  padding: 15px;
 }
-#new{
-    background-color: rgb(255, 174, 0);
-    font-size: 12px;
-    padding: 6px;
-    color: #fff;
-   float: right;
-   margin-right: 20px;
-   margin-top: -2px;
-}
-
-
-.samenav2 > ul > a> li:hover{
-   background-color: #F0F1F4    ;
+#new {
+  background-color: rgb(255, 174, 0);
+  font-size: 12px;
+  padding: 6px;
+  color: #fff;
+  float: right;
+  margin-right: 20px;
+  margin-top: -2px;
 }
 
-#NavBar>.NavFourSection>.loginSignUp>a>button {
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 14px;
-    font-weight: 400;
-    background-color: transparent;
-    color: #787887;
-    border-radius: 4px;
-    border: solid 1px#d3d3d3;
-    padding: 8px 10px;
+.samenav2 > ul > a > li:hover {
+  background-color: #f0f1f4;
 }
 
-#NavBar>.NavFourSection>.loginSignUp>a>button:hover {
-    border: solid 1px#00d9ff;
-    color: #00d9ff;
+#NavBar > .NavFourSection > .loginSignUp > a > button {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #787887;
+  border-radius: 4px;
+  border: solid 1px#d3d3d3;
+  padding: 8px 10px;
 }
+
+#NavBar > .NavFourSection > .loginSignUp > a > button:hover {
+  border: solid 1px#00d9ff;
+  color: #00d9ff;
+}
+
+.second4Text{
+  border-bottom: 5px solid #14bef0;
+}
+
+/* Footer  */
+
 
 #HomeFooterSection {
   padding: 50px;
   background-color: #28328c;
 }
 
-.footersection1{
+.footersection1 {
   display: flex;
-  justify-content: center;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 .footers1t {
@@ -1060,11 +1062,14 @@ h5 {
   text-align: left;
 }
 
-.footers1t > h2{
+.footers1t > h2 {
   font-size: 15px;
-  font-size: 700;
-  color:#fff;
+  color: #fff;
   margin-bottom: 20px;
+}
+
+.footers1t > ul{
+  padding-left: 0px;
 }
 
 .footers1t > ul > a {
@@ -1072,19 +1077,17 @@ h5 {
   color: #fff;
 }
 
-.footers1t > ul > a:hover{
-
+.footers1t > ul > a:hover {
   text-decoration: underline;
 }
 
-.footers1t > ul > a > li{
+.footers1t > ul > a > li {
   font-size: 15px;
- color: #fff; 
- font-weight: 100;
-margin-bottom: 10px;
- list-style: none;
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 10px;
+  list-style: none;
 }
-
 
 .footer2sectio {
   margin-top: 50px;
@@ -1097,7 +1100,7 @@ margin-bottom: 10px;
   text-align: center;
   color: rgb(252, 252, 252);
 }
-.footer2sectiontextcopy > h3{
+.footer2sectiontextcopy > h3 {
   font-size: 14px;
 }
 

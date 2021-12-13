@@ -1,25 +1,10 @@
-// var dob_value=document.getElementById("dob_val").value;
-// var DOB_err = document.getElementById("DOBerror_msg");
-// if(dob_value<10){
-//     console.log("yes")
-//     DOB_err.textContent ="No";
-// }
-// else{
-//     DOB_err.textContent = "Patient age cannot be less than 10 years";
-// }
-// var patname = document.getElementById("patname_input").value;
-// var patname_err = document.getElementById("patname_err");
-// if(patname.length=2){
-//     patname_err.textContent="Required";
-// }
-// else if (patname.length = 0){
-//   patname_err.textContent = " ";
-// }
 
+ var cart = JSON.parse(localStorage.getItem("cartitems")) || [];
+ 
  window.addEventListener("load", (event) => {
-var cart=JSON.parse(localStorage.getItem("cartitems"))||[];
  displaypop(cart);
  });
+             //displaying cart items and appending
  function displaypop(cart){
   var cart = JSON.parse(localStorage.getItem("cartitems"))||[];
     var cartitem_div = document.getElementById("cartitem_div");
@@ -34,13 +19,13 @@ var cart=JSON.parse(localStorage.getItem("cartitems"))||[];
     itemname.textContent = item.name;
     var itemprice = document.createElement("div");
     itemprice.setAttribute("class", "itemprice");
-    itemprice.textContent = "₹" + " " + item.price;
+    itemprice.textContent = "₹"+" "+item.price;
     var logo_div = document.createElement("div");
     logo_div.setAttribute("id", "logo_div");
     var logo_div_img = document.createElement("img");
     logo_div_img.setAttribute(
       "src",
-      "https://prod-dx.s3.amazonaws.com/dx/labs/Practo_Labs.png"
+      "./images/Practo_Labs (1).png"
     );
     var logo_div_txt = document.createElement("div");
     logo_div_txt.textContent = "By Practo Labs";
@@ -52,7 +37,6 @@ var cart=JSON.parse(localStorage.getItem("cartitems"))||[];
     var testnum = document.getElementById("test_num");
     testnum.textContent = cart.length + " " + "Test";
     });
-
     var totalamount=cart.reduce(function(acc,cv) {
      return acc+Number(cv.price);        
     },0)
