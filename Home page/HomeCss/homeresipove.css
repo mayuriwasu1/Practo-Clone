@@ -1,4 +1,4 @@
-/* @media screen and (max-width: 1444px) {
+/* @media screen and (max-width: 1500px) {
   body {
     width: 100%;
     margin: auto;
@@ -11,6 +11,7 @@
         width: 100%;
         margin: auto;
     }
+  }
 @media screen and (min-width: 857px) and (max-width: 1444px) {
   body {
     width: 100%;

@@ -172,7 +172,14 @@ a{
     
 }
 
-@media screen and (min-width: 43px) and (max-width: 768px){
+@media screen and (min-width: 430px) and (max-width: 768px){
+    #Homepagewarp {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1440px){
     #Homepagewarp {
         width: 100%;
         margin: auto;
