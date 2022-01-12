@@ -15,13 +15,6 @@ body {
   height: 811px;
   background-color: #fff;
 }
-/* #amntwrap{
-    width: 380px;
-    height: 433px;
-    border: 1px solid green;
-    background-color: #fff;
-    margin-left: 20px;
-} */
 #patdetails{
     width: 380px;
     height: 689px;
@@ -125,14 +118,12 @@ body {
 
 
 #cartitem_div {
-  /* border: 1px solid black; */
   width: 100%;
   margin-top: 3px;
 }
 .item_maindiv {
   width: 100%;
   height: 99px;
-  /* border: 1px solid orangered; */
   padding-left: 10px;
   padding-top: 15px;
 }
@@ -144,14 +135,14 @@ body {
   margin-right: 35px;
 }
 .item_pricediv {
-  /* border:1px solid greenyellow; */
+
   height: 25px;
   margin-top: 3px;
   display: flex;
   justify-content: space-between;
 }
 #logo_div {
-  /* border: 1px solid blue; */
+
   width: 95%;
   height: 23px;
   font-size: 13px;
