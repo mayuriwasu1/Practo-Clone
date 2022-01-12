@@ -1043,6 +1043,7 @@ h5 {
 /* Footer  */
 
 #HomeFooterSection {
+  z-index: 5;
   padding: 50px;
   background-color: #28328c;
 }
