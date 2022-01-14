@@ -1,17 +1,17 @@
 
 # Practo-Website-Clone
 ---
-##### This is clone website of purplle.com Purplle is an ecommerse website where user can buy all kinds of bueaty products.
+##### This is a team project where we worked on cloning the practo website. Here users can book appointments, consultations with doctors. We have built this using HTML, CSS, and JavaScript.
 ---
 ## [Video Presentation ](https://www.google.com)
 ---
 ## Tech Stack
 - `HTML5`
 - `CSS3`
-- `Advanced JavaScript`
+- `JavaScript`
 ---
 ## Features
-##### - User can buy any type of beauty product
+##### - User can book appointments, consultations with doctors
 ##### - They can use this website from any device 
 ---
 ## Page and Responsibilities 
@@ -19,91 +19,71 @@
 
 - **Home Page**
 
-![Landing Page](https://github.com/mayuriwasu1/purplle_clone/Home_page/image/homepage.png)
+![Landing Page](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/practo_home_img.png)
 
 ---
 - **Reponsive Home Page**
 
-![Responsive](https://github.com/mayuriwasu1/purplle_clone/Home_page/image/responsive.png)
-
----
-- **Navbar UI**
-
-![Landing Page Subcategory](https://github.com/)
-
----
-- **Navbar UI 2**
-
-![Landing Page Brands Category](https://github.com/)
+![Responsive](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/responsive.png)
 
 ---
 - **Sign-Up Page**
 
-![Sign Up Page](https://github.com/)
+![Sign Up Page](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/regis_practo.png)
 
 ---
 - **Sign-In Page**
 
-![Sign In Page](https://github.com/)
+![Sign In Page](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/login_practo.png)
 
 
 ---
-- **Product Category Page**
+- **Video Consultation**
 
-![Product Category Page](https://github.com/)
-
----
-
-- **Product Details Page**
-![Product Details Page](https://github.com/)
-
----
-- **Cart Page**
-
-![Cart Page](https://github.com/)
+![Video Consultation](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/video_practo.png)
 
 ---
 
-
-- **Checkout Page**
-
-![Checkout Page](https://github.com/)
-
----
-- **Payment Page**
-
-![Payment Page](https://github.com/)
+- **Medicines page**
+![Medicines page](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/medi_practo.png)
 
 ---
 
-- **Footer Section**
+- **Labtest**
 
-![Footer](https://github.com/)
+![Labtest](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/labtest_practo.png)
 
+---
+- **Card Section**
+
+![Card Section](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/addcard.png)
+
+---
+
+- **Contact Page**
+
+![Contact Page](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/contact.png))
+
+---
 
 
 
 ### How To Use 
-User can login into purplle by clicking the login button and inserting the right credentials, 
-new user can register themself by clicking on register button and filling a simple form, after sucessful 
-login user can stat shopping, they can choose category that they like also they can sort the product 
-according to their choice, after choosing product they can add it to cart or they 
-
-
-
-
+Users can log in into practo by clicking the login button and fill in the right credentials, new users can register themself by clicking on the register button and fill a simple form, after successful login user can start book appointments, consultations with doctors.
 
 
 ## Creators
 
+### Vaman
+#### [GitHub](https://github.com/Vaman93)
 ### Mayuri
 #### [GitHub](https://github.com/mayuriwasu1)
-### Kavya
-#### [GitHub](https://github.com/kavya-2021)
-### Reetesh
-#### [GitHub](https://github.com/Reeteshin)
-### Aswin
-#### [GitHub](https://github.com/AswinAnand66)
+### Ananthu
+#### [GitHub](https://github.com/AnanthuSuresh098)
+### Pavithran
+#### [GitHub](https://github.com/pavithran-paviii)
+### Partha
+#### [GitHub](https://github.com/parthadas93)
 
 
 
