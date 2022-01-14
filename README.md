@@ -74,11 +74,11 @@ Users can log in into practo by clicking the login button and fill in the right 
 
 ## Creators
 
-### Vaman #### [GitHub](https://github.com/Vaman93)
-### Mayuri #### [GitHub](https://github.com/mayuriwasu1)
-### Ananthu #### [GitHub](https://github.com/AnanthuSuresh098)
-### Pavithran #### [GitHub](https://github.com/pavithran-paviii)
-### Partha #### [GitHub](https://github.com/parthadas93)
+#### Vaman  [GitHub](https://github.com/Vaman93)
+#### Mayuri  [GitHub](https://github.com/mayuriwasu1)
+#### Ananthu [GitHub](https://github.com/AnanthuSuresh098)
+#### Pavithran [GitHub](https://github.com/pavithran-paviii)
+#### Partha [GitHub](https://github.com/parthadas93)
 
 
 
