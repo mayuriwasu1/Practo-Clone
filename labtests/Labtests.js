@@ -55,7 +55,7 @@ function displaypop(cartarr) {
   total.textContent = "₹" + " " + (totalamount + 150);
 
   cartcount++;
-  if (cartcount % 2 != 0) {
+  if (cartcount % 2 != 1) {
     document.getElementById("cartpop").style.display = "none";
   }
 }
