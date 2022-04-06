@@ -4,12 +4,10 @@
 ##### This is a team project where we worked on cloning the practo website. Here users can book appointments, consultations with doctors. We have built this using HTML, CSS, and JavaScript.
 ---
 ## [Demo Link](https://practoclone.netlify.app/) ↗️
-## [Blog ](https://medium.com/@mayuriwasu2000/built-practo-com-clone-5b93d0dd5a55) ↗️
+## [Blog Link](https://medium.com/@mayuriwasu2000/built-practo-com-clone-5b93d0dd5a55) ↗️
 ---
 ## Tech Stack
-- `HTML5`
-- `CSS3`
-- `JavaScript`
+- `HTML5`, `CSS3`, `JavaScript`
 ---
 ## Features
  - User can book appointments, consultations with doctors
