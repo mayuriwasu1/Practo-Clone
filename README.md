@@ -12,8 +12,9 @@
 - `JavaScript`
 ---
 ## Features
-##### - User can book appointments, consultations with doctors
-##### - They can use this website from any device 
+ - User can book appointments, consultations with doctors
+ - User can order medicines
+ - They can use this website from any device 
 ---
 ## Page and Responsibilities 
 ---
