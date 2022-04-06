@@ -68,7 +68,7 @@
 
 
 
-### How To Use ☑️
+### How To Use ✔️
 Users can log in into practo by clicking the login button and fill in the right credentials, new users can register themself by clicking on the register button and fill a simple form, after successful login user can start book appointments, consultations with doctors.
 
 
